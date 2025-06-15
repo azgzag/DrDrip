@@ -1,0 +1,351 @@
+/* === STYLE GLOBAL DOCTOR DRIP === */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  position: fixed;
+  width: 100%;
+}
+
+.logo img {
+  height: 170px;
+  padding-top: 70px
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #00bfff;
+  /* 🔵 BLEU */
+}
+
+main.auth,
+main.checkout {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+  text-align: center;
+}
+
+main.checkout {
+  flex-direction: column;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.form {
+  background: #333;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 100%;
+  animation: popUp 0.5s ease-out;
+}
+
+@keyframes popUp {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.form label {
+  display: block;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+.form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #444;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.form button {
+  width: 100%;
+  padding: 12px;
+  background: #00bfff;
+  /* 🔵 BLEU */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form button:hover {
+  background: #00a0e0;
+  /* 🔵 BLEU foncé */
+}
+
+.form a {
+  color: #00bfff;
+  /* 🔵 BLEU */
+  text-decoration: none;
+}
+
+.form a:hover {
+  text-decoration: underline;
+}
+
+#cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#cart-table th,
+#cart-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1em;
+  text-align: center;
+}
+
+#cart-container button {
+  background: #00bfff;
+  /* 🔵 BLEU */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#cart-container button:hover {
+  background: #00a0e0;
+  /* 🔵 BLEU foncé */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  background: transparent;
+  margin-top: auto;
+}
+
+/* Animation de transition entre pages */
+body.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+a[href] {
+  transition: color 0.3s;
+}
+
+a[href]:hover {
+  color: #00bfff;
+  /* 🔵 BLEU */
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px;
+  padding: 60px 20px;
+  animation: fadeSlideIn 1s ease-out;
+}
+
+.product {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .product img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #00bfff;
+  /* 🔵 BLEU */
+  bottom: 0;
+  left: 50%;
+  transition: all 0.4s ease;
+  transform: translateX(-50%);
+}
+
+nav a:hover::after,
+nav a.active::after {
+  width: 100%;
+}
+
+nav a.active {
+  color: #00bfff;
+  /* 🔵 BLEU */
+  font-weight: bold;
+}
+
+.cart-badge {
+  background: #00bfff;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  margin-left: 6px;
+  display: inline-block;
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.cart-badge.pop {
+  animation: popAnim 0.3s forwards;
+}
+
+@keyframes popAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+button {
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.4);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+button:hover {
+  background-color: #008fcf;
+  box-shadow: 0 6px 12px rgba(0, 143, 207, 0.6);
+  transform: translateY(-3px);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 8px 2px #00bfff;
+}
+
+/* Animation pour le clic */
+@keyframes clickPop {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+button:active {
+  animation: clickPop 0.2s ease;
+}

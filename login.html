@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Connexion - Doctor Drip</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: transparent;
+      position: fixed;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #00bfff;
+    }
+
+    main.auth {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 100px;
+      text-align: center;
+    }
+
+    .form {
+      background: #333;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      max-width: 400px;
+      width: 100%;
+      animation: popUp 0.5s ease-out;
+    }
+
+    @keyframes popUp {
+      0% { transform: scale(0.9); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .form label {
+      display: block;
+      margin: 10px 0 5px;
+      text-align: left;
+    }
+
+    .form input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background: #444;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .form button {
+      width: 100%;
+      padding: 12px;
+      background: #00bfff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-bottom: 15px;
+    }
+
+    .form button:hover {
+      background: #00a0e0;
+    }
+
+    .form a {
+      color: #00bfff ;
+      text-decoration: none;
+    }
+
+    .form a:hover {
+      text-decoration: underline;
+    }
+
+    /* Bouton Google */
+    .google-btn {
+      background: white;
+      color: #444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      border: none;
+      padding: 12px;
+      transition: background 0.3s;
+      width: 100%;
+    }
+
+    .google-btn:hover {
+      background: #eee;
+    }
+
+    .google-icon {
+      height: 20px;
+      width: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background: transparent;
+    }
+  </style>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDHQ4Ia5XAA5jPJMP5z0t5RNhoiJ7olc0c",
+      authDomain: "doctor-drip-1fa85.firebaseapp.com",
+      projectId: "doctor-drip-1fa85",
+      storageBucket: "doctor-drip-1fa85.appspot.com",
+      messagingSenderId: "875097047945",
+      appId: "1:875097047945:web:5fb263cf8b1b42a657d758",
+      measurementId: "G-9ST00ZM676"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+
+    window.loginUser = async function () {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      try {
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+          window.location.href = "shop.html";
+        }, 300);
+      } catch (error) {
+        alert("Erreur : " + error.message);
+      }
+    };
+
+    window.loginWithGoogle = async function () {
+      try {
+        const result = await signInWithPopup(auth, provider);
+        // Utilisateur connecté
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+          window.location.href = "shop.html";
+        }, 300);
+      } catch (error) {
+        alert("Erreur lors de la connexion avec Google : " + error.message);
+      }
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Doctor Drip Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="shop.html">Boutique</a></li>
+        <li><a href="login.html" class="active">Connexion</a></li>
+        <li><a href="register.html">Inscription</a></li>
+        <li><a href="checkout.html">Panier</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="auth">
+    <form class="form" onsubmit="event.preventDefault(); loginUser();">
+      <h2>Connexion</h2>
+      <label for="email">Adresse e-mail</label>
+      <input type="email" id="email" name="email" required placeholder="Email" />
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password" required placeholder="Mot de passe" />
+
+      <button type="submit">Se connecter</button>
+
+      <!-- Bouton Google ajouté -->
+      <button type="button" class="google-btn" onclick="loginWithGoogle()">
+        <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google logo" />
+        Se connecter avec Google
+      </button>
+
+      <p>Pas encore de compte ? <a href="register.html">Inscrivez-vous ici</a>.</p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Doctor Drip. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

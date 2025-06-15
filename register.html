@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscription - Doctor Drip</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDHQ4Ia5XAA5jPJMP5z0t5RNhoiJ7olc0c",
+      authDomain: "doctor-drip-1fa85.firebaseapp.com",
+      projectId: "doctor-drip-1fa85",
+      storageBucket: "doctor-drip-1fa85.appspot.com",
+      messagingSenderId: "875097047945",
+      appId: "1:875097047945:web:5fb263cf8b1b42a657d758",
+      measurementId: "G-9ST00ZM676"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    window.registerUser = async function () {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const confirm = document.getElementById("confirm").value;
+
+      if (password !== confirm) {
+        alert("Les mots de passe ne correspondent pas.");
+        return;
+      }
+
+      try {
+        await createUserWithEmailAndPassword(auth, email, password);
+        alert("Inscription réussie ! Connecte-toi maintenant.");
+        document.body.style.opacity = 0;
+        setTimeout(() => {
+          window.location.href = "login.html";
+        }, 300);
+      } catch (error) {
+        alert("Erreur : " + error.message);
+      }
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Doctor Drip Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="shop.html">Boutique</a></li>
+        <li><a href="login.html">Connexion</a></li>
+        <li><a href="register.html"class="active">Inscription</a></li>
+        <li><a href="checkout.html">Panier</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="auth">
+    <form class="form" onsubmit="event.preventDefault(); registerUser();">
+      <h2>Inscription</h2>
+      <label for="email">Adresse e-mail</label>
+      <input type="email" id="email" name="email" required placeholder="mail@example.com" />
+
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" name="password" required placeholder="••••••••" />
+
+      <label for="confirm">Confirmer le mot de passe</label>
+      <input type="password" id="confirm" name="confirm" required placeholder="••••••••" />
+
+      <button type="submit">S'inscrire</button>
+      <p>Tu as déjà un compte ? <a href="login.html">Connecte-toi ici</a>.</p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Doctor Drip. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doctor Drip - Boutique</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .product select {
+      margin: 10px 0;
+      padding: 8px;
+      border-radius: 5px;
+      border: none;
+      background: #f0f0f0;
+      font-size: 0.95em;
+    }
+
+    .cart-popup {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #00bfff;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 8px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+      z-index: 9999;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .cart-popup.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Doctor Drip Logo" />
+    </div>
+    <nav>
+  <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="shop.html" class="active">Boutique</a></li>
+    <li><a href="login.html">Connexion</a></li>
+    <li><a href="register.html">Inscription</a></li>
+    <li>
+      <a href="checkout.html">
+        Panier <span id="cart-count" style="background:#00bfff; color:white; padding:2px 8px; border-radius:12px; font-size:0.8em; margin-left:6px;">0</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  </header>
+
+  <main class="checkout">
+    <h1 style="margin-top: 100px;">Notre Sélection</h1>
+    <p style="text-align: center; margin: 10px 0 30px; font-style: italic;">Les articles les plus frais du moment.</p>
+
+    <section class="products">
+      <div class="product">
+        <img src="images/tshirt1.jpg" alt="product1" />
+        <h3>T-shirt Drip Skull</h3>
+        <p>29,99 €</p>
+
+        <label for="size1">Taille :</label>
+        <select id="size1">
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+
+        <label for="color1">Couleur :</label>
+        <select id="color1">
+          <option>Noir</option>
+          <option>Blanc</option>
+          <option>Rouge</option>
+          <option>Bleu</option>
+          <option>Vert</option>
+        </select>
+
+        <button onclick="addToCart('T-shirt Drip Skull', 29.99, 'size1', 'color1')">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="images/tshirt2.jpg" alt="product2" />
+        <h3>T-shirt Urban Flame</h3>
+        <p>34,99 €</p>
+
+        <label for="size2">Taille :</label>
+        <select id="size2">
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+
+        <label for="color2">Couleur :</label>
+        <select id="color2">
+          <option>Noir</option>
+          <option>Blanc</option>
+          <option>Rouge</option>
+          <option>Bleu</option>
+          <option>Vert</option>
+        </select>
+
+        <button onclick="addToCart('T-shirt Urban Flame', 34.99, 'size2', 'color2')">Ajouter au panier</button>
+      </div>
+
+      <div class="product">
+        <img src="images/tshirt3.jpg" alt="product3" />
+        <h3>T-shirt Graffiti Flow</h3>
+        <p>24,99 €</p>
+
+        <label for="size3">Taille :</label>
+        <select id="size3">
+          <option>XS</option>
+          <option>S</option>
+          <option>M</option>
+          <option>L</option>
+          <option>XL</option>
+          <option>XXL</option>
+        </select>
+
+        <label for="color3">Couleur :</label>
+        <select id="color3">
+          <option>Noir</option>
+          <option>Blanc</option>
+          <option>Rouge</option>
+          <option>Bleu</option>
+          <option>Vert</option>
+        </select>
+
+        <button onclick="addToCart('T-shirt Graffiti Flow', 24.99, 'size3', 'color3')">Ajouter au panier</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Doctor Drip. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    function addToCart(name, price, sizeId, colorId) {
+      const size = document.getElementById(sizeId).value;
+      const color = document.getElementById(colorId).value;
+
+      const item = {
+        name,
+        price,
+        size,
+        color,
+        quantity: 1
+      };
+
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push(item);
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      showAddToCartPopup(`${name} (${color}, ${size}) ajouté au panier`);
+    }
+
+    function showAddToCartPopup(message) {
+      const popup = document.createElement('div');
+      popup.className = 'cart-popup';
+      popup.innerText = message;
+      document.body.appendChild(popup);
+
+      setTimeout(() => popup.classList.add('visible'), 10);
+      setTimeout(() => {
+        popup.classList.remove('visible');
+        setTimeout(() => popup.remove(), 300);
+      }, 2000);
+    }
+  </script>
+</body>
+</html>

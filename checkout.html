@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Drip – Panier</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="Doctor Drip Logo" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="shop.html">Boutique</a></li>
+        <li><a href="login.html">Connexion</a></li>
+        <li><a href="register.html">Inscription</a></li>
+        <li><a href="checkout.html"class="active">Panier</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="checkout">
+    <h1 style="margin-top: 120px;">Ton Panier</h1>
+    <section id="cart-container">
+      <table id="cart-table">
+        <thead>
+          <tr>
+            <th>Produit</th>
+            <th>Couleur</th>
+            <th>Taille</th>
+            <th>Prix</th>
+            <th>Quantité</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items">
+          <!-- Articles injectés dynamiquement -->
+        </tbody>
+      </table>
+
+      <h3 id="total">Total : 0 €</h3>
+
+      <div style="margin-top: 20px; display: flex; justify-content: center; gap: 20px;">
+        <button id="pay-btn">Payer maintenant</button>
+        <button onclick="clearCart(); location.reload();">Vider le panier</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Doctor Drip. Tous droits réservés.</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+  <script>
+    const cartItems = getCartItems();
+    const cartTable = document.getElementById('cart-items');
+    const totalDisplay = document.getElementById('total');
+    let total = 0;
+
+    cartItems.forEach(item => {
+      const itemTotal = item.price * item.quantity;
+      total += itemTotal;
+
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${item.name}</td>
+        <td>${item.color}</td>
+        <td>${item.size}</td>
+        <td>${item.price.toFixed(2)} €</td>
+        <td>${item.quantity}</td>
+        <td>${itemTotal.toFixed(2)} €</td>
+      `;
+      cartTable.appendChild(row);
+    });
+
+    totalDisplay.textContent = `Total : ${total.toFixed(2)} €`;
+
+    document.getElementById('pay-btn').addEventListener('click', async () => {
+      if (cartItems.length === 0) {
+        alert("Ton panier est vide !");
+        return;
+      }
+
+      try {
+        const response = await fetch('http://localhost:4242/create-checkout-session', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ items: cartItems })
+        });
+
+        const data = await response.json();
+        if (data.url) {
+          document.body.classList.add('fade-out');
+          setTimeout(() => {
+            window.location.href = data.url;
+          }, 300);
+        } else {
+          alert("Erreur lors de la redirection vers Stripe.");
+        }
+      } catch (err) {
+        console.error(err);
+        alert("Une erreur est survenue pendant le paiement.");
+      }
+    });
+  </script>
+</body>
+</html>
