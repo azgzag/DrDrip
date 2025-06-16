@@ -3,8 +3,7 @@ import Stripe from 'stripe';
 import cors from 'cors';
 
 const app = express();
-const stripe = new Stripe('***REMOVED***'); // Mets bien ta vraie clé ici
-
+const stripeSecretKey = process.env.STRIPE_SECRET_KEY;
 app.use(cors());
 app.use(express.json());
 
