@@ -3,40 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Doctor Drip - Panier / Checkout</title>
+  <title>Doctor Drip - Checkout</title>
   <style>
     body {
       font-family: 'Montserrat', sans-serif;
       background: #121217;
       color: #e0e0e0;
-      margin: 0;
+      max-width: 700px;
+      margin: 40px auto;
       padding: 20px;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
     }
     h1 {
-      text-align: center;
-      margin-top: 20px;
-      margin-bottom: 20px;
       color: #818cf8;
+      text-align: center;
+      margin-bottom: 30px;
     }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 30px;
       background: #1f2937;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 6px 16px rgba(79, 70, 229, 0.6);
+      margin-bottom: 30px;
     }
     th, td {
-      padding: 15px 12px;
+      padding: 12px;
       text-align: left;
+      color: #cbd5e1;
     }
     th {
       background: #374151;
-      color: #94a3b8;
       font-weight: 600;
       text-transform: uppercase;
       font-size: 0.85em;
@@ -48,15 +45,33 @@
     tbody tr:last-child {
       border-bottom: none;
     }
-    td {
-      color: #cbd5e1;
-    }
     .total-row td {
       font-weight: 700;
       font-size: 1.1em;
       color: #e0e7ff;
     }
+    form, #add-item-form {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.8);
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      font-weight: 600;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
     button {
+      width: 100%;
       background-color: #6366f1;
       border: none;
       padding: 12px 20px;
@@ -69,103 +84,63 @@
     button:hover {
       background-color: #4f46e5;
     }
-    #empty-cart-btn {
-      margin-bottom: 30px;
-      display: block;
-      width: 100%;
-      max-width: 200px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    form {
-      background: #1e293b;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 12px 24px rgba(0,0,0,0.8);
-      color: #cbd5e1;
-    }
-    form h2 {
-      margin-top: 0;
-      margin-bottom: 20px;
-      color: #818cf8;
-      font-weight: 600;
-      text-align: center;
-    }
-    form label {
-      display: block;
-      margin: 12px 0 6px;
-      font-weight: 600;
-    }
-    form input, form select {
-      width: 100%;
-      padding: 10px;
-      border-radius: 8px;
-      border: none;
-      font-size: 1em;
-      margin-bottom: 15px;
-    }
-    form button[type="submit"] {
-      margin-top: 15px;
-      width: 100%;
-    }
     #empty-message {
       text-align: center;
-      margin-top: 80px;
       font-style: italic;
       color: #6b7280;
+      margin-bottom: 30px;
     }
-    
   </style>
 </head>
 <body>
 
-<!-- Bouton retour -->
-<div style="text-align:left; margin-bottom: 30px;">
-  <a href="shop.html" style="
-    display: inline-block;
-    background-color: #818cf8;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 10px;
-    font-weight: 600;
-    text-decoration: none;
-    box-shadow: 0 6px 12px rgba(129, 140, 248, 0.6);
-    transition: background-color 0.3s ease;
-  " onmouseover="this.style.backgroundColor='#6366f1'" onmouseout="this.style.backgroundColor='#818cf8'">
-    ← Retour à la boutique
-  </a>
-</div>
+<h1>Ajouter un article au panier (test)</h1>
+<form id="add-item-form">
+  <label for="item-name">Nom produit</label>
+  <input id="item-name" required placeholder="Ex: T-shirt Doctor Drip" />
 
-<h1>Votre Panier</h1>
+  <label for="item-size">Taille</label>
+  <input id="item-size" required placeholder="Ex: M" />
 
-<div id="cart-container">
-  <table id="cart-table" style="display:none;">
-    <thead>
-      <tr>
-        <th>Produit</th>
-        <th>Taille</th>
-        <th>Couleur</th>
-        <th>Quantité</th>
-        <th>Prix unitaire</th>
-        <th>Sous-total</th>
-      </tr>   
-    </thead>
-    <tbody id="cart-body"></tbody>
-    <tfoot>
-      <tr class="total-row">
-        <td colspan="5">Total</td>
-        <td id="total-price">0,00 €</td>
-      </tr>
-    </tfoot>
-  </table>
-  <p id="empty-message" style="display:none;">Votre panier est vide.</p>
+  <label for="item-color">Couleur</label>
+  <input id="item-color" required placeholder="Ex: Noir" />
 
-  <button id="empty-cart-btn" style="display:none;">Vider le panier</button>
-</div>
+  <label for="item-quantity">Quantité</label>
+  <input id="item-quantity" type="number" min="1" value="1" required />
 
+  <label for="item-price">Prix unitaire (€)</label>
+  <input id="item-price" type="number" min="0.01" step="0.01" required />
+
+  <button type="submit">Ajouter au panier</button>
+</form>
+
+<h1>Votre panier</h1>
+<table id="cart-table" style="display:none;">
+  <thead>
+    <tr>
+      <th>Produit</th>
+      <th>Taille</th>
+      <th>Couleur</th>
+      <th>Quantité</th>
+      <th>Prix unitaire</th>
+      <th>Sous-total</th>
+      <th>Supprimer</th>
+    </tr>
+  </thead>
+  <tbody id="cart-body"></tbody>
+  <tfoot>
+    <tr class="total-row">
+      <td colspan="5">Total</td>
+      <td id="total-price">0,00 €</td>
+      <td></td>
+    </tr>
+  </tfoot>
+</table>
+
+<p id="empty-message">Votre panier est vide.</p>
+
+<h1>Informations de livraison & paiement</h1>
 <form id="checkout-form" style="display:none;">
-  <h2>Informations de livraison</h2>
-
   <label for="fullname">Nom complet</label>
   <input type="text" id="fullname" name="fullname" required />
 
@@ -186,36 +161,43 @@
 
 <script src="https://js.stripe.com/v3/"></script>
 <script>
-  // Charger le panier depuis localStorage
-  function loadCart() {
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+  // Clé publique Stripe, remplace par la tienne
+  const stripe = Stripe('pk_test_ta_cle_publique');
+
+  // Panier en localStorage sous la clé 'cart'
+  function getCart() {
+    return JSON.parse(localStorage.getItem('cart')) || [];
+  }
+  function saveCart(cart) {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+
+  // Affiche le panier dans le tableau
+  function renderCart() {
+    const cart = getCart();
+    const tbody = document.getElementById('cart-body');
+    const table = document.getElementById('cart-table');
+    const emptyMsg = document.getElementById('empty-message');
+    const checkoutForm = document.getElementById('checkout-form');
+
     if(cart.length === 0) {
-      document.getElementById('cart-table').style.display = 'none';
-      document.getElementById('empty-message').style.display = 'block';
-      document.getElementById('empty-cart-btn').style.display = 'none';
-      document.getElementById('checkout-form').style.display = 'none';
+      tbody.innerHTML = '';
+      table.style.display = 'none';
+      emptyMsg.style.display = 'block';
+      checkoutForm.style.display = 'none';
       return;
     }
 
-    const tbody = document.getElementById('cart-body');
+    emptyMsg.style.display = 'none';
+    table.style.display = 'table';
+    checkoutForm.style.display = 'block';
+
     tbody.innerHTML = '';
 
-    // Regrouper les mêmes produits avec même taille + couleur pour additionner quantités
-    const grouped = {};
-    cart.forEach(item => {
-      const key = `${item.name}-${item.size}-${item.color}`;
-      if(grouped[key]) {
-        grouped[key].quantity += item.quantity;
-      } else {
-        grouped[key] = {...item};
-      }
-    });
-
     let total = 0;
-    for(const key in grouped) {
-      const item = grouped[key];
-      const subTotal = item.price * item.quantity;
-      total += subTotal;
+    cart.forEach((item, idx) => {
+      const subtotal = item.price * item.quantity;
+      total += subtotal;
 
       const tr = document.createElement('tr');
       tr.innerHTML = `
@@ -224,36 +206,106 @@
         <td>${item.color}</td>
         <td>${item.quantity}</td>
         <td>${item.price.toFixed(2)} €</td>
-        <td>${subTotal.toFixed(2)} €</td>
+        <td>${subtotal.toFixed(2)} €</td>
+        <td><button data-index="${idx}" class="delete-btn">✕</button></td>
       `;
       tbody.appendChild(tr);
-    }
+    });
 
     document.getElementById('total-price').innerText = total.toFixed(2) + ' €';
 
-    document.getElementById('cart-table').style.display = '';
-    document.getElementById('empty-message').style.display = 'none';
-    document.getElementById('empty-cart-btn').style.display = 'block';
-    document.getElementById('checkout-form').style.display = 'block';
+    // Boutons supprimer
+    document.querySelectorAll('.delete-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        const index = e.target.getAttribute('data-index');
+        const cart = getCart();
+        cart.splice(index,1);
+        saveCart(cart);
+        renderCart();
+      });
+    });
   }
 
-  // Vider le panier
-  document.getElementById('empty-cart-btn').addEventListener('click', () => {
-    if(confirm('Voulez-vous vraiment vider le panier ?')) {
-      localStorage.removeItem('cart');
-      loadCart();
+  // Ajout d'un article via le formulaire "Ajouter un article"
+  document.getElementById('add-item-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const name = document.getElementById('item-name').value.trim();
+    const size = document.getElementById('item-size').value.trim();
+    const color = document.getElementById('item-color').value.trim();
+    const quantity = parseInt(document.getElementById('item-quantity').value);
+    const price = parseFloat(document.getElementById('item-price').value);
+
+    if(!name || !size || !color || quantity <= 0 || price <= 0) {
+      alert('Merci de remplir tous les champs correctement.');
+      return;
+    }
+
+    const cart = getCart();
+
+    // Regroupe si même produit, taille, couleur
+    const existingIndex = cart.findIndex(i => i.name === name && i.size === size && i.color === color);
+    if(existingIndex > -1) {
+      cart[existingIndex].quantity += quantity;
+    } else {
+      cart.push({ name, size, color, quantity, price });
+    }
+
+    saveCart(cart);
+    renderCart();
+
+    // Reset formulaire
+    e.target.reset();
+  });
+
+  // Envoi vers Stripe au submit du checkout
+  document.getElementById('checkout-form').addEventListener('submit', async e => {
+    e.preventDefault();
+    const cart = getCart();
+    if(cart.length === 0) {
+      alert('Votre panier est vide.');
+      return;
+    }
+
+    const customer = {
+      fullname: document.getElementById('fullname').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      address: document.getElementById('address').value.trim(),
+      city: document.getElementById('city').value.trim(),
+      zipcode: document.getElementById('zipcode').value.trim(),
+    };
+
+    if(Object.values(customer).some(v => !v)) {
+      alert('Merci de remplir tous les champs.');
+      return;
+    }
+
+    try {
+      // Appel backend pour créer la session
+      const res = await fetch('/create-checkout-session', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ cart, customer }),
+      });
+      const data = await res.json();
+
+      if(data.error) {
+        alert(data.error);
+        return;
+      }
+
+      // Redirige vers Stripe Checkout
+      const result = await stripe.redirectToCheckout({ sessionId: data.id });
+      if(result.error) {
+        alert(result.error.message);
+      }
+    } catch (err) {
+      alert('Erreur lors de la création de la session de paiement.');
+      console.error(err);
     }
   });
 
-  // Soumission du formulaire (demo Stripe basique)
-  document.getElementById('checkout-form').addEventListener('submit', e => {
-    e.preventDefault();
-    alert('Paiement simulé — ici tu implémenterais Stripe ou autre.');
-    // TODO: intégrer Stripe ici
-  });
-
-  // Initialisation
-  loadCart();
+  // Au chargement, affiche le panier
+  renderCart();
 </script>
 
 </body>
