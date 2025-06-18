@@ -1,312 +1,343 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doctor Drip - Checkout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
   <style>
+    /* === STYLE GLOBAL DOCTOR DRIP === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: 'Montserrat', sans-serif;
-      background: #121217;
-      color: #e0e0e0;
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+      color: #f0f0f0;
+      transition: background 0.3s ease, color 0.3s ease;
     }
-    h1 {
-      color: #818cf8;
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background-color: transparent;
+      position: relative;
+      z-index: 10;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      color: #00bfff;
+    }
+
+    main.checkout {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 120px;
       text-align: center;
-      margin-bottom: 30px;
+      flex-direction: column;
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
+
+    .form {
+      background: #333;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      max-width: 400px;
+      width: 100%;
+      animation: popUp 0.5s ease-out;
+    }
+
+    .form label {
+      display: block;
+      margin: 10px 0 5px;
+      text-align: left;
+    }
+
+    .form input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background: #444;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .form button {
+      width: 100%;
+      padding: 12px;
+      background: #00bfff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .form button:hover {
+      background: #00a0e0;
+    }
+
+    #order-summary {
+      overflow-y: auto;
+      max-height: 300px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 100%;
+      background: #222;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
-      background: #1f2937;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 6px 16px rgba(79, 70, 229, 0.6);
-      margin-bottom: 30px;
     }
-    th, td {
-      padding: 12px;
-      text-align: left;
-      color: #cbd5e1;
-    }
-    th {
-      background: #374151;
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 0.85em;
-      letter-spacing: 0.05em;
-    }
-    tbody tr {
-      border-bottom: 1px solid #374151;
-    }
-    tbody tr:last-child {
-      border-bottom: none;
-    }
-    .total-row td {
-      font-weight: 700;
-      font-size: 1.1em;
-      color: #e0e7ff;
-    }
-    form, #add-item-form {
-      background: #1e293b;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 12px 24px rgba(0,0,0,0.8);
-      margin-bottom: 30px;
-    }
-    label {
-      display: block;
-      margin: 12px 0 6px;
-      font-weight: 600;
-    }
-    input, select {
-      width: 100%;
+
+    th,
+    td {
       padding: 10px;
-      border-radius: 8px;
-      border: none;
       font-size: 1em;
-      margin-bottom: 15px;
-    }
-    button {
-      width: 100%;
-      background-color: #6366f1;
-      border: none;
-      padding: 12px 20px;
-      color: white;
-      border-radius: 10px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #4f46e5;
-    }
-    #empty-message {
       text-align: center;
-      font-style: italic;
-      color: #6b7280;
-      margin-bottom: 30px;
+      border-bottom: 1px solid #444;
+    }
+
+    th {
+      background: #333;
+    }
+
+    #total-display {
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    .contact-us {
+      margin-top: 40px;
+      padding: 20px;
+      background: #444;
+      border-radius: 10px;
+    }
+
+    .contact-us h2 {
+      margin-bottom: 20px;
+    }
+
+    .contact-us form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact-us input,
+    .contact-us textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background: #555;
+      color: white;
+    }
+
+    .contact-us button {
+      padding: 12px;
+      background: #00bfff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-us button:hover {
+      background: #00a0e0;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #00bfff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+      display: none; /* Hidden by default */
+    }
+
+    .back-to-top.show {
+      display: block; /* Show when scrolled down */
     }
   </style>
 </head>
+
 <body>
+  <header>
+    <div class="logo"><img src="images/logo.png" alt="Doctor Drip Logo" /></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="shop.html">Boutique</a></li>
+        <li><a href="login.html">Connexion</a></li>
+        <li><a href="register.html">Inscription</a></li>
+        <li><a href="checkout.html" class="active">Panier</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<h1>Ajouter un article au panier (test)</h1>
-<form id="add-item-form">
-  <label for="item-name">Nom produit</label>
-  <input id="item-name" required placeholder="Ex: T-shirt Doctor Drip" />
+  <main class="checkout">
+    <section>
+      <h2>Order Summary</h2>
+      <div id="order-summary">
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Color</th>
+              <th>Size</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="cart-items"></tbody>
+        </table>
+      </div>
+      <div id="total-display">Total: 0.00 €</div>
+    </section>
+    <section>
+      <h2>Shipping Information</h2>
+      <form id="checkout-form" class="form">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" required />
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required />
+        
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" required />
+        
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" required />
+        
+        <label for="postal">Postal Code</label>
+        <input type="text" name="postal" id="postal" required />
+        
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" required />
+        
+        <button type="submit">Complete Purchase</button>
+      </form>
+    </section>
 
-  <label for="item-size">Taille</label>
-  <input id="item-size" required placeholder="Ex: M" />
+    <div class="contact-us">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" name="contact-name" placeholder="Your Name" required />
+        <input type="email" name="contact-email" placeholder="Your Email" required />
+        <textarea name="contact-message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
 
-  <label for="item-color">Couleur</label>
-  <input id="item-color" required placeholder="Ex: Noir" />
+  <button class="back-to-top" id="back-to-top">↑</button>
 
-  <label for="item-quantity">Quantité</label>
-  <input id="item-quantity" type="number" min="1" value="1" required />
-
-  <label for="item-price">Prix unitaire (€)</label>
-  <input id="item-price" type="number" min="0.01" step="0.01" required />
-
-  <button type="submit">Ajouter au panier</button>
-</form>
-
-<h1>Votre panier</h1>
-<table id="cart-table" style="display:none;">
-  <thead>
-    <tr>
-      <th>Produit</th>
-      <th>Taille</th>
-      <th>Couleur</th>
-      <th>Quantité</th>
-      <th>Prix unitaire</th>
-      <th>Sous-total</th>
-      <th>Supprimer</th>
-    </tr>
-  </thead>
-  <tbody id="cart-body"></tbody>
-  <tfoot>
-    <tr class="total-row">
-      <td colspan="5">Total</td>
-      <td id="total-price">0,00 €</td>
-      <td></td>
-    </tr>
-  </tfoot>
-</table>
-
-<p id="empty-message">Votre panier est vide.</p>
-
-<h1>Informations de livraison & paiement</h1>
-<form id="checkout-form" style="display:none;">
-  <label for="fullname">Nom complet</label>
-  <input type="text" id="fullname" name="fullname" required />
-
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email" required />
-
-  <label for="address">Adresse</label>
-  <input type="text" id="address" name="address" required />
-
-  <label for="city">Ville</label>
-  <input type="text" id="city" name="city" required />
-
-  <label for="zipcode">Code postal</label>
-  <input type="text" id="zipcode" name="zipcode" required />
-
-  <button type="submit">Valider et payer</button>
-</form>
-
-<script src="https://js.stripe.com/v3/"></script>
-<script>
-  // Clé publique Stripe, remplace par la tienne
-  const stripe = Stripe('pk_test_ta_cle_publique');
-
-  // Panier en localStorage sous la clé 'cart'
-  function getCart() {
-    return JSON.parse(localStorage.getItem('cart')) || [];
-  }
-  function saveCart(cart) {
-    localStorage.setItem('cart', JSON.stringify(cart));
-  }
-
-  // Affiche le panier dans le tableau
-  function renderCart() {
-    const cart = getCart();
-    const tbody = document.getElementById('cart-body');
-    const table = document.getElementById('cart-table');
-    const emptyMsg = document.getElementById('empty-message');
-    const checkoutForm = document.getElementById('checkout-form');
-
-    if(cart.length === 0) {
-      tbody.innerHTML = '';
-      table.style.display = 'none';
-      emptyMsg.style.display = 'block';
-      checkoutForm.style.display = 'none';
-      return;
-    }
-
-    emptyMsg.style.display = 'none';
-    table.style.display = 'table';
-    checkoutForm.style.display = 'block';
-
-    tbody.innerHTML = '';
-
+  <script>
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartTable = document.getElementById('cart-items');
+    const totalDisplay = document.getElementById('total-display');
     let total = 0;
-    cart.forEach((item, idx) => {
-      const subtotal = item.price * item.quantity;
-      total += subtotal;
 
-      const tr = document.createElement('tr');
-      tr.innerHTML = `
+    cartItems.forEach(item => {
+      const itemTotal = item.price * item.quantity;
+      total += itemTotal;
+
+      const row = document.createElement('tr');
+      row.innerHTML = `
         <td>${item.name}</td>
-        <td>${item.size}</td>
         <td>${item.color}</td>
-        <td>${item.quantity}</td>
+        <td>${item.size}</td>
         <td>${item.price.toFixed(2)} €</td>
-        <td>${subtotal.toFixed(2)} €</td>
-        <td><button data-index="${idx}" class="delete-btn">✕</button></td>
+        <td>${item.quantity}</td>
+        <td>${itemTotal.toFixed(2)} €</td>
       `;
-      tbody.appendChild(tr);
+      cartTable.appendChild(row);
     });
 
-    document.getElementById('total-price').innerText = total.toFixed(2) + ' €';
+    totalDisplay.textContent = `Total: ${total.toFixed(2)} €`;
 
-    // Boutons supprimer
-    document.querySelectorAll('.delete-btn').forEach(btn => {
-      btn.addEventListener('click', e => {
-        const index = e.target.getAttribute('data-index');
-        const cart = getCart();
-        cart.splice(index,1);
-        saveCart(cart);
-        renderCart();
-      });
+    document.getElementById('checkout-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData.entries());
+      data.total = total.toFixed(2);
+
+      // OPTIONAL: Send email or process order data here.
+
+      // Redirect user to Stripe Payment Link:
+      const stripeUrl = 'https://buy.stripe.com/test_XXXXXXXXXXXXX'; // REPLACE this with your Stripe payment link
+      window.location.href = stripeUrl;
     });
-  }
 
-  // Ajout d'un article via le formulaire "Ajouter un article"
-  document.getElementById('add-item-form').addEventListener('submit', e => {
-    e.preventDefault();
-    const name = document.getElementById('item-name').value.trim();
-    const size = document.getElementById('item-size').value.trim();
-    const color = document.getElementById('item-color').value.trim();
-    const quantity = parseInt(document.getElementById('item-quantity').value);
-    const price = parseFloat(document.getElementById('item-price').value);
-
-    if(!name || !size || !color || quantity <= 0 || price <= 0) {
-      alert('Merci de remplir tous les champs correctement.');
-      return;
-    }
-
-    const cart = getCart();
-
-    // Regroupe si même produit, taille, couleur
-    const existingIndex = cart.findIndex(i => i.name === name && i.size === size && i.color === color);
-    if(existingIndex > -1) {
-      cart[existingIndex].quantity += quantity;
-    } else {
-      cart.push({ name, size, color, quantity, price });
-    }
-
-    saveCart(cart);
-    renderCart();
-
-    // Reset formulaire
-    e.target.reset();
-  });
-
-  // Envoi vers Stripe au submit du checkout
-  document.getElementById('checkout-form').addEventListener('submit', async e => {
-    e.preventDefault();
-    const cart = getCart();
-    if(cart.length === 0) {
-      alert('Votre panier est vide.');
-      return;
-    }
-
-    const customer = {
-      fullname: document.getElementById('fullname').value.trim(),
-      email: document.getElementById('email').value.trim(),
-      address: document.getElementById('address').value.trim(),
-      city: document.getElementById('city').value.trim(),
-      zipcode: document.getElementById('zipcode').value.trim(),
+    // Back to Top Button
+    const backToTopButton = document.getElementById('back-to-top');
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.classList.add('show');
+      } else {
+        backToTopButton.classList.remove('show');
+      }
     };
 
-    if(Object.values(customer).some(v => !v)) {
-      alert('Merci de remplir tous les champs.');
-      return;
-    }
+    backToTopButton.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
 
-    try {
-      // Appel backend pour créer la session
-      const res = await fetch('/create-checkout-session', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ cart, customer }),
-      });
-      const data = await res.json();
-
-      if(data.error) {
-        alert(data.error);
-        return;
-      }
-
-      // Redirige vers Stripe Checkout
-      const result = await stripe.redirectToCheckout({ sessionId: data.id });
-      if(result.error) {
-        alert(result.error.message);
-      }
-    } catch (err) {
-      alert('Erreur lors de la création de la session de paiement.');
-      console.error(err);
-    }
-  });
-
-  // Au chargement, affiche le panier
-  renderCart();
-</script>
-
+    // Contact Form Submission (Placeholder)
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const contactData = new FormData(this);
+      const contactInfo = Object.fromEntries(contactData.entries());
+      console.log('Contact Form Data:', contactInfo);
+      // Here you can send the contact info to your server or email service
+      alert('Your message has been sent!');
+      this.reset(); // Reset the form after submission
+    });
+  </script>
 </body>
+
 </html>
