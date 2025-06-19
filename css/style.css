@@ -36,8 +36,8 @@ header {
 }
 
 .logo img {
-  height: 170px;
-  padding-top: 70px
+  height: 110px;
+  padding-top:5px
 }
 
 nav ul {
@@ -348,4 +348,243 @@ button:focus {
 
 button:active {
   animation: clickPop 0.2s ease;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+nav ul li a:hover {
+  background: #00bfff;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #111;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 6px;
+    width: 150px;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+#clear-cart-btn {
+  background-color: #222;
+  color: #f44336; /* rouge vif pour signaler la suppression */
+  border: 2px solid #f44336;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.15s ease;
+  box-shadow: 0 3px 8px rgba(244, 67, 54, 0.5);
+  user-select: none;
+  margin-left: 15px;
+}
+
+#clear-cart-btn:hover {
+  background-color: #f44336;
+  color: #222;
+  box-shadow: 0 6px 15px rgba(244, 67, 54, 0.8);
+  transform: scale(1.05);
+}
+
+#clear-cart-btn:active {
+  transform: scale(0.95);
+}
+.footer {
+  background-color: #111;
+  color: #eee;
+  padding: 60px 30px 30px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1 1 220px;
+  min-width: 220px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #00bfff;
+  font-weight: 700;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #00bfff;
+  text-decoration: underline;
+}
+
+.footer-section p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.footer-section a {
+  color: #00bfff;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.newsletter-form input[type="email"] {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+}
+
+.newsletter-form button {
+  background-color: #00bfff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background-color: #008fcf;
+}
+
+.social-icons a {
+  font-size: 22px;
+  margin-right: 15px;
+  color: #ccc;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #00bfff;
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 30px;
+  padding-top: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-bottom ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  font-size: 13px;
+  color: #888;
+}
+
+.footer-bottom ul li {
+  white-space: nowrap;
+}
+
+.footer-bottom ul li a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom ul li a:hover {
+  color: #00bfff;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-bottom ul {
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+section {
+  padding-top: 60px; /* espace au dessus des ancres */
+  margin-top: -60px; /* compense le padding pour un bon scroll */
+}
+
+a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.8em;
+  vertical-align: super;
+  color: #00bfff;
+}
+
+.product {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease;
+}
+
+.product:hover {
+  transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }

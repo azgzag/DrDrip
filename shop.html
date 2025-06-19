@@ -37,6 +37,7 @@
   </style>
 </head>
 <body>
+  
   <header>
     <div class="logo">
       <img src="images/logo.png" alt="Doctor Drip Logo" />
@@ -119,7 +120,7 @@
       <div class="product">
         <img src="images/tshirt3.jpg" alt="product3" />
         <h3>T-shirt Graffiti Flow</h3>
-        <p>24,99 €</p>
+        <p>1 €</p>
 
         <label for="size3">Taille :</label>
         <select id="size3">
@@ -140,7 +141,7 @@
           <option>Vert</option>
         </select>
 
-        <button onclick="addToCart('T-shirt Graffiti Flow', 24.99, 'size3', 'color3')">Ajouter au panier</button>
+        <button onclick="addToCart('T-shirt Graffiti Flow', 1, 'size3', 'color3')">Ajouter au panier</button>
       </div>
     </section>
   </main>
@@ -182,5 +183,7 @@
       }, 2000);
     }
   </script>
+  <script src="https://js.stripe.com/v3/"></script>
+
 </body>
 </html>

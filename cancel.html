@@ -1,1 +1,70 @@
-<h1>❌ Paiement annulé</h1>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiement Annulé - Doctor Drip</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    #theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #00bfff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    }
+    #particles-js {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      z-index: -1;
+      background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <button id="theme-toggle">🌓</button>
+
+  <main class="auth">
+    <div class="form">
+      <h2>❌ Paiement annulé</h2>
+      <p>Votre transaction n'a pas été finalisée.</p>
+      <a href="checkout.html"><button>Retour au panier</button></a>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('theme-toggle').onclick = () => {
+      document.body.classList.toggle('light');
+    };
+
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: '#00bfff' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5, random: true },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: '#00bfff', opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2, direction: 'none', out_mode: 'out' }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: { onhover: { enable: true, mode: 'repulse' } },
+        modes: { repulse: { distance: 100, duration: 0.4 } }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
