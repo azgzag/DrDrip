@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doctor Drip - Checkout</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://js.stripe.com/v3/"></script>
   <style>
-    /* === STYLE GLOBAL DOCTOR DRIP === */
+    /* ===========================
+       Style Global (similaire à index)
+    ============================== */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(to right, #1e1e1e, #2c2c2c);
       color: #f0f0f0;
-      transition: background 0.3s ease, color 0.3s ease;
     }
-
     header {
       display: flex;
       justify-content: space-between;
@@ -31,157 +29,129 @@
       position: relative;
       z-index: 10;
     }
-
-    .logo img {
-      height: 50px;
-    }
-
+    .logo img { height: 50px; }
     nav ul {
       list-style: none;
       display: flex;
       gap: 20px;
     }
-
     nav a {
       text-decoration: none;
       color: inherit;
       font-weight: 600;
       transition: color 0.2s;
     }
-
-    nav a:hover,
-    nav a.active {
-      color: #00bfff;
-    }
-
+    nav a:hover, nav a.active { color: #00bfff; }
+    
+    /* ===========================
+       Style Checkout Page
+    ============================== */
     main.checkout {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 120px;
-      text-align: center;
-      flex-direction: column;
-      padding: 40px 20px;
+      padding: 60px 10%;
       max-width: 1000px;
       margin: 0 auto;
     }
-
-    .form {
-      background: #333;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      max-width: 400px;
-      width: 100%;
-      animation: popUp 0.5s ease-out;
+    section {
+      margin-bottom: 40px;
     }
-
-    .form label {
-      display: block;
-      margin: 10px 0 5px;
-      text-align: left;
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #00bfff;
     }
-
-    .form input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      background: #444;
-      color: white;
-      margin-bottom: 15px;
-    }
-
-    .form button {
-      width: 100%;
-      padding: 12px;
-      background: #00bfff;
-      border: none;
-      border-radius: 5px;
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .form button:hover {
-      background: #00a0e0;
-    }
-
+    /* Order Summary */
     #order-summary {
-      overflow-y: auto;
-      max-height: 300px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 1rem;
-      width: 100%;
-      background: #222;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
-
     table {
       width: 100%;
       border-collapse: collapse;
     }
-
-    th,
-    td {
-      padding: 10px;
-      font-size: 1em;
+    th, td {
+      padding: 12px 15px;
       text-align: center;
       border-bottom: 1px solid #444;
     }
-
     th {
-      background: #333;
+      background: rgba(0,191,255,0.2);
+      font-weight: 600;
     }
-
     #total-display {
+      text-align: right;
+      font-size: 1.2em;
       font-weight: bold;
-      margin-top: 1rem;
+      margin-top: 10px;
     }
-
-    .contact-us {
-      margin-top: 40px;
-      padding: 20px;
-      background: #444;
-      border-radius: 10px;
+    /* Shipping Form */
+    .form {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      max-width: 500px;
+      margin: 0 auto;
     }
-
-    .contact-us h2 {
-      margin-bottom: 20px;
+    .form label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: 600;
     }
-
-    .contact-us form {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .contact-us input,
-    .contact-us textarea {
-      margin-bottom: 10px;
+    .form input {
+      width: 100%;
       padding: 10px;
-      border-radius: 5px;
+      border-radius: 6px;
       border: none;
-      background: #555;
-      color: white;
+      background: #333;
+      color: #f0f0f0;
     }
-
+    .form button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background: #00bfff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+      color: #fff;
+    }
+    .form button:hover { background: #009acf; }
+    /* Contact Form */
+    .contact-us {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 30px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      max-width: 500px;
+      margin: 40px auto;
+    }
+    .contact-us input, .contact-us textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      margin: 10px 0;
+      background: #333;
+      color: #f0f0f0;
+    }
     .contact-us button {
+      width: 100%;
       padding: 12px;
       background: #00bfff;
       border: none;
-      border-radius: 5px;
-      color: white;
-      font-weight: bold;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: 600;
       cursor: pointer;
       transition: background 0.3s;
     }
-
-    .contact-us button:hover {
-      background: #00a0e0;
-    }
-
+    .contact-us button:hover { background: #009acf; }
+    /* Back To Top Button */
     .back-to-top {
       position: fixed;
       bottom: 20px;
@@ -195,18 +165,22 @@
       font-size: 24px;
       cursor: pointer;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-      display: none; /* Hidden by default */
+      display: none;
     }
-
-    .back-to-top.show {
-      display: block; /* Show when scrolled down */
+    .back-to-top.show { display: block; }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      main.checkout { padding: 40px 5%; }
+      nav ul { flex-direction: column; }
     }
   </style>
 </head>
-
 <body>
   <header>
-    <div class="logo"><img src="images/logo.png" alt="Doctor Drip Logo" /></div>
+    <div class="logo">
+      <img src="images/logo.png" alt="Doctor Drip Logo" />
+    </div>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
@@ -242,50 +216,44 @@
       <h2>Shipping Information</h2>
       <form id="checkout-form" class="form">
         <label for="name">Full Name</label>
-        <input type="text" name="name" id="name" required />
-        
+        <input type="text" name="name" id="name" required>
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" required />
-        
+        <input type="email" name="email" id="email" required>
         <label for="address">Address</label>
-        <input type="text" name="address" id="address" required />
-        
+        <input type="text" name="address" id="address" required>
         <label for="city">City</label>
-        <input type="text" name="city" id="city" required />
-        
+        <input type="text" name="city" id="city" required>
         <label for="postal">Postal Code</label>
-        <input type="text" name="postal" id="postal" required />
-        
+        <input type="text" name="postal" id="postal" required>
         <label for="country">Country</label>
-        <input type="text" name="country" id="country" required />
-        
+        <input type="text" name="country" id="country" required>
         <button type="submit">Complete Purchase</button>
       </form>
     </section>
-
-    <div class="contact-us">
+    <section>
       <h2>Contact Us</h2>
-      <form id="contact-form">
-        <input type="text" name="contact-name" placeholder="Your Name" required />
-        <input type="email" name="contact-email" placeholder="Your Email" required />
-        <textarea name="contact-message" rows="4" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+      <div class="contact-us">
+        <form id="contact-form">
+          <input type="text" name="contact-name" placeholder="Your Name" required>
+          <input type="email" name="contact-email" placeholder="Your Email" required>
+          <textarea name="contact-message" rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <button class="back-to-top" id="back-to-top">↑</button>
 
   <script>
+    // Gestion du panier
     const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
     const cartTable = document.getElementById('cart-items');
     const totalDisplay = document.getElementById('total-display');
     let total = 0;
-
     cartItems.forEach(item => {
       const itemTotal = item.price * item.quantity;
       total += itemTotal;
-
       const row = document.createElement('tr');
       row.innerHTML = `
         <td>${item.name}</td>
@@ -297,23 +265,33 @@
       `;
       cartTable.appendChild(row);
     });
-
     totalDisplay.textContent = `Total: ${total.toFixed(2)} €`;
 
-    document.getElementById('checkout-form').addEventListener('submit', function(event) {
+    // Stripe
+    const stripe = Stripe('pk_test_51RaENmFToC8jgGBi6PCw6cfPwsQ3KZC11vb0jpWLMguxIMAV1mwyKaZoYrw6GmA2f5u6skZAi3FAPUcVRRh8qTBj003i38k8zW');
+    document.getElementById('checkout-form').addEventListener('submit', async function(event) {
       event.preventDefault();
       const formData = new FormData(this);
-      const data = Object.fromEntries(formData.entries());
-      data.total = total.toFixed(2);
-
-      // OPTIONAL: Send email or process order data here.
-
-      // Redirect user to Stripe Payment Link:
-      const stripeUrl = 'https://buy.stripe.com/test_XXXXXXXXXXXXX'; // REPLACE this with your Stripe payment link
-      window.location.href = stripeUrl;
+      const shipping = Object.fromEntries(formData.entries());
+      try {
+        const response = await fetch('/create-checkout-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ cartItems, shipping })
+        });
+        const session = await response.json();
+        if (session.id) {
+          stripe.redirectToCheckout({ sessionId: session.id });
+        } else {
+          alert("Erreur de paiement : session invalide");
+        }
+      } catch (error) {
+        console.error(error);
+        alert("Erreur serveur");
+      }
     });
-
-    // Back to Top Button
+    
+    // Back to top
     const backToTopButton = document.getElementById('back-to-top');
     window.onscroll = function() {
       if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -322,22 +300,14 @@
         backToTopButton.classList.remove('show');
       }
     };
+    backToTopButton.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    backToTopButton.onclick = function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    };
-
-    // Contact Form Submission (Placeholder)
+    // Contact form
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault();
-      const contactData = new FormData(this);
-      const contactInfo = Object.fromEntries(contactData.entries());
-      console.log('Contact Form Data:', contactInfo);
-      // Here you can send the contact info to your server or email service
-      alert('Your message has been sent!');
-      this.reset(); // Reset the form after submission
+      alert('Votre message a été envoyé !');
+      this.reset();
     });
   </script>
 </body>
-
 </html>
