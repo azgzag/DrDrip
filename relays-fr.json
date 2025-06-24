@@ -1,0 +1,6002 @@
+[
+  {
+    "nom": "Relais Point Service 0",
+    "adresse": "48 Rue de Paris",
+    "code_postal": "75159",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 1",
+    "adresse": "9 Rue Jean Jaurès",
+    "code_postal": "38450",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Point Service 2",
+    "adresse": "130 Rue République",
+    "code_postal": "49755",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 3",
+    "adresse": "129 Rue de Paris",
+    "code_postal": "31559",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Supérette 4",
+    "adresse": "29 Rue Victor Hugo",
+    "code_postal": "21847",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Tabac 5",
+    "adresse": "36 Rue Jean Jaurès",
+    "code_postal": "67552",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 6",
+    "adresse": "80 Rue de Paris",
+    "code_postal": "51441",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 7",
+    "adresse": "82 Rue République",
+    "code_postal": "49458",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 8",
+    "adresse": "76 Rue de Paris",
+    "code_postal": "59361",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 9",
+    "adresse": "101 Rue de Paris",
+    "code_postal": "51287",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 10",
+    "adresse": "47 Rue Victor Hugo",
+    "code_postal": "67487",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 11",
+    "adresse": "19 Rue Victor Hugo",
+    "code_postal": "35446",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Librairie 12",
+    "adresse": "99 Rue de Paris",
+    "code_postal": "49680",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 13",
+    "adresse": "4 Rue République",
+    "code_postal": "31301",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 14",
+    "adresse": "50 Rue Victor Hugo",
+    "code_postal": "34386",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Tabac 15",
+    "adresse": "75 Rue Jean Jaurès",
+    "code_postal": "21475",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Supérette 16",
+    "adresse": "145 Rue Jean Jaurès",
+    "code_postal": "06654",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 17",
+    "adresse": "58 Rue Victor Hugo",
+    "code_postal": "38349",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 18",
+    "adresse": "50 Rue République",
+    "code_postal": "06650",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 19",
+    "adresse": "46 Rue de Paris",
+    "code_postal": "83535",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 20",
+    "adresse": "59 Rue de Paris",
+    "code_postal": "06365",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 21",
+    "adresse": "102 Rue Victor Hugo",
+    "code_postal": "76351",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 22",
+    "adresse": "20 Rue Jean Jaurès",
+    "code_postal": "49154",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Supérette 23",
+    "adresse": "116 Rue de Paris",
+    "code_postal": "49279",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 24",
+    "adresse": "92 Rue République",
+    "code_postal": "76774",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 25",
+    "adresse": "19 Rue de Paris",
+    "code_postal": "21422",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Supérette 26",
+    "adresse": "84 Rue République",
+    "code_postal": "76793",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 27",
+    "adresse": "47 Rue de Paris",
+    "code_postal": "34630",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Tabac 28",
+    "adresse": "5 Rue République",
+    "code_postal": "59134",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 29",
+    "adresse": "62 Rue de Paris",
+    "code_postal": "42561",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Tabac 30",
+    "adresse": "59 Rue de Paris",
+    "code_postal": "49181",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Librairie 31",
+    "adresse": "134 Rue République",
+    "code_postal": "06056",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 32",
+    "adresse": "13 Rue Jean Jaurès",
+    "code_postal": "49654",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 33",
+    "adresse": "48 Rue Jean Jaurès",
+    "code_postal": "06343",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 34",
+    "adresse": "146 Rue République",
+    "code_postal": "75446",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Supérette 35",
+    "adresse": "2 Rue de Paris",
+    "code_postal": "13817",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 36",
+    "adresse": "25 Rue de Paris",
+    "code_postal": "75159",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Supérette 37",
+    "adresse": "47 Rue de Paris",
+    "code_postal": "49616",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Librairie 38",
+    "adresse": "82 Rue République",
+    "code_postal": "49742",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 39",
+    "adresse": "65 Rue Jean Jaurès",
+    "code_postal": "83514",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 40",
+    "adresse": "132 Rue République",
+    "code_postal": "44687",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 41",
+    "adresse": "102 Rue de Paris",
+    "code_postal": "51648",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 42",
+    "adresse": "115 Rue République",
+    "code_postal": "21544",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Point Service 43",
+    "adresse": "145 Rue Jean Jaurès",
+    "code_postal": "67849",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 44",
+    "adresse": "147 Rue de Paris",
+    "code_postal": "49149",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 45",
+    "adresse": "44 Rue Jean Jaurès",
+    "code_postal": "13267",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 46",
+    "adresse": "34 Rue Victor Hugo",
+    "code_postal": "75365",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 47",
+    "adresse": "140 Rue République",
+    "code_postal": "42107",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Tabac 48",
+    "adresse": "4 Rue Victor Hugo",
+    "code_postal": "06617",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 49",
+    "adresse": "131 Rue Victor Hugo",
+    "code_postal": "83701",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 50",
+    "adresse": "125 Rue République",
+    "code_postal": "76803",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Point Service 51",
+    "adresse": "129 Rue de Paris",
+    "code_postal": "44512",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 52",
+    "adresse": "81 Rue République",
+    "code_postal": "75503",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 53",
+    "adresse": "99 Rue de Paris",
+    "code_postal": "38111",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 54",
+    "adresse": "117 Rue République",
+    "code_postal": "13719",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 55",
+    "adresse": "24 Rue Victor Hugo",
+    "code_postal": "69346",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 56",
+    "adresse": "133 Rue de Paris",
+    "code_postal": "34065",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Librairie 57",
+    "adresse": "119 Rue République",
+    "code_postal": "44300",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Tabac 58",
+    "adresse": "107 Rue de Paris",
+    "code_postal": "51866",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 59",
+    "adresse": "42 Rue Jean Jaurès",
+    "code_postal": "31199",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 60",
+    "adresse": "129 Rue République",
+    "code_postal": "49635",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Librairie 61",
+    "adresse": "45 Rue Victor Hugo",
+    "code_postal": "42014",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 62",
+    "adresse": "35 Rue Jean Jaurès",
+    "code_postal": "69706",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Tabac 63",
+    "adresse": "105 Rue Jean Jaurès",
+    "code_postal": "21300",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Point Service 64",
+    "adresse": "61 Rue de Paris",
+    "code_postal": "69749",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 65",
+    "adresse": "149 Rue République",
+    "code_postal": "21316",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Librairie 66",
+    "adresse": "138 Rue Victor Hugo",
+    "code_postal": "34115",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Supérette 67",
+    "adresse": "114 Rue Jean Jaurès",
+    "code_postal": "83120",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 68",
+    "adresse": "45 Rue Jean Jaurès",
+    "code_postal": "44896",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Librairie 69",
+    "adresse": "89 Rue Victor Hugo",
+    "code_postal": "49314",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Supérette 70",
+    "adresse": "128 Rue Jean Jaurès",
+    "code_postal": "75546",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 71",
+    "adresse": "134 Rue de Paris",
+    "code_postal": "83543",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 72",
+    "adresse": "13 Rue Victor Hugo",
+    "code_postal": "51846",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 73",
+    "adresse": "111 Rue République",
+    "code_postal": "69616",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 74",
+    "adresse": "17 Rue de Paris",
+    "code_postal": "33181",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 75",
+    "adresse": "84 Rue Victor Hugo",
+    "code_postal": "44252",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 76",
+    "adresse": "122 Rue Victor Hugo",
+    "code_postal": "35716",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 77",
+    "adresse": "95 Rue de Paris",
+    "code_postal": "33173",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 78",
+    "adresse": "119 Rue Jean Jaurès",
+    "code_postal": "38003",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 79",
+    "adresse": "132 Rue République",
+    "code_postal": "59460",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 80",
+    "adresse": "137 Rue Jean Jaurès",
+    "code_postal": "51009",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 81",
+    "adresse": "114 Rue Jean Jaurès",
+    "code_postal": "83067",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 82",
+    "adresse": "91 Rue Victor Hugo",
+    "code_postal": "30885",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 83",
+    "adresse": "70 Rue Victor Hugo",
+    "code_postal": "83823",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 84",
+    "adresse": "34 Rue de Paris",
+    "code_postal": "31831",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 85",
+    "adresse": "27 Rue Victor Hugo",
+    "code_postal": "75257",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 86",
+    "adresse": "102 Rue Victor Hugo",
+    "code_postal": "75822",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 87",
+    "adresse": "9 Rue Jean Jaurès",
+    "code_postal": "69389",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 88",
+    "adresse": "67 Rue Jean Jaurès",
+    "code_postal": "42181",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 89",
+    "adresse": "70 Rue de Paris",
+    "code_postal": "06315",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 90",
+    "adresse": "65 Rue République",
+    "code_postal": "33043",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 91",
+    "adresse": "133 Rue République",
+    "code_postal": "34490",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Librairie 92",
+    "adresse": "57 Rue Victor Hugo",
+    "code_postal": "69190",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 93",
+    "adresse": "83 Rue République",
+    "code_postal": "38743",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Librairie 94",
+    "adresse": "15 Rue de Paris",
+    "code_postal": "75712",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 95",
+    "adresse": "51 Rue Jean Jaurès",
+    "code_postal": "76579",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 96",
+    "adresse": "87 Rue Jean Jaurès",
+    "code_postal": "69581",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 97",
+    "adresse": "3 Rue de Paris",
+    "code_postal": "31265",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 98",
+    "adresse": "56 Rue République",
+    "code_postal": "51375",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 99",
+    "adresse": "78 Rue de Paris",
+    "code_postal": "34138",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Tabac 100",
+    "adresse": "61 Rue Jean Jaurès",
+    "code_postal": "51613",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 101",
+    "adresse": "80 Rue Victor Hugo",
+    "code_postal": "13704",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 102",
+    "adresse": "108 Rue de Paris",
+    "code_postal": "13271",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 103",
+    "adresse": "96 Rue République",
+    "code_postal": "83852",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 104",
+    "adresse": "145 Rue République",
+    "code_postal": "44365",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 105",
+    "adresse": "22 Rue Jean Jaurès",
+    "code_postal": "83635",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 106",
+    "adresse": "50 Rue République",
+    "code_postal": "83570",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 107",
+    "adresse": "76 Rue Jean Jaurès",
+    "code_postal": "13300",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Librairie 108",
+    "adresse": "74 Rue Victor Hugo",
+    "code_postal": "51479",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 109",
+    "adresse": "134 Rue Jean Jaurès",
+    "code_postal": "76630",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 110",
+    "adresse": "14 Rue de Paris",
+    "code_postal": "30296",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Tabac 111",
+    "adresse": "136 Rue République",
+    "code_postal": "06516",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Point Service 112",
+    "adresse": "120 Rue République",
+    "code_postal": "06073",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Point Service 113",
+    "adresse": "101 Rue Jean Jaurès",
+    "code_postal": "75117",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Supérette 114",
+    "adresse": "141 Rue Victor Hugo",
+    "code_postal": "35363",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 115",
+    "adresse": "124 Rue République",
+    "code_postal": "83054",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 116",
+    "adresse": "149 Rue Jean Jaurès",
+    "code_postal": "67571",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Librairie 117",
+    "adresse": "59 Rue Jean Jaurès",
+    "code_postal": "38532",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 118",
+    "adresse": "129 Rue Jean Jaurès",
+    "code_postal": "38879",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 119",
+    "adresse": "37 Rue Jean Jaurès",
+    "code_postal": "69568",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 120",
+    "adresse": "110 Rue de Paris",
+    "code_postal": "31756",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Tabac 121",
+    "adresse": "126 Rue République",
+    "code_postal": "38695",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 122",
+    "adresse": "26 Rue République",
+    "code_postal": "75810",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 123",
+    "adresse": "12 Rue de Paris",
+    "code_postal": "59702",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 124",
+    "adresse": "77 Rue Victor Hugo",
+    "code_postal": "44649",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 125",
+    "adresse": "65 Rue de Paris",
+    "code_postal": "31349",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 126",
+    "adresse": "90 Rue République",
+    "code_postal": "59087",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 127",
+    "adresse": "67 Rue de Paris",
+    "code_postal": "31481",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 128",
+    "adresse": "10 Rue Jean Jaurès",
+    "code_postal": "06649",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 129",
+    "adresse": "79 Rue Jean Jaurès",
+    "code_postal": "31308",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 130",
+    "adresse": "102 Rue Jean Jaurès",
+    "code_postal": "35582",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Librairie 131",
+    "adresse": "33 Rue République",
+    "code_postal": "69879",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 132",
+    "adresse": "89 Rue Jean Jaurès",
+    "code_postal": "51825",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 133",
+    "adresse": "98 Rue de Paris",
+    "code_postal": "21427",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Supérette 134",
+    "adresse": "70 Rue de Paris",
+    "code_postal": "49040",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Supérette 135",
+    "adresse": "145 Rue Victor Hugo",
+    "code_postal": "33406",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 136",
+    "adresse": "140 Rue Jean Jaurès",
+    "code_postal": "51272",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 137",
+    "adresse": "139 Rue République",
+    "code_postal": "69735",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 138",
+    "adresse": "114 Rue de Paris",
+    "code_postal": "69779",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 139",
+    "adresse": "70 Rue de Paris",
+    "code_postal": "38234",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 140",
+    "adresse": "131 Rue Jean Jaurès",
+    "code_postal": "30692",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Tabac 141",
+    "adresse": "104 Rue Jean Jaurès",
+    "code_postal": "59853",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 142",
+    "adresse": "122 Rue Victor Hugo",
+    "code_postal": "34168",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Point Service 143",
+    "adresse": "129 Rue République",
+    "code_postal": "59039",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 144",
+    "adresse": "49 Rue Victor Hugo",
+    "code_postal": "69527",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 145",
+    "adresse": "114 Rue de Paris",
+    "code_postal": "35402",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 146",
+    "adresse": "140 Rue République",
+    "code_postal": "44601",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Tabac 147",
+    "adresse": "77 Rue République",
+    "code_postal": "35011",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Librairie 148",
+    "adresse": "92 Rue République",
+    "code_postal": "51521",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 149",
+    "adresse": "103 Rue République",
+    "code_postal": "69657",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 150",
+    "adresse": "138 Rue Victor Hugo",
+    "code_postal": "44160",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Librairie 151",
+    "adresse": "109 Rue Jean Jaurès",
+    "code_postal": "13194",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 152",
+    "adresse": "92 Rue de Paris",
+    "code_postal": "21413",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Librairie 153",
+    "adresse": "55 Rue Jean Jaurès",
+    "code_postal": "33480",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 154",
+    "adresse": "38 Rue Jean Jaurès",
+    "code_postal": "49242",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 155",
+    "adresse": "67 Rue Victor Hugo",
+    "code_postal": "75410",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 156",
+    "adresse": "57 Rue Jean Jaurès",
+    "code_postal": "69760",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 157",
+    "adresse": "125 Rue de Paris",
+    "code_postal": "31382",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Supérette 158",
+    "adresse": "36 Rue Jean Jaurès",
+    "code_postal": "31498",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Supérette 159",
+    "adresse": "24 Rue de Paris",
+    "code_postal": "34535",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Supérette 160",
+    "adresse": "138 Rue Victor Hugo",
+    "code_postal": "67456",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 161",
+    "adresse": "47 Rue Jean Jaurès",
+    "code_postal": "83505",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 162",
+    "adresse": "59 Rue République",
+    "code_postal": "59304",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 163",
+    "adresse": "1 Rue Victor Hugo",
+    "code_postal": "35494",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 164",
+    "adresse": "18 Rue République",
+    "code_postal": "69848",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 165",
+    "adresse": "25 Rue Jean Jaurès",
+    "code_postal": "31890",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 166",
+    "adresse": "13 Rue de Paris",
+    "code_postal": "67228",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 167",
+    "adresse": "18 Rue Victor Hugo",
+    "code_postal": "35139",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 168",
+    "adresse": "53 Rue Jean Jaurès",
+    "code_postal": "06590",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 169",
+    "adresse": "90 Rue Jean Jaurès",
+    "code_postal": "38277",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 170",
+    "adresse": "128 Rue Jean Jaurès",
+    "code_postal": "76211",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 171",
+    "adresse": "41 Rue de Paris",
+    "code_postal": "30391",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Tabac 172",
+    "adresse": "144 Rue Victor Hugo",
+    "code_postal": "31580",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Tabac 173",
+    "adresse": "105 Rue Jean Jaurès",
+    "code_postal": "31585",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 174",
+    "adresse": "69 Rue République",
+    "code_postal": "33848",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 175",
+    "adresse": "79 Rue République",
+    "code_postal": "42643",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 176",
+    "adresse": "93 Rue de Paris",
+    "code_postal": "69043",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 177",
+    "adresse": "69 Rue de Paris",
+    "code_postal": "69430",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 178",
+    "adresse": "56 Rue République",
+    "code_postal": "31333",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 179",
+    "adresse": "95 Rue République",
+    "code_postal": "76463",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 180",
+    "adresse": "56 Rue de Paris",
+    "code_postal": "76308",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Point Service 181",
+    "adresse": "16 Rue de Paris",
+    "code_postal": "42286",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 182",
+    "adresse": "141 Rue de Paris",
+    "code_postal": "33599",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 183",
+    "adresse": "6 Rue de Paris",
+    "code_postal": "30428",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Tabac 184",
+    "adresse": "38 Rue Jean Jaurès",
+    "code_postal": "59300",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 185",
+    "adresse": "106 Rue Victor Hugo",
+    "code_postal": "75067",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Supérette 186",
+    "adresse": "54 Rue République",
+    "code_postal": "75511",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 187",
+    "adresse": "32 Rue Victor Hugo",
+    "code_postal": "33643",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 188",
+    "adresse": "141 Rue République",
+    "code_postal": "76567",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 189",
+    "adresse": "28 Rue Jean Jaurès",
+    "code_postal": "13018",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 190",
+    "adresse": "103 Rue de Paris",
+    "code_postal": "83185",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 191",
+    "adresse": "56 Rue Victor Hugo",
+    "code_postal": "13666",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 192",
+    "adresse": "77 Rue de Paris",
+    "code_postal": "34245",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Point Service 193",
+    "adresse": "25 Rue République",
+    "code_postal": "33844",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 194",
+    "adresse": "55 Rue Victor Hugo",
+    "code_postal": "35233",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 195",
+    "adresse": "130 Rue Victor Hugo",
+    "code_postal": "34325",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Librairie 196",
+    "adresse": "65 Rue de Paris",
+    "code_postal": "33802",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 197",
+    "adresse": "33 Rue Jean Jaurès",
+    "code_postal": "75574",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 198",
+    "adresse": "4 Rue Victor Hugo",
+    "code_postal": "06678",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 199",
+    "adresse": "130 Rue Jean Jaurès",
+    "code_postal": "13376",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 200",
+    "adresse": "124 Rue République",
+    "code_postal": "69496",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Tabac 201",
+    "adresse": "10 Rue République",
+    "code_postal": "69049",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 202",
+    "adresse": "18 Rue Victor Hugo",
+    "code_postal": "33651",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 203",
+    "adresse": "138 Rue de Paris",
+    "code_postal": "31527",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 204",
+    "adresse": "7 Rue Victor Hugo",
+    "code_postal": "76603",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 205",
+    "adresse": "6 Rue Victor Hugo",
+    "code_postal": "67528",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 206",
+    "adresse": "35 Rue Jean Jaurès",
+    "code_postal": "38547",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Point Service 207",
+    "adresse": "99 Rue République",
+    "code_postal": "13043",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Librairie 208",
+    "adresse": "18 Rue Jean Jaurès",
+    "code_postal": "51264",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 209",
+    "adresse": "6 Rue Victor Hugo",
+    "code_postal": "59882",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 210",
+    "adresse": "143 Rue Jean Jaurès",
+    "code_postal": "75755",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 211",
+    "adresse": "122 Rue de Paris",
+    "code_postal": "83391",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 212",
+    "adresse": "47 Rue République",
+    "code_postal": "33386",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 213",
+    "adresse": "45 Rue de Paris",
+    "code_postal": "13406",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Librairie 214",
+    "adresse": "5 Rue Victor Hugo",
+    "code_postal": "69156",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 215",
+    "adresse": "31 Rue République",
+    "code_postal": "76322",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Point Service 216",
+    "adresse": "66 Rue République",
+    "code_postal": "76426",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 217",
+    "adresse": "6 Rue de Paris",
+    "code_postal": "31427",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 218",
+    "adresse": "2 Rue Jean Jaurès",
+    "code_postal": "75345",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 219",
+    "adresse": "47 Rue République",
+    "code_postal": "59208",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 220",
+    "adresse": "37 Rue Victor Hugo",
+    "code_postal": "21633",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Tabac 221",
+    "adresse": "124 Rue République",
+    "code_postal": "76785",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 222",
+    "adresse": "141 Rue Victor Hugo",
+    "code_postal": "06019",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 223",
+    "adresse": "28 Rue de Paris",
+    "code_postal": "42622",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 224",
+    "adresse": "6 Rue Victor Hugo",
+    "code_postal": "83011",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 225",
+    "adresse": "30 Rue République",
+    "code_postal": "44466",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 226",
+    "adresse": "65 Rue Victor Hugo",
+    "code_postal": "21847",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Librairie 227",
+    "adresse": "84 Rue Jean Jaurès",
+    "code_postal": "83678",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 228",
+    "adresse": "121 Rue Victor Hugo",
+    "code_postal": "44219",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 229",
+    "adresse": "136 Rue République",
+    "code_postal": "34849",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Supérette 230",
+    "adresse": "131 Rue République",
+    "code_postal": "44472",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 231",
+    "adresse": "61 Rue Jean Jaurès",
+    "code_postal": "49072",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 232",
+    "adresse": "121 Rue Jean Jaurès",
+    "code_postal": "06745",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 233",
+    "adresse": "135 Rue Victor Hugo",
+    "code_postal": "49650",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Supérette 234",
+    "adresse": "126 Rue Victor Hugo",
+    "code_postal": "59235",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 235",
+    "adresse": "2 Rue République",
+    "code_postal": "13412",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 236",
+    "adresse": "124 Rue République",
+    "code_postal": "35497",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 237",
+    "adresse": "17 Rue Jean Jaurès",
+    "code_postal": "76262",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Point Service 238",
+    "adresse": "82 Rue République",
+    "code_postal": "35128",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 239",
+    "adresse": "57 Rue Victor Hugo",
+    "code_postal": "76877",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 240",
+    "adresse": "98 Rue République",
+    "code_postal": "38868",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Point Service 241",
+    "adresse": "81 Rue Victor Hugo",
+    "code_postal": "42808",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 242",
+    "adresse": "142 Rue Jean Jaurès",
+    "code_postal": "75768",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 243",
+    "adresse": "55 Rue de Paris",
+    "code_postal": "75894",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 244",
+    "adresse": "125 Rue Victor Hugo",
+    "code_postal": "51563",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 245",
+    "adresse": "24 Rue Victor Hugo",
+    "code_postal": "59873",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 246",
+    "adresse": "137 Rue Victor Hugo",
+    "code_postal": "69053",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 247",
+    "adresse": "39 Rue de Paris",
+    "code_postal": "51447",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 248",
+    "adresse": "133 Rue de Paris",
+    "code_postal": "51176",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 249",
+    "adresse": "21 Rue de Paris",
+    "code_postal": "21205",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Point Service 250",
+    "adresse": "140 Rue Jean Jaurès",
+    "code_postal": "38385",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 251",
+    "adresse": "41 Rue République",
+    "code_postal": "69590",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Tabac 252",
+    "adresse": "83 Rue Victor Hugo",
+    "code_postal": "30255",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Tabac 253",
+    "adresse": "20 Rue Jean Jaurès",
+    "code_postal": "76860",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 254",
+    "adresse": "96 Rue de Paris",
+    "code_postal": "75189",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 255",
+    "adresse": "37 Rue de Paris",
+    "code_postal": "13571",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 256",
+    "adresse": "50 Rue République",
+    "code_postal": "42157",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Supérette 257",
+    "adresse": "95 Rue Victor Hugo",
+    "code_postal": "44085",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 258",
+    "adresse": "20 Rue Victor Hugo",
+    "code_postal": "51660",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 259",
+    "adresse": "141 Rue Jean Jaurès",
+    "code_postal": "59217",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 260",
+    "adresse": "146 Rue Victor Hugo",
+    "code_postal": "69401",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 261",
+    "adresse": "125 Rue Victor Hugo",
+    "code_postal": "75580",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 262",
+    "adresse": "116 Rue Victor Hugo",
+    "code_postal": "13072",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 263",
+    "adresse": "138 Rue Jean Jaurès",
+    "code_postal": "59660",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 264",
+    "adresse": "90 Rue de Paris",
+    "code_postal": "35871",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 265",
+    "adresse": "16 Rue République",
+    "code_postal": "69556",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 266",
+    "adresse": "21 Rue Victor Hugo",
+    "code_postal": "51045",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 267",
+    "adresse": "7 Rue Jean Jaurès",
+    "code_postal": "31165",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 268",
+    "adresse": "6 Rue République",
+    "code_postal": "42623",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Supérette 269",
+    "adresse": "69 Rue Victor Hugo",
+    "code_postal": "49187",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 270",
+    "adresse": "21 Rue Jean Jaurès",
+    "code_postal": "06175",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 271",
+    "adresse": "47 Rue de Paris",
+    "code_postal": "59326",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 272",
+    "adresse": "17 Rue République",
+    "code_postal": "33667",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 273",
+    "adresse": "115 Rue de Paris",
+    "code_postal": "69805",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Tabac 274",
+    "adresse": "42 Rue Jean Jaurès",
+    "code_postal": "30505",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 275",
+    "adresse": "138 Rue Jean Jaurès",
+    "code_postal": "33662",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 276",
+    "adresse": "92 Rue République",
+    "code_postal": "59717",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 277",
+    "adresse": "116 Rue Victor Hugo",
+    "code_postal": "33844",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 278",
+    "adresse": "150 Rue République",
+    "code_postal": "33510",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 279",
+    "adresse": "62 Rue Jean Jaurès",
+    "code_postal": "13133",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 280",
+    "adresse": "89 Rue Victor Hugo",
+    "code_postal": "33625",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 281",
+    "adresse": "81 Rue République",
+    "code_postal": "31895",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 282",
+    "adresse": "88 Rue Victor Hugo",
+    "code_postal": "13583",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 283",
+    "adresse": "119 Rue Jean Jaurès",
+    "code_postal": "06648",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 284",
+    "adresse": "58 Rue République",
+    "code_postal": "83158",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 285",
+    "adresse": "106 Rue République",
+    "code_postal": "42088",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 286",
+    "adresse": "93 Rue République",
+    "code_postal": "49846",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 287",
+    "adresse": "109 Rue Victor Hugo",
+    "code_postal": "83184",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 288",
+    "adresse": "35 Rue Jean Jaurès",
+    "code_postal": "59893",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 289",
+    "adresse": "59 Rue Jean Jaurès",
+    "code_postal": "33556",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 290",
+    "adresse": "16 Rue République",
+    "code_postal": "06599",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 291",
+    "adresse": "96 Rue République",
+    "code_postal": "13577",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 292",
+    "adresse": "8 Rue de Paris",
+    "code_postal": "49012",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 293",
+    "adresse": "21 Rue de Paris",
+    "code_postal": "38420",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 294",
+    "adresse": "38 Rue de Paris",
+    "code_postal": "67473",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Librairie 295",
+    "adresse": "50 Rue de Paris",
+    "code_postal": "13887",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 296",
+    "adresse": "142 Rue Jean Jaurès",
+    "code_postal": "38795",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 297",
+    "adresse": "10 Rue Victor Hugo",
+    "code_postal": "67069",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 298",
+    "adresse": "44 Rue Victor Hugo",
+    "code_postal": "30726",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 299",
+    "adresse": "26 Rue République",
+    "code_postal": "30332",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Supérette 300",
+    "adresse": "56 Rue de Paris",
+    "code_postal": "33233",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 301",
+    "adresse": "19 Rue République",
+    "code_postal": "38407",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Point Service 302",
+    "adresse": "49 Rue République",
+    "code_postal": "75013",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 303",
+    "adresse": "135 Rue de Paris",
+    "code_postal": "06845",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 304",
+    "adresse": "136 Rue Victor Hugo",
+    "code_postal": "35793",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 305",
+    "adresse": "123 Rue Jean Jaurès",
+    "code_postal": "34762",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Supérette 306",
+    "adresse": "59 Rue Jean Jaurès",
+    "code_postal": "30032",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 307",
+    "adresse": "92 Rue de Paris",
+    "code_postal": "34689",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Librairie 308",
+    "adresse": "98 Rue Victor Hugo",
+    "code_postal": "21863",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Supérette 309",
+    "adresse": "73 Rue Jean Jaurès",
+    "code_postal": "75391",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Supérette 310",
+    "adresse": "57 Rue de Paris",
+    "code_postal": "42424",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Supérette 311",
+    "adresse": "131 Rue de Paris",
+    "code_postal": "34024",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Tabac 312",
+    "adresse": "11 Rue Jean Jaurès",
+    "code_postal": "69225",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 313",
+    "adresse": "142 Rue Victor Hugo",
+    "code_postal": "69489",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 314",
+    "adresse": "72 Rue Victor Hugo",
+    "code_postal": "69863",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 315",
+    "adresse": "98 Rue Victor Hugo",
+    "code_postal": "06056",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 316",
+    "adresse": "125 Rue Jean Jaurès",
+    "code_postal": "51866",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 317",
+    "adresse": "102 Rue Jean Jaurès",
+    "code_postal": "35501",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 318",
+    "adresse": "59 Rue Jean Jaurès",
+    "code_postal": "83369",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 319",
+    "adresse": "112 Rue de Paris",
+    "code_postal": "59809",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 320",
+    "adresse": "116 Rue de Paris",
+    "code_postal": "35860",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 321",
+    "adresse": "34 Rue Jean Jaurès",
+    "code_postal": "30873",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 322",
+    "adresse": "119 Rue Jean Jaurès",
+    "code_postal": "76745",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 323",
+    "adresse": "105 Rue République",
+    "code_postal": "83637",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 324",
+    "adresse": "75 Rue République",
+    "code_postal": "51005",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 325",
+    "adresse": "150 Rue République",
+    "code_postal": "69226",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Tabac 326",
+    "adresse": "142 Rue République",
+    "code_postal": "59648",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 327",
+    "adresse": "94 Rue République",
+    "code_postal": "51484",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 328",
+    "adresse": "136 Rue de Paris",
+    "code_postal": "13453",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 329",
+    "adresse": "79 Rue République",
+    "code_postal": "30301",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 330",
+    "adresse": "141 Rue République",
+    "code_postal": "34593",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Supérette 331",
+    "adresse": "86 Rue Jean Jaurès",
+    "code_postal": "76063",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 332",
+    "adresse": "42 Rue de Paris",
+    "code_postal": "59267",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 333",
+    "adresse": "22 Rue Victor Hugo",
+    "code_postal": "35560",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 334",
+    "adresse": "79 Rue Jean Jaurès",
+    "code_postal": "44889",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 335",
+    "adresse": "145 Rue Victor Hugo",
+    "code_postal": "75668",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 336",
+    "adresse": "132 Rue de Paris",
+    "code_postal": "35524",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 337",
+    "adresse": "106 Rue République",
+    "code_postal": "59396",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 338",
+    "adresse": "30 Rue République",
+    "code_postal": "44724",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 339",
+    "adresse": "97 Rue Jean Jaurès",
+    "code_postal": "44535",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 340",
+    "adresse": "80 Rue Victor Hugo",
+    "code_postal": "13633",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 341",
+    "adresse": "66 Rue de Paris",
+    "code_postal": "33683",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 342",
+    "adresse": "112 Rue Victor Hugo",
+    "code_postal": "44876",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 343",
+    "adresse": "127 Rue République",
+    "code_postal": "13075",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 344",
+    "adresse": "135 Rue Victor Hugo",
+    "code_postal": "33789",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 345",
+    "adresse": "133 Rue Jean Jaurès",
+    "code_postal": "38332",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 346",
+    "adresse": "44 Rue de Paris",
+    "code_postal": "51059",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 347",
+    "adresse": "144 Rue Victor Hugo",
+    "code_postal": "67598",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 348",
+    "adresse": "93 Rue République",
+    "code_postal": "49139",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 349",
+    "adresse": "65 Rue de Paris",
+    "code_postal": "69120",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 350",
+    "adresse": "22 Rue Victor Hugo",
+    "code_postal": "67770",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 351",
+    "adresse": "35 Rue de Paris",
+    "code_postal": "69311",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 352",
+    "adresse": "20 Rue Jean Jaurès",
+    "code_postal": "59276",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 353",
+    "adresse": "35 Rue République",
+    "code_postal": "51135",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 354",
+    "adresse": "47 Rue de Paris",
+    "code_postal": "30261",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Supérette 355",
+    "adresse": "84 Rue Jean Jaurès",
+    "code_postal": "35668",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Librairie 356",
+    "adresse": "18 Rue Victor Hugo",
+    "code_postal": "69434",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 357",
+    "adresse": "69 Rue Jean Jaurès",
+    "code_postal": "83786",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 358",
+    "adresse": "26 Rue République",
+    "code_postal": "21602",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Supérette 359",
+    "adresse": "65 Rue Victor Hugo",
+    "code_postal": "69638",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 360",
+    "adresse": "63 Rue Jean Jaurès",
+    "code_postal": "42591",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Tabac 361",
+    "adresse": "40 Rue Victor Hugo",
+    "code_postal": "38270",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Point Service 362",
+    "adresse": "71 Rue République",
+    "code_postal": "44659",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 363",
+    "adresse": "69 Rue Jean Jaurès",
+    "code_postal": "34625",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Tabac 364",
+    "adresse": "144 Rue République",
+    "code_postal": "34216",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Librairie 365",
+    "adresse": "118 Rue de Paris",
+    "code_postal": "33470",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 366",
+    "adresse": "12 Rue de Paris",
+    "code_postal": "34293",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Point Service 367",
+    "adresse": "57 Rue de Paris",
+    "code_postal": "13596",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Librairie 368",
+    "adresse": "129 Rue Jean Jaurès",
+    "code_postal": "33033",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 369",
+    "adresse": "6 Rue Victor Hugo",
+    "code_postal": "51071",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 370",
+    "adresse": "10 Rue République",
+    "code_postal": "69785",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 371",
+    "adresse": "119 Rue Victor Hugo",
+    "code_postal": "42450",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Tabac 372",
+    "adresse": "100 Rue République",
+    "code_postal": "67881",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Supérette 373",
+    "adresse": "89 Rue République",
+    "code_postal": "44044",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 374",
+    "adresse": "150 Rue Victor Hugo",
+    "code_postal": "59720",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 375",
+    "adresse": "101 Rue Jean Jaurès",
+    "code_postal": "38499",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Librairie 376",
+    "adresse": "75 Rue Jean Jaurès",
+    "code_postal": "21720",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Supérette 377",
+    "adresse": "46 Rue Victor Hugo",
+    "code_postal": "31757",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 378",
+    "adresse": "123 Rue Jean Jaurès",
+    "code_postal": "34113",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Librairie 379",
+    "adresse": "28 Rue Victor Hugo",
+    "code_postal": "67660",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 380",
+    "adresse": "130 Rue de Paris",
+    "code_postal": "51862",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 381",
+    "adresse": "79 Rue de Paris",
+    "code_postal": "69559",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 382",
+    "adresse": "134 Rue République",
+    "code_postal": "75616",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Supérette 383",
+    "adresse": "19 Rue Jean Jaurès",
+    "code_postal": "33655",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 384",
+    "adresse": "143 Rue République",
+    "code_postal": "67362",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Supérette 385",
+    "adresse": "111 Rue Jean Jaurès",
+    "code_postal": "49878",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 386",
+    "adresse": "43 Rue Victor Hugo",
+    "code_postal": "51374",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 387",
+    "adresse": "69 Rue République",
+    "code_postal": "83554",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 388",
+    "adresse": "72 Rue Victor Hugo",
+    "code_postal": "83008",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 389",
+    "adresse": "21 Rue Jean Jaurès",
+    "code_postal": "31194",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 390",
+    "adresse": "39 Rue de Paris",
+    "code_postal": "59775",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 391",
+    "adresse": "147 Rue de Paris",
+    "code_postal": "35749",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 392",
+    "adresse": "137 Rue République",
+    "code_postal": "67655",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Supérette 393",
+    "adresse": "57 Rue Jean Jaurès",
+    "code_postal": "31845",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Supérette 394",
+    "adresse": "75 Rue Jean Jaurès",
+    "code_postal": "75145",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Supérette 395",
+    "adresse": "23 Rue Victor Hugo",
+    "code_postal": "51423",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 396",
+    "adresse": "99 Rue de Paris",
+    "code_postal": "75699",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 397",
+    "adresse": "80 Rue Jean Jaurès",
+    "code_postal": "21720",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Point Service 398",
+    "adresse": "3 Rue de Paris",
+    "code_postal": "38608",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Librairie 399",
+    "adresse": "121 Rue de Paris",
+    "code_postal": "75659",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 400",
+    "adresse": "72 Rue Jean Jaurès",
+    "code_postal": "69704",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 401",
+    "adresse": "120 Rue Victor Hugo",
+    "code_postal": "76701",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Tabac 402",
+    "adresse": "66 Rue Victor Hugo",
+    "code_postal": "69019",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 403",
+    "adresse": "103 Rue Jean Jaurès",
+    "code_postal": "69462",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 404",
+    "adresse": "109 Rue République",
+    "code_postal": "51069",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 405",
+    "adresse": "36 Rue République",
+    "code_postal": "75117",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 406",
+    "adresse": "55 Rue République",
+    "code_postal": "35238",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 407",
+    "adresse": "120 Rue de Paris",
+    "code_postal": "33349",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 408",
+    "adresse": "103 Rue République",
+    "code_postal": "75100",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 409",
+    "adresse": "26 Rue République",
+    "code_postal": "35221",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 410",
+    "adresse": "49 Rue Victor Hugo",
+    "code_postal": "59806",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 411",
+    "adresse": "25 Rue Victor Hugo",
+    "code_postal": "83024",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 412",
+    "adresse": "82 Rue Victor Hugo",
+    "code_postal": "69462",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 413",
+    "adresse": "19 Rue Victor Hugo",
+    "code_postal": "59285",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 414",
+    "adresse": "100 Rue Victor Hugo",
+    "code_postal": "59503",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 415",
+    "adresse": "128 Rue Victor Hugo",
+    "code_postal": "33595",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 416",
+    "adresse": "72 Rue République",
+    "code_postal": "69463",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 417",
+    "adresse": "3 Rue Victor Hugo",
+    "code_postal": "76283",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Point Service 418",
+    "adresse": "7 Rue Victor Hugo",
+    "code_postal": "76408",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Point Service 419",
+    "adresse": "7 Rue Victor Hugo",
+    "code_postal": "83572",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 420",
+    "adresse": "39 Rue de Paris",
+    "code_postal": "13418",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 421",
+    "adresse": "31 Rue Jean Jaurès",
+    "code_postal": "69657",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 422",
+    "adresse": "40 Rue de Paris",
+    "code_postal": "44635",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Librairie 423",
+    "adresse": "68 Rue Jean Jaurès",
+    "code_postal": "30152",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 424",
+    "adresse": "11 Rue de Paris",
+    "code_postal": "69178",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 425",
+    "adresse": "93 Rue de Paris",
+    "code_postal": "69692",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Tabac 426",
+    "adresse": "66 Rue Victor Hugo",
+    "code_postal": "30736",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Tabac 427",
+    "adresse": "148 Rue Jean Jaurès",
+    "code_postal": "51789",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 428",
+    "adresse": "150 Rue Jean Jaurès",
+    "code_postal": "31560",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 429",
+    "adresse": "134 Rue République",
+    "code_postal": "34853",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Supérette 430",
+    "adresse": "69 Rue de Paris",
+    "code_postal": "21512",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Tabac 431",
+    "adresse": "19 Rue Victor Hugo",
+    "code_postal": "42042",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 432",
+    "adresse": "59 Rue de Paris",
+    "code_postal": "34791",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Librairie 433",
+    "adresse": "31 Rue Jean Jaurès",
+    "code_postal": "42319",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 434",
+    "adresse": "78 Rue Victor Hugo",
+    "code_postal": "34789",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Point Service 435",
+    "adresse": "101 Rue de Paris",
+    "code_postal": "42332",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 436",
+    "adresse": "53 Rue Victor Hugo",
+    "code_postal": "69877",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 437",
+    "adresse": "65 Rue République",
+    "code_postal": "06071",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 438",
+    "adresse": "29 Rue de Paris",
+    "code_postal": "51125",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 439",
+    "adresse": "43 Rue Jean Jaurès",
+    "code_postal": "13827",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Librairie 440",
+    "adresse": "136 Rue de Paris",
+    "code_postal": "75238",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 441",
+    "adresse": "94 Rue Victor Hugo",
+    "code_postal": "21849",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Point Service 442",
+    "adresse": "118 Rue Jean Jaurès",
+    "code_postal": "49866",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 443",
+    "adresse": "47 Rue République",
+    "code_postal": "38710",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 444",
+    "adresse": "56 Rue de Paris",
+    "code_postal": "69892",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 445",
+    "adresse": "56 Rue Jean Jaurès",
+    "code_postal": "38051",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 446",
+    "adresse": "10 Rue République",
+    "code_postal": "69746",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 447",
+    "adresse": "107 Rue de Paris",
+    "code_postal": "42056",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 448",
+    "adresse": "41 Rue Jean Jaurès",
+    "code_postal": "69897",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 449",
+    "adresse": "133 Rue Jean Jaurès",
+    "code_postal": "31798",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Tabac 450",
+    "adresse": "96 Rue de Paris",
+    "code_postal": "13765",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 451",
+    "adresse": "18 Rue Victor Hugo",
+    "code_postal": "34687",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Point Service 452",
+    "adresse": "142 Rue Jean Jaurès",
+    "code_postal": "42014",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 453",
+    "adresse": "28 Rue de Paris",
+    "code_postal": "76504",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Tabac 454",
+    "adresse": "139 Rue de Paris",
+    "code_postal": "30082",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 455",
+    "adresse": "29 Rue Victor Hugo",
+    "code_postal": "75389",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 456",
+    "adresse": "87 Rue Jean Jaurès",
+    "code_postal": "69078",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 457",
+    "adresse": "27 Rue République",
+    "code_postal": "69223",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 458",
+    "adresse": "145 Rue Victor Hugo",
+    "code_postal": "06197",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 459",
+    "adresse": "99 Rue République",
+    "code_postal": "42142",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Supérette 460",
+    "adresse": "124 Rue Jean Jaurès",
+    "code_postal": "51713",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 461",
+    "adresse": "23 Rue Victor Hugo",
+    "code_postal": "31727",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Supérette 462",
+    "adresse": "83 Rue République",
+    "code_postal": "38136",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 463",
+    "adresse": "34 Rue Jean Jaurès",
+    "code_postal": "33471",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 464",
+    "adresse": "31 Rue Jean Jaurès",
+    "code_postal": "76821",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 465",
+    "adresse": "139 Rue de Paris",
+    "code_postal": "30381",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 466",
+    "adresse": "3 Rue Victor Hugo",
+    "code_postal": "67657",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 467",
+    "adresse": "99 Rue de Paris",
+    "code_postal": "31609",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Supérette 468",
+    "adresse": "99 Rue République",
+    "code_postal": "76771",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 469",
+    "adresse": "78 Rue Victor Hugo",
+    "code_postal": "31511",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 470",
+    "adresse": "127 Rue de Paris",
+    "code_postal": "42405",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 471",
+    "adresse": "124 Rue de Paris",
+    "code_postal": "13112",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 472",
+    "adresse": "43 Rue Jean Jaurès",
+    "code_postal": "33197",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 473",
+    "adresse": "110 Rue République",
+    "code_postal": "44418",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 474",
+    "adresse": "49 Rue de Paris",
+    "code_postal": "21342",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Tabac 475",
+    "adresse": "99 Rue République",
+    "code_postal": "75509",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 476",
+    "adresse": "37 Rue de Paris",
+    "code_postal": "69784",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 477",
+    "adresse": "92 Rue Jean Jaurès",
+    "code_postal": "30050",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 478",
+    "adresse": "129 Rue Victor Hugo",
+    "code_postal": "51868",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 479",
+    "adresse": "34 Rue de Paris",
+    "code_postal": "44026",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 480",
+    "adresse": "134 Rue Jean Jaurès",
+    "code_postal": "34430",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Supérette 481",
+    "adresse": "91 Rue République",
+    "code_postal": "75857",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 482",
+    "adresse": "70 Rue République",
+    "code_postal": "67414",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 483",
+    "adresse": "86 Rue Jean Jaurès",
+    "code_postal": "83829",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 484",
+    "adresse": "107 Rue République",
+    "code_postal": "33161",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 485",
+    "adresse": "140 Rue de Paris",
+    "code_postal": "35302",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 486",
+    "adresse": "116 Rue Jean Jaurès",
+    "code_postal": "83405",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 487",
+    "adresse": "14 Rue République",
+    "code_postal": "69796",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 488",
+    "adresse": "139 Rue Victor Hugo",
+    "code_postal": "21163",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Tabac 489",
+    "adresse": "1 Rue Jean Jaurès",
+    "code_postal": "21334",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Supérette 490",
+    "adresse": "136 Rue République",
+    "code_postal": "59097",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 491",
+    "adresse": "139 Rue Victor Hugo",
+    "code_postal": "21712",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Point Service 492",
+    "adresse": "51 Rue République",
+    "code_postal": "33305",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 493",
+    "adresse": "94 Rue Jean Jaurès",
+    "code_postal": "30688",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Tabac 494",
+    "adresse": "65 Rue de Paris",
+    "code_postal": "51434",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 495",
+    "adresse": "67 Rue Jean Jaurès",
+    "code_postal": "35405",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Librairie 496",
+    "adresse": "10 Rue Victor Hugo",
+    "code_postal": "51651",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 497",
+    "adresse": "21 Rue Jean Jaurès",
+    "code_postal": "06487",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 498",
+    "adresse": "70 Rue Jean Jaurès",
+    "code_postal": "69432",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 499",
+    "adresse": "22 Rue République",
+    "code_postal": "75019",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 500",
+    "adresse": "51 Rue Victor Hugo",
+    "code_postal": "69030",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Tabac 501",
+    "adresse": "16 Rue de Paris",
+    "code_postal": "67891",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 502",
+    "adresse": "125 Rue de Paris",
+    "code_postal": "69543",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 503",
+    "adresse": "78 Rue Jean Jaurès",
+    "code_postal": "42533",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Supérette 504",
+    "adresse": "61 Rue de Paris",
+    "code_postal": "75022",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 505",
+    "adresse": "42 Rue de Paris",
+    "code_postal": "21005",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Supérette 506",
+    "adresse": "31 Rue de Paris",
+    "code_postal": "38632",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 507",
+    "adresse": "10 Rue de Paris",
+    "code_postal": "44079",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Librairie 508",
+    "adresse": "2 Rue République",
+    "code_postal": "31851",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Supérette 509",
+    "adresse": "47 Rue Jean Jaurès",
+    "code_postal": "30332",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Tabac 510",
+    "adresse": "72 Rue Victor Hugo",
+    "code_postal": "75868",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 511",
+    "adresse": "2 Rue Victor Hugo",
+    "code_postal": "49093",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 512",
+    "adresse": "30 Rue de Paris",
+    "code_postal": "38847",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 513",
+    "adresse": "26 Rue Jean Jaurès",
+    "code_postal": "67838",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 514",
+    "adresse": "141 Rue Victor Hugo",
+    "code_postal": "13047",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 515",
+    "adresse": "121 Rue Jean Jaurès",
+    "code_postal": "69389",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 516",
+    "adresse": "13 Rue Victor Hugo",
+    "code_postal": "83588",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 517",
+    "adresse": "107 Rue Jean Jaurès",
+    "code_postal": "69049",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 518",
+    "adresse": "48 Rue Victor Hugo",
+    "code_postal": "76061",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Tabac 519",
+    "adresse": "142 Rue de Paris",
+    "code_postal": "42745",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Supérette 520",
+    "adresse": "52 Rue République",
+    "code_postal": "69819",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 521",
+    "adresse": "1 Rue de Paris",
+    "code_postal": "59812",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 522",
+    "adresse": "72 Rue de Paris",
+    "code_postal": "30035",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 523",
+    "adresse": "111 Rue Jean Jaurès",
+    "code_postal": "83508",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 524",
+    "adresse": "22 Rue République",
+    "code_postal": "76467",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 525",
+    "adresse": "72 Rue République",
+    "code_postal": "06519",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 526",
+    "adresse": "79 Rue de Paris",
+    "code_postal": "42881",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Tabac 527",
+    "adresse": "149 Rue Jean Jaurès",
+    "code_postal": "35539",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 528",
+    "adresse": "9 Rue Jean Jaurès",
+    "code_postal": "59646",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 529",
+    "adresse": "15 Rue de Paris",
+    "code_postal": "44610",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Librairie 530",
+    "adresse": "79 Rue de Paris",
+    "code_postal": "75333",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Supérette 531",
+    "adresse": "16 Rue de Paris",
+    "code_postal": "76646",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Tabac 532",
+    "adresse": "51 Rue Jean Jaurès",
+    "code_postal": "06223",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Point Service 533",
+    "adresse": "51 Rue République",
+    "code_postal": "76245",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Point Service 534",
+    "adresse": "141 Rue République",
+    "code_postal": "33255",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 535",
+    "adresse": "149 Rue de Paris",
+    "code_postal": "06330",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 536",
+    "adresse": "88 Rue République",
+    "code_postal": "76898",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Point Service 537",
+    "adresse": "52 Rue de Paris",
+    "code_postal": "69236",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 538",
+    "adresse": "68 Rue République",
+    "code_postal": "21363",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Librairie 539",
+    "adresse": "144 Rue de Paris",
+    "code_postal": "38368",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 540",
+    "adresse": "79 Rue Victor Hugo",
+    "code_postal": "42793",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 541",
+    "adresse": "43 Rue de Paris",
+    "code_postal": "31124",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 542",
+    "adresse": "122 Rue Victor Hugo",
+    "code_postal": "76005",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 543",
+    "adresse": "39 Rue République",
+    "code_postal": "59445",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 544",
+    "adresse": "72 Rue Victor Hugo",
+    "code_postal": "33646",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 545",
+    "adresse": "88 Rue de Paris",
+    "code_postal": "35782",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 546",
+    "adresse": "100 Rue de Paris",
+    "code_postal": "76008",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 547",
+    "adresse": "120 Rue de Paris",
+    "code_postal": "38822",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 548",
+    "adresse": "135 Rue Victor Hugo",
+    "code_postal": "13230",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 549",
+    "adresse": "102 Rue Victor Hugo",
+    "code_postal": "69636",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 550",
+    "adresse": "112 Rue Jean Jaurès",
+    "code_postal": "13007",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Librairie 551",
+    "adresse": "54 Rue de Paris",
+    "code_postal": "21768",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Point Service 552",
+    "adresse": "116 Rue Jean Jaurès",
+    "code_postal": "31787",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Supérette 553",
+    "adresse": "108 Rue de Paris",
+    "code_postal": "38474",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Point Service 554",
+    "adresse": "125 Rue de Paris",
+    "code_postal": "33633",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 555",
+    "adresse": "54 Rue Jean Jaurès",
+    "code_postal": "49089",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Librairie 556",
+    "adresse": "115 Rue Victor Hugo",
+    "code_postal": "75587",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 557",
+    "adresse": "12 Rue République",
+    "code_postal": "83244",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 558",
+    "adresse": "134 Rue de Paris",
+    "code_postal": "06481",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 559",
+    "adresse": "110 Rue Victor Hugo",
+    "code_postal": "06172",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Point Service 560",
+    "adresse": "70 Rue République",
+    "code_postal": "35422",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Librairie 561",
+    "adresse": "71 Rue République",
+    "code_postal": "69413",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 562",
+    "adresse": "78 Rue de Paris",
+    "code_postal": "31647",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 563",
+    "adresse": "36 Rue République",
+    "code_postal": "35785",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 564",
+    "adresse": "37 Rue République",
+    "code_postal": "31082",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 565",
+    "adresse": "54 Rue République",
+    "code_postal": "76384",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Point Service 566",
+    "adresse": "56 Rue République",
+    "code_postal": "34091",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Supérette 567",
+    "adresse": "80 Rue Jean Jaurès",
+    "code_postal": "44442",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 568",
+    "adresse": "101 Rue Jean Jaurès",
+    "code_postal": "51369",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 569",
+    "adresse": "46 Rue de Paris",
+    "code_postal": "51434",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 570",
+    "adresse": "86 Rue de Paris",
+    "code_postal": "83731",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 571",
+    "adresse": "47 Rue Jean Jaurès",
+    "code_postal": "69691",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 572",
+    "adresse": "10 Rue République",
+    "code_postal": "06762",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 573",
+    "adresse": "4 Rue Jean Jaurès",
+    "code_postal": "69014",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 574",
+    "adresse": "122 Rue de Paris",
+    "code_postal": "33095",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 575",
+    "adresse": "1 Rue Victor Hugo",
+    "code_postal": "51107",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 576",
+    "adresse": "118 Rue de Paris",
+    "code_postal": "06544",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Point Service 577",
+    "adresse": "12 Rue Jean Jaurès",
+    "code_postal": "75203",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 578",
+    "adresse": "134 Rue République",
+    "code_postal": "44628",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 579",
+    "adresse": "111 Rue Victor Hugo",
+    "code_postal": "69703",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 580",
+    "adresse": "17 Rue Victor Hugo",
+    "code_postal": "34312",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Librairie 581",
+    "adresse": "132 Rue de Paris",
+    "code_postal": "42840",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Supérette 582",
+    "adresse": "9 Rue République",
+    "code_postal": "51224",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 583",
+    "adresse": "150 Rue de Paris",
+    "code_postal": "34735",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Supérette 584",
+    "adresse": "127 Rue Jean Jaurès",
+    "code_postal": "38117",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 585",
+    "adresse": "132 Rue de Paris",
+    "code_postal": "67559",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 586",
+    "adresse": "80 Rue Jean Jaurès",
+    "code_postal": "06750",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 587",
+    "adresse": "89 Rue Jean Jaurès",
+    "code_postal": "69865",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 588",
+    "adresse": "99 Rue Victor Hugo",
+    "code_postal": "83304",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 589",
+    "adresse": "9 Rue Jean Jaurès",
+    "code_postal": "75605",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 590",
+    "adresse": "149 Rue République",
+    "code_postal": "42495",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Supérette 591",
+    "adresse": "139 Rue de Paris",
+    "code_postal": "69094",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 592",
+    "adresse": "139 Rue Jean Jaurès",
+    "code_postal": "33403",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 593",
+    "adresse": "97 Rue Jean Jaurès",
+    "code_postal": "83358",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 594",
+    "adresse": "37 Rue Victor Hugo",
+    "code_postal": "44270",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 595",
+    "adresse": "146 Rue République",
+    "code_postal": "33130",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 596",
+    "adresse": "112 Rue de Paris",
+    "code_postal": "30763",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Supérette 597",
+    "adresse": "137 Rue Victor Hugo",
+    "code_postal": "44321",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Tabac 598",
+    "adresse": "43 Rue Jean Jaurès",
+    "code_postal": "06659",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 599",
+    "adresse": "59 Rue Jean Jaurès",
+    "code_postal": "13182",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 600",
+    "adresse": "34 Rue Jean Jaurès",
+    "code_postal": "33785",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 601",
+    "adresse": "102 Rue République",
+    "code_postal": "69799",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 602",
+    "adresse": "12 Rue République",
+    "code_postal": "83515",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 603",
+    "adresse": "7 Rue République",
+    "code_postal": "44035",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 604",
+    "adresse": "44 Rue Jean Jaurès",
+    "code_postal": "38006",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 605",
+    "adresse": "50 Rue de Paris",
+    "code_postal": "67390",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Librairie 606",
+    "adresse": "57 Rue Jean Jaurès",
+    "code_postal": "33385",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 607",
+    "adresse": "92 Rue de Paris",
+    "code_postal": "35435",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 608",
+    "adresse": "55 Rue Victor Hugo",
+    "code_postal": "49493",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Librairie 609",
+    "adresse": "75 Rue Jean Jaurès",
+    "code_postal": "51198",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 610",
+    "adresse": "146 Rue Victor Hugo",
+    "code_postal": "69235",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 611",
+    "adresse": "40 Rue de Paris",
+    "code_postal": "33360",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 612",
+    "adresse": "146 Rue Jean Jaurès",
+    "code_postal": "13268",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 613",
+    "adresse": "62 Rue République",
+    "code_postal": "49376",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 614",
+    "adresse": "30 Rue de Paris",
+    "code_postal": "83225",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 615",
+    "adresse": "60 Rue Jean Jaurès",
+    "code_postal": "21205",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Supérette 616",
+    "adresse": "83 Rue Victor Hugo",
+    "code_postal": "69854",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Tabac 617",
+    "adresse": "80 Rue Jean Jaurès",
+    "code_postal": "76675",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Tabac 618",
+    "adresse": "10 Rue République",
+    "code_postal": "31863",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Tabac 619",
+    "adresse": "120 Rue Jean Jaurès",
+    "code_postal": "35150",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 620",
+    "adresse": "2 Rue République",
+    "code_postal": "69016",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 621",
+    "adresse": "144 Rue Victor Hugo",
+    "code_postal": "30071",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 622",
+    "adresse": "60 Rue Jean Jaurès",
+    "code_postal": "44095",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Librairie 623",
+    "adresse": "123 Rue Victor Hugo",
+    "code_postal": "21812",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Tabac 624",
+    "adresse": "12 Rue de Paris",
+    "code_postal": "38381",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 625",
+    "adresse": "2 Rue de Paris",
+    "code_postal": "59442",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 626",
+    "adresse": "95 Rue de Paris",
+    "code_postal": "13214",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 627",
+    "adresse": "10 Rue de Paris",
+    "code_postal": "31344",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Tabac 628",
+    "adresse": "92 Rue de Paris",
+    "code_postal": "69574",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 629",
+    "adresse": "34 Rue Jean Jaurès",
+    "code_postal": "51759",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 630",
+    "adresse": "108 Rue Jean Jaurès",
+    "code_postal": "33190",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 631",
+    "adresse": "39 Rue République",
+    "code_postal": "30289",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 632",
+    "adresse": "6 Rue Victor Hugo",
+    "code_postal": "44834",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Librairie 633",
+    "adresse": "90 Rue Jean Jaurès",
+    "code_postal": "69570",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 634",
+    "adresse": "61 Rue de Paris",
+    "code_postal": "69157",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 635",
+    "adresse": "77 Rue Jean Jaurès",
+    "code_postal": "51598",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 636",
+    "adresse": "63 Rue de Paris",
+    "code_postal": "51437",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 637",
+    "adresse": "4 Rue Victor Hugo",
+    "code_postal": "06621",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 638",
+    "adresse": "118 Rue Victor Hugo",
+    "code_postal": "06666",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 639",
+    "adresse": "134 Rue Jean Jaurès",
+    "code_postal": "75836",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 640",
+    "adresse": "3 Rue de Paris",
+    "code_postal": "35603",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 641",
+    "adresse": "57 Rue Jean Jaurès",
+    "code_postal": "35637",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 642",
+    "adresse": "120 Rue Victor Hugo",
+    "code_postal": "69150",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 643",
+    "adresse": "143 Rue République",
+    "code_postal": "51711",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 644",
+    "adresse": "43 Rue Victor Hugo",
+    "code_postal": "59880",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 645",
+    "adresse": "62 Rue de Paris",
+    "code_postal": "69083",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 646",
+    "adresse": "109 Rue Jean Jaurès",
+    "code_postal": "49285",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 647",
+    "adresse": "136 Rue de Paris",
+    "code_postal": "38407",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Point Service 648",
+    "adresse": "106 Rue Victor Hugo",
+    "code_postal": "33100",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 649",
+    "adresse": "62 Rue Victor Hugo",
+    "code_postal": "31603",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 650",
+    "adresse": "55 Rue Jean Jaurès",
+    "code_postal": "42856",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 651",
+    "adresse": "16 Rue de Paris",
+    "code_postal": "67002",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 652",
+    "adresse": "129 Rue de Paris",
+    "code_postal": "69654",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 653",
+    "adresse": "111 Rue République",
+    "code_postal": "35057",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 654",
+    "adresse": "81 Rue Victor Hugo",
+    "code_postal": "34603",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Point Service 655",
+    "adresse": "26 Rue de Paris",
+    "code_postal": "35521",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 656",
+    "adresse": "51 Rue de Paris",
+    "code_postal": "33387",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 657",
+    "adresse": "43 Rue de Paris",
+    "code_postal": "75816",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 658",
+    "adresse": "62 Rue Victor Hugo",
+    "code_postal": "34725",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Librairie 659",
+    "adresse": "110 Rue Victor Hugo",
+    "code_postal": "83527",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 660",
+    "adresse": "105 Rue de Paris",
+    "code_postal": "76651",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Tabac 661",
+    "adresse": "14 Rue Victor Hugo",
+    "code_postal": "83443",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 662",
+    "adresse": "62 Rue République",
+    "code_postal": "49323",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 663",
+    "adresse": "119 Rue de Paris",
+    "code_postal": "51400",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 664",
+    "adresse": "6 Rue de Paris",
+    "code_postal": "38722",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Librairie 665",
+    "adresse": "2 Rue République",
+    "code_postal": "30738",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 666",
+    "adresse": "69 Rue Victor Hugo",
+    "code_postal": "21888",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Librairie 667",
+    "adresse": "140 Rue Jean Jaurès",
+    "code_postal": "30352",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 668",
+    "adresse": "119 Rue Victor Hugo",
+    "code_postal": "42157",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Tabac 669",
+    "adresse": "42 Rue Victor Hugo",
+    "code_postal": "59237",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 670",
+    "adresse": "80 Rue de Paris",
+    "code_postal": "59247",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 671",
+    "adresse": "143 Rue Victor Hugo",
+    "code_postal": "59050",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 672",
+    "adresse": "104 Rue Jean Jaurès",
+    "code_postal": "42388",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 673",
+    "adresse": "141 Rue Victor Hugo",
+    "code_postal": "75176",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 674",
+    "adresse": "50 Rue Victor Hugo",
+    "code_postal": "35249",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Librairie 675",
+    "adresse": "4 Rue Victor Hugo",
+    "code_postal": "51075",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 676",
+    "adresse": "49 Rue Jean Jaurès",
+    "code_postal": "49526",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Supérette 677",
+    "adresse": "90 Rue Jean Jaurès",
+    "code_postal": "35244",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 678",
+    "adresse": "105 Rue de Paris",
+    "code_postal": "76419",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Point Service 679",
+    "adresse": "3 Rue Victor Hugo",
+    "code_postal": "49366",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 680",
+    "adresse": "102 Rue Victor Hugo",
+    "code_postal": "13021",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Librairie 681",
+    "adresse": "47 Rue de Paris",
+    "code_postal": "59060",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 682",
+    "adresse": "48 Rue Jean Jaurès",
+    "code_postal": "33538",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 683",
+    "adresse": "15 Rue Jean Jaurès",
+    "code_postal": "76494",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Tabac 684",
+    "adresse": "86 Rue de Paris",
+    "code_postal": "49228",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Supérette 685",
+    "adresse": "143 Rue Jean Jaurès",
+    "code_postal": "75695",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 686",
+    "adresse": "121 Rue Victor Hugo",
+    "code_postal": "76011",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Tabac 687",
+    "adresse": "111 Rue République",
+    "code_postal": "42151",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 688",
+    "adresse": "105 Rue République",
+    "code_postal": "67552",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 689",
+    "adresse": "63 Rue de Paris",
+    "code_postal": "83864",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 690",
+    "adresse": "85 Rue Jean Jaurès",
+    "code_postal": "76768",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Tabac 691",
+    "adresse": "73 Rue Jean Jaurès",
+    "code_postal": "42741",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 692",
+    "adresse": "138 Rue Jean Jaurès",
+    "code_postal": "69796",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 693",
+    "adresse": "98 Rue de Paris",
+    "code_postal": "51155",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 694",
+    "adresse": "108 Rue Victor Hugo",
+    "code_postal": "69243",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 695",
+    "adresse": "23 Rue République",
+    "code_postal": "59251",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 696",
+    "adresse": "72 Rue de Paris",
+    "code_postal": "34711",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Tabac 697",
+    "adresse": "97 Rue Victor Hugo",
+    "code_postal": "69755",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 698",
+    "adresse": "8 Rue Jean Jaurès",
+    "code_postal": "35347",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 699",
+    "adresse": "16 Rue République",
+    "code_postal": "75461",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 700",
+    "adresse": "38 Rue République",
+    "code_postal": "83764",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 701",
+    "adresse": "84 Rue Victor Hugo",
+    "code_postal": "59412",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 702",
+    "adresse": "15 Rue Jean Jaurès",
+    "code_postal": "76445",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 703",
+    "adresse": "9 Rue République",
+    "code_postal": "51538",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 704",
+    "adresse": "104 Rue de Paris",
+    "code_postal": "34549",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Point Service 705",
+    "adresse": "27 Rue Jean Jaurès",
+    "code_postal": "06391",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 706",
+    "adresse": "88 Rue Jean Jaurès",
+    "code_postal": "35535",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 707",
+    "adresse": "98 Rue République",
+    "code_postal": "59812",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 708",
+    "adresse": "125 Rue République",
+    "code_postal": "75454",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 709",
+    "adresse": "114 Rue de Paris",
+    "code_postal": "83620",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 710",
+    "adresse": "40 Rue Jean Jaurès",
+    "code_postal": "83101",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 711",
+    "adresse": "131 Rue République",
+    "code_postal": "75539",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 712",
+    "adresse": "60 Rue de Paris",
+    "code_postal": "06301",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 713",
+    "adresse": "103 Rue de Paris",
+    "code_postal": "38573",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 714",
+    "adresse": "72 Rue République",
+    "code_postal": "59043",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 715",
+    "adresse": "93 Rue République",
+    "code_postal": "38695",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 716",
+    "adresse": "64 Rue République",
+    "code_postal": "49830",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Librairie 717",
+    "adresse": "60 Rue de Paris",
+    "code_postal": "69163",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 718",
+    "adresse": "126 Rue Victor Hugo",
+    "code_postal": "38033",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 719",
+    "adresse": "59 Rue Jean Jaurès",
+    "code_postal": "42756",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Tabac 720",
+    "adresse": "126 Rue République",
+    "code_postal": "49624",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 721",
+    "adresse": "126 Rue Jean Jaurès",
+    "code_postal": "69037",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 722",
+    "adresse": "99 Rue de Paris",
+    "code_postal": "30078",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Tabac 723",
+    "adresse": "5 Rue République",
+    "code_postal": "44472",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Librairie 724",
+    "adresse": "147 Rue Victor Hugo",
+    "code_postal": "49632",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Librairie 725",
+    "adresse": "123 Rue Jean Jaurès",
+    "code_postal": "31842",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Tabac 726",
+    "adresse": "51 Rue de Paris",
+    "code_postal": "83025",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 727",
+    "adresse": "25 Rue République",
+    "code_postal": "51280",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 728",
+    "adresse": "34 Rue Jean Jaurès",
+    "code_postal": "13529",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 729",
+    "adresse": "36 Rue Jean Jaurès",
+    "code_postal": "06108",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 730",
+    "adresse": "71 Rue Victor Hugo",
+    "code_postal": "76607",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 731",
+    "adresse": "78 Rue République",
+    "code_postal": "38167",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Librairie 732",
+    "adresse": "148 Rue Jean Jaurès",
+    "code_postal": "69548",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Point Service 733",
+    "adresse": "119 Rue Victor Hugo",
+    "code_postal": "49296",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Supérette 734",
+    "adresse": "93 Rue de Paris",
+    "code_postal": "59182",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 735",
+    "adresse": "145 Rue Victor Hugo",
+    "code_postal": "30630",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 736",
+    "adresse": "59 Rue Victor Hugo",
+    "code_postal": "69846",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 737",
+    "adresse": "39 Rue République",
+    "code_postal": "30202",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 738",
+    "adresse": "122 Rue Jean Jaurès",
+    "code_postal": "30523",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Supérette 739",
+    "adresse": "29 Rue de Paris",
+    "code_postal": "51496",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 740",
+    "adresse": "81 Rue de Paris",
+    "code_postal": "67882",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Supérette 741",
+    "adresse": "65 Rue Victor Hugo",
+    "code_postal": "34123",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Librairie 742",
+    "adresse": "67 Rue République",
+    "code_postal": "35476",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 743",
+    "adresse": "113 Rue de Paris",
+    "code_postal": "44695",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 744",
+    "adresse": "33 Rue de Paris",
+    "code_postal": "31114",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Tabac 745",
+    "adresse": "124 Rue République",
+    "code_postal": "31656",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Supérette 746",
+    "adresse": "104 Rue République",
+    "code_postal": "31899",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 747",
+    "adresse": "62 Rue Jean Jaurès",
+    "code_postal": "33102",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 748",
+    "adresse": "125 Rue Victor Hugo",
+    "code_postal": "49767",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Supérette 749",
+    "adresse": "39 Rue Victor Hugo",
+    "code_postal": "33406",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 750",
+    "adresse": "116 Rue Victor Hugo",
+    "code_postal": "21878",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Librairie 751",
+    "adresse": "56 Rue Jean Jaurès",
+    "code_postal": "33126",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 752",
+    "adresse": "107 Rue République",
+    "code_postal": "30201",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 753",
+    "adresse": "95 Rue de Paris",
+    "code_postal": "67047",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Supérette 754",
+    "adresse": "3 Rue République",
+    "code_postal": "21627",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Point Service 755",
+    "adresse": "102 Rue Jean Jaurès",
+    "code_postal": "13847",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 756",
+    "adresse": "146 Rue République",
+    "code_postal": "38817",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 757",
+    "adresse": "145 Rue Jean Jaurès",
+    "code_postal": "31846",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 758",
+    "adresse": "42 Rue Jean Jaurès",
+    "code_postal": "49393",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 759",
+    "adresse": "138 Rue Victor Hugo",
+    "code_postal": "69111",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 760",
+    "adresse": "39 Rue République",
+    "code_postal": "06053",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 761",
+    "adresse": "56 Rue République",
+    "code_postal": "83785",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 762",
+    "adresse": "126 Rue de Paris",
+    "code_postal": "49754",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 763",
+    "adresse": "1 Rue République",
+    "code_postal": "13324",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 764",
+    "adresse": "10 Rue de Paris",
+    "code_postal": "06439",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 765",
+    "adresse": "13 Rue Victor Hugo",
+    "code_postal": "67470",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Supérette 766",
+    "adresse": "95 Rue Jean Jaurès",
+    "code_postal": "13039",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Librairie 767",
+    "adresse": "73 Rue République",
+    "code_postal": "83815",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 768",
+    "adresse": "93 Rue Victor Hugo",
+    "code_postal": "38568",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 769",
+    "adresse": "23 Rue de Paris",
+    "code_postal": "44323",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 770",
+    "adresse": "59 Rue de Paris",
+    "code_postal": "31139",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 771",
+    "adresse": "85 Rue de Paris",
+    "code_postal": "33203",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 772",
+    "adresse": "45 Rue de Paris",
+    "code_postal": "83791",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 773",
+    "adresse": "44 Rue Jean Jaurès",
+    "code_postal": "51254",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 774",
+    "adresse": "105 Rue Victor Hugo",
+    "code_postal": "83703",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 775",
+    "adresse": "143 Rue Jean Jaurès",
+    "code_postal": "76235",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 776",
+    "adresse": "4 Rue Jean Jaurès",
+    "code_postal": "49717",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 777",
+    "adresse": "91 Rue Jean Jaurès",
+    "code_postal": "13410",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 778",
+    "adresse": "37 Rue de Paris",
+    "code_postal": "35091",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 779",
+    "adresse": "20 Rue République",
+    "code_postal": "33274",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 780",
+    "adresse": "84 Rue Victor Hugo",
+    "code_postal": "06043",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Point Service 781",
+    "adresse": "118 Rue Victor Hugo",
+    "code_postal": "06457",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 782",
+    "adresse": "22 Rue Jean Jaurès",
+    "code_postal": "13771",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 783",
+    "adresse": "94 Rue République",
+    "code_postal": "33397",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 784",
+    "adresse": "1 Rue de Paris",
+    "code_postal": "59063",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 785",
+    "adresse": "10 Rue République",
+    "code_postal": "13464",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 786",
+    "adresse": "40 Rue de Paris",
+    "code_postal": "83014",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 787",
+    "adresse": "79 Rue République",
+    "code_postal": "38796",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Point Service 788",
+    "adresse": "60 Rue République",
+    "code_postal": "67179",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Librairie 789",
+    "adresse": "50 Rue République",
+    "code_postal": "34179",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Point Service 790",
+    "adresse": "122 Rue République",
+    "code_postal": "42827",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Supérette 791",
+    "adresse": "70 Rue de Paris",
+    "code_postal": "44265",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 792",
+    "adresse": "34 Rue Jean Jaurès",
+    "code_postal": "49744",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 793",
+    "adresse": "143 Rue Victor Hugo",
+    "code_postal": "35806",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 794",
+    "adresse": "144 Rue République",
+    "code_postal": "30694",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Tabac 795",
+    "adresse": "75 Rue République",
+    "code_postal": "35869",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 796",
+    "adresse": "24 Rue Victor Hugo",
+    "code_postal": "49301",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Librairie 797",
+    "adresse": "107 Rue République",
+    "code_postal": "21615",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Tabac 798",
+    "adresse": "139 Rue Jean Jaurès",
+    "code_postal": "06296",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 799",
+    "adresse": "24 Rue Jean Jaurès",
+    "code_postal": "83547",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 800",
+    "adresse": "139 Rue République",
+    "code_postal": "49312",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 801",
+    "adresse": "20 Rue de Paris",
+    "code_postal": "13811",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 802",
+    "adresse": "134 Rue de Paris",
+    "code_postal": "30044",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 803",
+    "adresse": "42 Rue Jean Jaurès",
+    "code_postal": "42101",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Tabac 804",
+    "adresse": "92 Rue Jean Jaurès",
+    "code_postal": "59841",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 805",
+    "adresse": "27 Rue de Paris",
+    "code_postal": "59265",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 806",
+    "adresse": "58 Rue Victor Hugo",
+    "code_postal": "69381",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 807",
+    "adresse": "30 Rue Victor Hugo",
+    "code_postal": "59055",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 808",
+    "adresse": "64 Rue de Paris",
+    "code_postal": "69542",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 809",
+    "adresse": "70 Rue Jean Jaurès",
+    "code_postal": "59669",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 810",
+    "adresse": "43 Rue République",
+    "code_postal": "35418",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 811",
+    "adresse": "99 Rue Jean Jaurès",
+    "code_postal": "75190",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 812",
+    "adresse": "101 Rue Jean Jaurès",
+    "code_postal": "42320",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Tabac 813",
+    "adresse": "112 Rue République",
+    "code_postal": "75481",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 814",
+    "adresse": "134 Rue de Paris",
+    "code_postal": "69544",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 815",
+    "adresse": "91 Rue Victor Hugo",
+    "code_postal": "75802",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 816",
+    "adresse": "87 Rue de Paris",
+    "code_postal": "42520",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 817",
+    "adresse": "80 Rue Victor Hugo",
+    "code_postal": "75474",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Supérette 818",
+    "adresse": "43 Rue Victor Hugo",
+    "code_postal": "67446",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 819",
+    "adresse": "131 Rue de Paris",
+    "code_postal": "21465",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Librairie 820",
+    "adresse": "129 Rue de Paris",
+    "code_postal": "33346",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 821",
+    "adresse": "22 Rue République",
+    "code_postal": "33286",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 822",
+    "adresse": "140 Rue de Paris",
+    "code_postal": "69427",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 823",
+    "adresse": "79 Rue de Paris",
+    "code_postal": "76825",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Point Service 824",
+    "adresse": "85 Rue Jean Jaurès",
+    "code_postal": "13713",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 825",
+    "adresse": "78 Rue République",
+    "code_postal": "06033",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 826",
+    "adresse": "61 Rue République",
+    "code_postal": "69413",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 827",
+    "adresse": "136 Rue Victor Hugo",
+    "code_postal": "35858",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 828",
+    "adresse": "83 Rue de Paris",
+    "code_postal": "42744",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 829",
+    "adresse": "55 Rue Victor Hugo",
+    "code_postal": "51675",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 830",
+    "adresse": "43 Rue Jean Jaurès",
+    "code_postal": "13444",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 831",
+    "adresse": "71 Rue de Paris",
+    "code_postal": "67493",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 832",
+    "adresse": "74 Rue Jean Jaurès",
+    "code_postal": "75075",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Librairie 833",
+    "adresse": "145 Rue Jean Jaurès",
+    "code_postal": "83808",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 834",
+    "adresse": "147 Rue Victor Hugo",
+    "code_postal": "83743",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 835",
+    "adresse": "129 Rue de Paris",
+    "code_postal": "69367",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 836",
+    "adresse": "98 Rue de Paris",
+    "code_postal": "42173",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 837",
+    "adresse": "87 Rue Jean Jaurès",
+    "code_postal": "69515",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 838",
+    "adresse": "147 Rue Jean Jaurès",
+    "code_postal": "83373",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 839",
+    "adresse": "109 Rue de Paris",
+    "code_postal": "69262",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 840",
+    "adresse": "44 Rue Victor Hugo",
+    "code_postal": "67259",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Librairie 841",
+    "adresse": "84 Rue République",
+    "code_postal": "67676",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 842",
+    "adresse": "63 Rue République",
+    "code_postal": "69340",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 843",
+    "adresse": "35 Rue de Paris",
+    "code_postal": "83327",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 844",
+    "adresse": "14 Rue Victor Hugo",
+    "code_postal": "69233",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 845",
+    "adresse": "18 Rue République",
+    "code_postal": "44813",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 846",
+    "adresse": "7 Rue Victor Hugo",
+    "code_postal": "44666",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 847",
+    "adresse": "64 Rue de Paris",
+    "code_postal": "69422",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 848",
+    "adresse": "95 Rue Victor Hugo",
+    "code_postal": "38860",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 849",
+    "adresse": "106 Rue République",
+    "code_postal": "69341",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Tabac 850",
+    "adresse": "148 Rue Jean Jaurès",
+    "code_postal": "33455",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 851",
+    "adresse": "33 Rue Victor Hugo",
+    "code_postal": "35470",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 852",
+    "adresse": "149 Rue République",
+    "code_postal": "33260",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 853",
+    "adresse": "38 Rue République",
+    "code_postal": "83213",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 854",
+    "adresse": "81 Rue Jean Jaurès",
+    "code_postal": "06436",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Supérette 855",
+    "adresse": "39 Rue Victor Hugo",
+    "code_postal": "42636",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 856",
+    "adresse": "150 Rue Victor Hugo",
+    "code_postal": "06071",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Tabac 857",
+    "adresse": "85 Rue Victor Hugo",
+    "code_postal": "51849",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Supérette 858",
+    "adresse": "14 Rue de Paris",
+    "code_postal": "35539",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 859",
+    "adresse": "118 Rue de Paris",
+    "code_postal": "21400",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Point Service 860",
+    "adresse": "75 Rue République",
+    "code_postal": "69186",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Tabac 861",
+    "adresse": "60 Rue Victor Hugo",
+    "code_postal": "31847",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 862",
+    "adresse": "39 Rue République",
+    "code_postal": "67245",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 863",
+    "adresse": "96 Rue Victor Hugo",
+    "code_postal": "51525",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 864",
+    "adresse": "73 Rue Jean Jaurès",
+    "code_postal": "21807",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Supérette 865",
+    "adresse": "65 Rue République",
+    "code_postal": "30450",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 866",
+    "adresse": "120 Rue de Paris",
+    "code_postal": "35673",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Librairie 867",
+    "adresse": "9 Rue de Paris",
+    "code_postal": "13877",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Supérette 868",
+    "adresse": "54 Rue de Paris",
+    "code_postal": "35629",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Tabac 869",
+    "adresse": "105 Rue Jean Jaurès",
+    "code_postal": "75690",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Tabac 870",
+    "adresse": "67 Rue de Paris",
+    "code_postal": "30512",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 871",
+    "adresse": "18 Rue République",
+    "code_postal": "69141",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 872",
+    "adresse": "36 Rue de Paris",
+    "code_postal": "49543",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Librairie 873",
+    "adresse": "43 Rue de Paris",
+    "code_postal": "33649",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 874",
+    "adresse": "139 Rue République",
+    "code_postal": "83549",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 875",
+    "adresse": "27 Rue Jean Jaurès",
+    "code_postal": "75234",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 876",
+    "adresse": "29 Rue Victor Hugo",
+    "code_postal": "30327",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 877",
+    "adresse": "121 Rue Jean Jaurès",
+    "code_postal": "21156",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Point Service 878",
+    "adresse": "34 Rue de Paris",
+    "code_postal": "59247",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Point Service 879",
+    "adresse": "11 Rue Victor Hugo",
+    "code_postal": "33453",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Point Service 880",
+    "adresse": "37 Rue République",
+    "code_postal": "51720",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 881",
+    "adresse": "30 Rue Victor Hugo",
+    "code_postal": "06300",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Point Service 882",
+    "adresse": "36 Rue Victor Hugo",
+    "code_postal": "69041",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 883",
+    "adresse": "71 Rue République",
+    "code_postal": "44690",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 884",
+    "adresse": "51 Rue République",
+    "code_postal": "30793",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Supérette 885",
+    "adresse": "101 Rue Jean Jaurès",
+    "code_postal": "21054",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Point Service 886",
+    "adresse": "78 Rue République",
+    "code_postal": "76696",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 887",
+    "adresse": "61 Rue de Paris",
+    "code_postal": "42203",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 888",
+    "adresse": "118 Rue Jean Jaurès",
+    "code_postal": "33129",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 889",
+    "adresse": "90 Rue Victor Hugo",
+    "code_postal": "06469",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Point Service 890",
+    "adresse": "139 Rue Victor Hugo",
+    "code_postal": "51836",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 891",
+    "adresse": "73 Rue Jean Jaurès",
+    "code_postal": "42250",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 892",
+    "adresse": "2 Rue de Paris",
+    "code_postal": "51253",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 893",
+    "adresse": "134 Rue Victor Hugo",
+    "code_postal": "76555",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 894",
+    "adresse": "91 Rue République",
+    "code_postal": "35493",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 895",
+    "adresse": "13 Rue Jean Jaurès",
+    "code_postal": "69695",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Librairie 896",
+    "adresse": "96 Rue Jean Jaurès",
+    "code_postal": "34253",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Librairie 897",
+    "adresse": "19 Rue de Paris",
+    "code_postal": "42477",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Librairie 898",
+    "adresse": "119 Rue Jean Jaurès",
+    "code_postal": "38484",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Librairie 899",
+    "adresse": "9 Rue République",
+    "code_postal": "49780",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 900",
+    "adresse": "128 Rue Victor Hugo",
+    "code_postal": "67143",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Supérette 901",
+    "adresse": "6 Rue Jean Jaurès",
+    "code_postal": "83799",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 902",
+    "adresse": "67 Rue République",
+    "code_postal": "35749",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Librairie 903",
+    "adresse": "136 Rue République",
+    "code_postal": "49296",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Librairie 904",
+    "adresse": "143 Rue Victor Hugo",
+    "code_postal": "67415",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 905",
+    "adresse": "98 Rue Jean Jaurès",
+    "code_postal": "59004",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 906",
+    "adresse": "142 Rue République",
+    "code_postal": "76374",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 907",
+    "adresse": "24 Rue Jean Jaurès",
+    "code_postal": "31843",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 908",
+    "adresse": "50 Rue de Paris",
+    "code_postal": "69850",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 909",
+    "adresse": "4 Rue de Paris",
+    "code_postal": "44274",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 910",
+    "adresse": "80 Rue République",
+    "code_postal": "38413",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Librairie 911",
+    "adresse": "74 Rue Victor Hugo",
+    "code_postal": "59198",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 912",
+    "adresse": "145 Rue Victor Hugo",
+    "code_postal": "83545",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Point Service 913",
+    "adresse": "93 Rue de Paris",
+    "code_postal": "35625",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Point Service 914",
+    "adresse": "43 Rue République",
+    "code_postal": "31478",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 915",
+    "adresse": "104 Rue Victor Hugo",
+    "code_postal": "31722",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 916",
+    "adresse": "41 Rue Victor Hugo",
+    "code_postal": "59356",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 917",
+    "adresse": "105 Rue République",
+    "code_postal": "69120",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Tabac 918",
+    "adresse": "142 Rue Jean Jaurès",
+    "code_postal": "31381",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 919",
+    "adresse": "10 Rue de Paris",
+    "code_postal": "83442",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 920",
+    "adresse": "75 Rue de Paris",
+    "code_postal": "30509",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Point Service 921",
+    "adresse": "19 Rue Victor Hugo",
+    "code_postal": "83530",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 922",
+    "adresse": "39 Rue Victor Hugo",
+    "code_postal": "21351",
+    "ville": "Dijon"
+  },
+  {
+    "nom": "Relais Supérette 923",
+    "adresse": "108 Rue Victor Hugo",
+    "code_postal": "59003",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 924",
+    "adresse": "93 Rue République",
+    "code_postal": "59683",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 925",
+    "adresse": "31 Rue République",
+    "code_postal": "67761",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Librairie 926",
+    "adresse": "123 Rue de Paris",
+    "code_postal": "59412",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 927",
+    "adresse": "63 Rue République",
+    "code_postal": "51174",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Point Service 928",
+    "adresse": "116 Rue Jean Jaurès",
+    "code_postal": "33122",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 929",
+    "adresse": "56 Rue de Paris",
+    "code_postal": "59637",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Tabac 930",
+    "adresse": "98 Rue Jean Jaurès",
+    "code_postal": "33335",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 931",
+    "adresse": "85 Rue de Paris",
+    "code_postal": "51055",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 932",
+    "adresse": "87 Rue Jean Jaurès",
+    "code_postal": "38240",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Point Service 933",
+    "adresse": "131 Rue Jean Jaurès",
+    "code_postal": "69129",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Supérette 934",
+    "adresse": "55 Rue République",
+    "code_postal": "59234",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 935",
+    "adresse": "143 Rue Jean Jaurès",
+    "code_postal": "31779",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 936",
+    "adresse": "140 Rue République",
+    "code_postal": "76246",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Librairie 937",
+    "adresse": "26 Rue République",
+    "code_postal": "13214",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Point Service 938",
+    "adresse": "91 Rue de Paris",
+    "code_postal": "49368",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Tabac 939",
+    "adresse": "73 Rue Victor Hugo",
+    "code_postal": "83755",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Librairie 940",
+    "adresse": "136 Rue de Paris",
+    "code_postal": "38761",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Librairie 941",
+    "adresse": "102 Rue Victor Hugo",
+    "code_postal": "76327",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Tabac 942",
+    "adresse": "64 Rue République",
+    "code_postal": "76775",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Tabac 943",
+    "adresse": "10 Rue République",
+    "code_postal": "34718",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Tabac 944",
+    "adresse": "116 Rue Victor Hugo",
+    "code_postal": "69644",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 945",
+    "adresse": "101 Rue de Paris",
+    "code_postal": "30005",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Tabac 946",
+    "adresse": "78 Rue Jean Jaurès",
+    "code_postal": "75260",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 947",
+    "adresse": "21 Rue République",
+    "code_postal": "42631",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Point Service 948",
+    "adresse": "61 Rue de Paris",
+    "code_postal": "38403",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Supérette 949",
+    "adresse": "28 Rue de Paris",
+    "code_postal": "69159",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 950",
+    "adresse": "104 Rue Victor Hugo",
+    "code_postal": "38762",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Tabac 951",
+    "adresse": "71 Rue de Paris",
+    "code_postal": "44531",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 952",
+    "adresse": "80 Rue Jean Jaurès",
+    "code_postal": "44314",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Tabac 953",
+    "adresse": "136 Rue de Paris",
+    "code_postal": "51843",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Librairie 954",
+    "adresse": "57 Rue Jean Jaurès",
+    "code_postal": "33645",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Tabac 955",
+    "adresse": "130 Rue République",
+    "code_postal": "33094",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Supérette 956",
+    "adresse": "37 Rue Victor Hugo",
+    "code_postal": "35363",
+    "ville": "Rennes"
+  },
+  {
+    "nom": "Relais Supérette 957",
+    "adresse": "36 Rue République",
+    "code_postal": "06607",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Point Service 958",
+    "adresse": "54 Rue Victor Hugo",
+    "code_postal": "67306",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Point Service 959",
+    "adresse": "110 Rue République",
+    "code_postal": "31674",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 960",
+    "adresse": "69 Rue Jean Jaurès",
+    "code_postal": "13899",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 961",
+    "adresse": "28 Rue Victor Hugo",
+    "code_postal": "30398",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 962",
+    "adresse": "134 Rue de Paris",
+    "code_postal": "83269",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 963",
+    "adresse": "81 Rue Jean Jaurès",
+    "code_postal": "06723",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Point Service 964",
+    "adresse": "67 Rue Victor Hugo",
+    "code_postal": "83110",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 965",
+    "adresse": "27 Rue République",
+    "code_postal": "31644",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Librairie 966",
+    "adresse": "76 Rue République",
+    "code_postal": "69249",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 967",
+    "adresse": "97 Rue de Paris",
+    "code_postal": "69035",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Librairie 968",
+    "adresse": "107 Rue Jean Jaurès",
+    "code_postal": "30206",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 969",
+    "adresse": "136 Rue de Paris",
+    "code_postal": "30024",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 970",
+    "adresse": "81 Rue de Paris",
+    "code_postal": "67486",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 971",
+    "adresse": "74 Rue Victor Hugo",
+    "code_postal": "44449",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Point Service 972",
+    "adresse": "34 Rue de Paris",
+    "code_postal": "13431",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Librairie 973",
+    "adresse": "23 Rue de Paris",
+    "code_postal": "34483",
+    "ville": "Montpellier"
+  },
+  {
+    "nom": "Relais Point Service 974",
+    "adresse": "40 Rue Victor Hugo",
+    "code_postal": "69069",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Point Service 975",
+    "adresse": "63 Rue de Paris",
+    "code_postal": "51275",
+    "ville": "Reims"
+  },
+  {
+    "nom": "Relais Tabac 976",
+    "adresse": "45 Rue Victor Hugo",
+    "code_postal": "67150",
+    "ville": "Strasbourg"
+  },
+  {
+    "nom": "Relais Tabac 977",
+    "adresse": "27 Rue République",
+    "code_postal": "44484",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Supérette 978",
+    "adresse": "148 Rue Jean Jaurès",
+    "code_postal": "69853",
+    "ville": "Villeurbanne"
+  },
+  {
+    "nom": "Relais Supérette 979",
+    "adresse": "110 Rue République",
+    "code_postal": "49602",
+    "ville": "Angers"
+  },
+  {
+    "nom": "Relais Point Service 980",
+    "adresse": "99 Rue Jean Jaurès",
+    "code_postal": "59060",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Supérette 981",
+    "adresse": "5 Rue de Paris",
+    "code_postal": "69149",
+    "ville": "Lyon"
+  },
+  {
+    "nom": "Relais Tabac 982",
+    "adresse": "81 Rue Jean Jaurès",
+    "code_postal": "38157",
+    "ville": "Grenoble"
+  },
+  {
+    "nom": "Relais Librairie 983",
+    "adresse": "123 Rue Victor Hugo",
+    "code_postal": "44252",
+    "ville": "Nantes"
+  },
+  {
+    "nom": "Relais Tabac 984",
+    "adresse": "137 Rue Victor Hugo",
+    "code_postal": "42733",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Supérette 985",
+    "adresse": "56 Rue Jean Jaurès",
+    "code_postal": "06268",
+    "ville": "Nice"
+  },
+  {
+    "nom": "Relais Librairie 986",
+    "adresse": "72 Rue Victor Hugo",
+    "code_postal": "42024",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Tabac 987",
+    "adresse": "100 Rue Victor Hugo",
+    "code_postal": "75667",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 988",
+    "adresse": "95 Rue Victor Hugo",
+    "code_postal": "33851",
+    "ville": "Bordeaux"
+  },
+  {
+    "nom": "Relais Librairie 989",
+    "adresse": "88 Rue République",
+    "code_postal": "30399",
+    "ville": "Nîmes"
+  },
+  {
+    "nom": "Relais Librairie 990",
+    "adresse": "107 Rue de Paris",
+    "code_postal": "83874",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Supérette 991",
+    "adresse": "134 Rue Victor Hugo",
+    "code_postal": "76404",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 992",
+    "adresse": "150 Rue Victor Hugo",
+    "code_postal": "59354",
+    "ville": "Lille"
+  },
+  {
+    "nom": "Relais Librairie 993",
+    "adresse": "94 Rue de Paris",
+    "code_postal": "76612",
+    "ville": "Le Havre"
+  },
+  {
+    "nom": "Relais Supérette 994",
+    "adresse": "111 Rue de Paris",
+    "code_postal": "83612",
+    "ville": "Toulon"
+  },
+  {
+    "nom": "Relais Tabac 995",
+    "adresse": "4 Rue de Paris",
+    "code_postal": "42212",
+    "ville": "Saint-Étienne"
+  },
+  {
+    "nom": "Relais Supérette 996",
+    "adresse": "125 Rue Victor Hugo",
+    "code_postal": "31203",
+    "ville": "Toulouse"
+  },
+  {
+    "nom": "Relais Point Service 997",
+    "adresse": "89 Rue République",
+    "code_postal": "13242",
+    "ville": "Marseille"
+  },
+  {
+    "nom": "Relais Tabac 998",
+    "adresse": "142 Rue Jean Jaurès",
+    "code_postal": "75844",
+    "ville": "Paris"
+  },
+  {
+    "nom": "Relais Point Service 999",
+    "adresse": "139 Rue République",
+    "code_postal": "34279",
+    "ville": "Montpellier"
+  }
+]

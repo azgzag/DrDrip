@@ -1,19 +1,62 @@
-<script>
-  const avatar = document.querySelector('.user-menu .avatar');
-  const menu = document.querySelector('.user-menu .menu');
+<!DOCTYPE html>
+<html lang="fr">
 
-  avatar.addEventListener('click', () => {
-    if(menu.style.display === 'block') {
-      menu.style.display = 'none';
-    } else {
-      menu.style.display = 'block';
-    }
-  });
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Mon compte – Doctor Drip</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
 
-  // Fermer le menu si clic à l'extérieur
-  document.addEventListener('click', (e) => {
-    if(!avatar.contains(e.target) && !menu.contains(e.target)) {
-      menu.style.display = 'none';
+<body style="font-family:Poppins,sans-serif;background:#111;color:#fff;padding:20px;">
+  <h1>Mon compte</h1>
+  <div id="purchases">Chargement…</div>
+  <form id="account-form" style="margin-top:20px;">
+    <label>Prénom</label><input type="text" name="firstName" /><br />
+    <label>Nom</label><input type="text" name="lastName" /><br />
+    <label>Date de naissance</label><input type="date" name="dob" /><br /><br />
+    <button type="submit">Enregistrer</button>
+  </form>
+  <button id="logout" style="margin-top:20px;">Se déconnecter</button>
+
+  <script type="module">
+    import { auth, db } from './firebase.js';
+    auth.onAuthStateChanged(user => {
+      if (user) loadPage();
+      else location.href = 'login.html';
+    });
+    async function loadPage() {
+      const u = auth.currentUser;
+      const snap = await db.collection('customers').doc(u.uid).collection('charges').orderBy('created', 'desc').get();
+      const p = document.getElementById('purchases');
+      p.innerHTML = '<h2>Achats précédents</h2>';
+      snap.forEach(doc => {
+        const d = doc.data();
+        const date = new Date(d.created * 1000).toLocaleDateString();
+        p.innerHTML += `<div>${d.description} — ${(d.amount / 100).toFixed(2)} € — ${date}</div>`;
+      });
+      const doc = await db.collection('users').doc(u.uid).get();
+      if (doc.exists) {
+        const d = doc.data();
+        document.querySelector('[name=firstName]').value = d.firstName || '';
+        document.querySelector('[name=lastName]').value = d.lastName || '';
+        document.querySelector('[name=dob]').value = d.dob || '';
+      }
     }
-  });
-</script>
+    document.getElementById('account-form').addEventListener('submit', async e => {
+      e.preventDefault();
+      const u = auth.currentUser;
+      await db.collection('users').doc(u.uid).set({
+        firstName: e.target.firstName.value,
+        lastName: e.target.lastName.value,
+        dob: e.target.dob.value
+      }, { merge: true });
+      alert('Profil mis à jour');
+    });
+    document.getElementById('logout').onclick = () => {
+      auth.signOut().then(() => location.href = 'index.html');
+    };
+  </script>
+</body>
+
+</html>

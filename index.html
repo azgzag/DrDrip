@@ -2,12 +2,14 @@
 <html lang="fr">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doctor Drip - Accueil</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
   <style>
+    /* Styles CSS (identiques à ton code original) */
     * {
       margin: 0;
       padding: 0;
@@ -261,6 +263,67 @@
         visibility: hidden;
       }
     }
+
+    .profile-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+    }
+
+    .account-page {
+        display: none; /* Masqué par défaut */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+        backdrop-filter: blur(5px); /* Effet de flou */
+        z-index: 1000; /* Assure que la page est au-dessus de tout */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .account-container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 80%;
+        max-width: 600px;
+    }
+
+    #updateForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #updateForm label {
+        margin-bottom: 5px;
+    }
+
+    #updateForm input {
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #updateForm button {
+        padding: 10px;
+        background-color: #00bfff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -285,7 +348,40 @@
         <li><a href="checkout.html">Panier</a></li>
       </ul>
     </nav>
+    <div class="profile-icon" id="profileIcon">
+        <!-- Icône de profil ou initiales ici -->
+    </div>
   </header>
+
+  <div class="account-page" id="accountPage">
+    <div class="account-container">
+        <h2>Mon Compte</h2>
+        <div class="user-info">
+            <p><strong>Nom:</strong> <span id="userName"></span></p>
+            <p><strong>Prénom:</strong> <span id="userFirstName"></span></p>
+            <p><strong>Date de Naissance:</strong> <span id="userBirthDate"></span></p>
+        </div>
+
+        <h3>Mes Achats Stripe</h3>
+        <ul id="stripePurchases">
+            <!-- Liste des achats Stripe ici -->
+        </ul>
+
+        <h3>Modifier mes informations</h3>
+        <form id="updateForm">
+            <label for="name">Nom:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="firstName">Prénom:</label>
+            <input type="text" id="firstName" name="firstName"><br><br>
+
+            <label for="birthDate">Date de Naissance:</label>
+            <input type="date" id="birthDate" name="birthDate"><br><br>
+
+            <button type="submit">Mettre à jour</button>
+        </form>
+    </div>
+  </div>
 
   <main class="auth">
     <div class="form">
@@ -299,19 +395,19 @@
     <div class="product">
       <img src="images/tshirt1.jpg" alt="T-shirt 1" />
       <h3>T-shirt Drip Skull</h3>
-      <p>29,99 €</p>
+      <p>999 €</p>
       <button>Ajouter au panier</button>
     </div>
     <div class="product">
       <img src="images/tshirt2.jpg" alt="T-shirt 2" />
       <h3>T-shirt Urban Flame</h3>
-      <p>34,99 €</p>
+      <p>999 €</p>
       <button>Ajouter au panier</button>
     </div>
     <div class="product">
       <img src="images/tshirt3.jpg" alt="T-shirt 3" />
       <h3>T-shirt Graffiti Flow</h3>
-      <p>1 €</p>
+      <p>999 €</p>
       <button>Ajouter au panier</button>
     </div>
   </section>
@@ -395,11 +491,121 @@
           onhover: { enable: true, mode: 'repulse' }
         },
         modes: {
-          repulse: { distance: 100, duration: 0.4 }
+          repulse: { distance: 200, duration: 0.4 }
         }
-      },
-      retina_detect: true
+      }
     });
   </script>
+
+  <script>
+    // Fonction pour vérifier si l'utilisateur est connecté
+    function isLoggedIn() {
+        return localStorage.getItem('user') !== null;
+    }
+
+    // Fonction pour récupérer les informations de l'utilisateur
+    function getUserData() {
+        const userString = localStorage.getItem('user');
+        return userString ? JSON.parse(userString) : null;
+    }
+
+    const profileIcon = document.getElementById('profileIcon');
+    const accountPage = document.getElementById('accountPage');
+    const userName = document.getElementById('userName');
+    const userFirstName = document.getElementById('userFirstName');
+    const userBirthDate = document.getElementById('userBirthDate');
+    const stripePurchases = document.getElementById('stripePurchases');
+    const updateForm = document.getElementById('updateForm');
+    const menu = document.getElementById('menu');
+
+    // Fonction pour afficher la page de compte
+    function showAccountPage() {
+        accountPage.style.display = 'flex';
+    }
+
+    // Fonction pour masquer la page de compte
+    function hideAccountPage() {
+        accountPage.style.display = 'none';
+    }
+
+    // Vérifier si l'utilisateur est connecté
+    if (isLoggedIn()) {
+        // Récupérer les informations de l'utilisateur
+        const userData = getUserData();
+
+        // Afficher les initiales dans l'icône de profil
+        profileIcon.textContent = userData.firstName.charAt(0).toUpperCase() + userData.name.charAt(0).toUpperCase();
+
+        // Afficher les informations de l'utilisateur
+        userName.textContent = userData.name;
+        userFirstName.textContent = userData.firstName;
+        userBirthDate.textContent = userData.birthDate;
+
+        // Afficher les achats Stripe (exemple)
+        if (userData.purchases) {
+            userData.purchases.forEach(purchase => {
+                const li = document.createElement('li');
+                li.textContent = purchase;
+                stripePurchases.appendChild(li);
+            });
+        }
+
+        // Afficher la page de compte lorsqu'on clique sur l'icône de profil
+        profileIcon.addEventListener('click', showAccountPage);
+
+        // Masquer la page de compte lorsqu'on clique en dehors de la fenêtre
+        accountPage.addEventListener('click', function(event) {
+            if (event.target === accountPage) {
+                hideAccountPage();
+            }
+        });
+
+        // Gérer la soumission du formulaire
+        updateForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const newName = document.getElementById('name').value;
+            const newFirstName = document.getElementById('firstName').value;
+            const newBirthDate = document.getElementById('birthDate').value;
+
+            // Mettre à jour les informations de l'utilisateur (à envoyer à Firebase)
+            userName.textContent = newName;
+            userFirstName.textContent = newFirstName;
+            userBirthDate.textContent = newBirthDate;
+
+            // Mettre à jour les informations dans localStorage
+            userData.name = newName;
+            userData.firstName = newFirstName;
+            userData.birthDate = newBirthDate;
+            localStorage.setItem('user', JSON.stringify(userData));
+
+            // Fermer la page de compte après la mise à jour
+            hideAccountPage();
+        });
+
+        // Ajouter un lien de déconnexion
+        const logoutLink = document.createElement('li');
+        logoutLink.innerHTML = '<a href="#" id="logout">Déconnexion</a>';
+        menu.appendChild(logoutLink);
+
+        // Gérer la déconnexion
+        document.getElementById('logout').addEventListener('click', function(event) {
+            event.preventDefault();
+            localStorage.removeItem('user');
+            window.location.href = 'login.html'; // Rediriger vers la page de connexion
+        });
+
+        // Masquer les liens de connexion et d'inscription
+        document.querySelector('nav ul li a[href="login.html"]').style.display = 'none';
+        document.querySelector('nav ul li a[href="register.html"]').style.display = 'none';
+    } else {
+        // Masquer l'icône de profil si l'utilisateur n'est pas connecté
+        profileIcon.style.display = 'none';
+
+        // Afficher les liens de connexion et d'inscription
+        document.querySelector('nav ul li a[href="login.html"]').style.display = 'inline';
+        document.querySelector('nav ul li a[href="register.html"]').style.display = 'inline';
+    }
+  </script>
 </body>
+
 </html>

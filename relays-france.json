@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Relais Paris Centre",
+    "address": "10 Rue de Rivoli",
+    "postal": "75001",
+    "city": "Paris",
+    "country": "FR"
+  },
+  {
+    "name": "Relais Lyon Part-Dieu",
+    "address": "17 Rue Bouchut",
+    "postal": "69003",
+    "city": "Lyon",
+    "country": "FR"
+  },
+  {
+    "name": "Relais Marseille Vieux-Port",
+    "address": "22 Bd Charles Livon",
+    "postal": "13007",
+    "city": "Marseille",
+    "country": "FR"
+  },
+  {
+    "name": "Relais Toulouse Capitole",
+    "address": "3 Rue du Poids de l'Huile",
+    "postal": "31000",
+    "city": "Toulouse",
+    "country": "FR"
+  },
+  {
+    "name": "Relais Lille Flandres",
+    "address": "19 Rue Faidherbe",
+    "postal": "59800",
+    "city": "Lille",
+    "country": "FR"
+  }
+]
