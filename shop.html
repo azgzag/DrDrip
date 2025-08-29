@@ -1,189 +1,475 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Doctor Drip - Boutique</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://images.pexels.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
   <style>
-    .product select {
-      margin: 10px 0;
-      padding: 8px;
-      border-radius: 5px;
-      border: none;
-      background: #f0f0f0;
-      font-size: 0.95em;
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    .cart-popup {
+    :root {
+      --bg: #0a0a0a;
+      --fg: #ffffff;
+      --muted: #aaaaaa;
+      --primary: #b084f9;
+      --primary-700: #9254c8;
+      --card: rgba(255, 255, 255, 0.05);
+      --border: rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      min-height: 100vh;
+      padding-top: 160px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: min(1200px, 92%);
+      margin: 0 auto;
+    }
+
+    header {
       position: fixed;
-      bottom: 30px;
-      right: 30px;
-      background: #00bfff;
-      color: white;
-      padding: 15px 20px;
-      border-radius: 8px;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.3s ease;
-      z-index: 9999;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      padding: 10px 30px;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 14px;
+      z-index: 1000;
     }
 
-    .cart-popup.visible {
-      opacity: 1;
-      transform: translateY(0);
+    @media (min-width: 1921px),
+    (min-height: 1081px) {
+      header {
+        width: 60%;
+      }
     }
+
+    header h1 {
+      color: var(--primary);
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .auth-buttons a {
+      margin-left: 15px;
+      padding: 7px 15px;
+      border-radius: 50px;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .auth-buttons a:hover {
+      background-color: #00bfff;
+      color: #121212;
+    }
+
+    .selection-title {
+      margin: 40px auto 20px;
+      font-size: 32px;
+      color: var(--primary);
+      font-weight: 700;
+      text-align: center;
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 8px;
+      user-select: none;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+      margin-bottom: 80px;
+    }
+
+    .product-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 0 18px var(--primary);
+    }
+
+    .product-card img {
+      border-radius: 10px;
+      margin-bottom: 12px;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+      width: 100%;
+      height: auto;
+    }
+
+    .product-name {
+      font-weight: 700;
+      margin-bottom: 6px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .product-price {
+      font-weight: 700;
+      color: var(--primary);
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .add-to-cart-btn {
+      padding: 10px 14px;
+      border: none;
+      background: var(--primary);
+      color: white;
+      font-weight: 800;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100%;
+    }
+
+    .add-to-cart-btn:hover {
+      background-color: var(--primary-700);
+    }
+
+    .cart-toggle {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1001;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 12px 18px;
+      font-weight: 800;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .cart {
+      position: fixed;
+      top: 160px;
+      right: 20px;
+      width: 300px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      color: white;
+      font-size: 14px;
+      max-height: 70vh;
+      overflow-y: auto;
+      user-select: none;
+      z-index: 999;
+    }
+
+    .cart h3 {
+      color: var(--primary);
+      margin-bottom: 12px;
+      text-align: center;
+      font-weight: 800;
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .cart-item-name {
+      flex: 1;
+      margin-right: 10px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .cart-item-qty {
+      margin-right: 10px;
+    }
+
+    .cart-item-price {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    footer {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid #222;
+      width: 100%;
+      margin-top: auto;
+      user-select: none;
+    }
+
+    footer h3 {
+      color: var(--primary);
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    footer a {
+      margin: 0 15px;
+      color: var(--primary);
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    footer p {
+      font-size: 13px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 1024px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cart {
+        position: static;
+        width: 100%;
+        margin: 20px auto;
+        max-height: none;
+      }
+
+      .cart-toggle {
+        display: none;
+      }
+    }
+
+    @media (max-width: 720px) {
+      header {
+        width: 90%;
+        padding: 10px 20px;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .cart {
+        width: 100%;
+        margin-top: 20px;
+      }
+    }
+    @media (max-width: 720px) {
+  .auth-buttons { 
+    display: none; 
+  }
+}
+
   </style>
 </head>
-<body>
-  
-  <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Doctor Drip Logo" />
-    </div>
-    <nav>
-  <ul>
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="shop.html" class="active">Boutique</a></li>
-    <li><a href="login.html">Connexion</a></li>
-    <li><a href="register.html">Inscription</a></li>
-    <li>
-      <a href="checkout.html">
-        Panier <span id="cart-count" style="background:#00bfff; color:white; padding:2px 8px; border-radius:12px; font-size:0.8em; margin-left:6px;">0</span>
-      </a>
-    </li>
-  </ul>
-</nav>
 
+<body>
+  <header>
+    <h1>Doctor Drip</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="shop.html">Shop</a>
+      <a href="#drop">Nouveautés</a>
+      <a href="#categories">Catégories</a>
+      <a href="checkout.html">Payer Maintenant !</a>
+    </nav>
+    <div class="auth-buttons">
+      <a id="login-btn" href="login.html">Connexion</a>
+      <a id="signup-btn" href="signup.html">Inscription</a>
+    </div>
   </header>
 
-  <main class="checkout">
-    <h1 style="margin-top: 100px;">Notre Sélection</h1>
-    <p style="text-align: center; margin: 10px 0 30px; font-style: italic;">Les articles les plus frais du moment.</p>
+  <div class="container">
+    <div class="selection-title">Ma sélection</div>
 
-    <section class="products">
-      <div class="product">
-        <img src="images/tshirt1.jpg" alt="product1" />
-        <h3>T-shirt Drip Skull</h3>
-        <p>29,99 €</p>
+    <main class="products-grid" aria-label="Liste des produits">
+<article class="product-card" data-id="1" tabindex="0">
+<a href="product.html?id=1">
+<img src="img.png" alt="Lèvres stylisées avec billets" loading="lazy" decoding="async" width="600" height="600" />
+<div class="product-name">Lèvres avec billets</div>
+<div class="product-price">€15</div>
+</a>
+<button class="add-to-cart-btn" aria-label="Ajouter Lèvres avec billets au panier">Ajouter au panier</button>
+</article>
 
-        <label for="size1">Taille :</label>
-        <select id="size1">
-          <option>XS</option>
-          <option>S</option>
-          <option>M</option>
-          <option>L</option>
-          <option>XL</option>
-          <option>XXL</option>
-        </select>
 
-        <label for="color1">Couleur :</label>
-        <select id="color1">
-          <option>Noir</option>
-          <option>Blanc</option>
-          <option>Rouge</option>
-          <option>Bleu</option>
-          <option>Vert</option>
-        </select>
+<article class="product-card" data-id="2" tabindex="0">
+<a href="product.html?id=2">
+<img src="https://images.pexels.com/photos/2915881/pexels-photo-2915881.jpeg" alt="T-shirt blanc minimaliste" loading="lazy" decoding="async" width="600" height="600" />
+<div class="product-name">T-shirt Blanc Drip</div>
+<div class="product-price">€30</div>
+</a>
+<button class="add-to-cart-btn" aria-label="Ajouter T-shirt Blanc Drip au panier">Ajouter au panier</button>
+</article>
 
-        <button onclick="addToCart('T-shirt Drip Skull', 29.99, 'size1', 'color1')">Ajouter au panier</button>
-      </div>
 
-      <div class="product">
-        <img src="images/tshirt2.jpg" alt="product2" />
-        <h3>T-shirt Urban Flame</h3>
-        <p>34,99 €</p>
+<article class="product-card" data-id="3" tabindex="0">
+<a href="product.html?id=3">
+<img src="https://images.pexels.com/photos/175814/pexels-photo-175814.jpeg" alt="Casquette futuriste violette" loading="lazy" decoding="async" width="600" height="600" />
+<div class="product-name">Casquette Futuriste Violet</div>
+<div class="product-price">€22</div>
+</a>
+<button class="add-to-cart-btn" aria-label="Ajouter Casquette Futuriste Violet au panier">Ajouter au panier</button>
+</article>
 
-        <label for="size2">Taille :</label>
-        <select id="size2">
-          <option>XS</option>
-          <option>S</option>
-          <option>M</option>
-          <option>L</option>
-          <option>XL</option>
-          <option>XXL</option>
-        </select>
 
-        <label for="color2">Couleur :</label>
-        <select id="color2">
-          <option>Noir</option>
-          <option>Blanc</option>
-          <option>Rouge</option>
-          <option>Bleu</option>
-          <option>Vert</option>
-        </select>
+<article class="product-card" data-id="4" tabindex="0">
+<a href="product.html?id=4">
+<img src="https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg" alt="Veste techwear noire" loading="lazy" decoding="async" width="600" height="600" />
+<div class="product-name">Veste Techwear Noir</div>
+<div class="product-price">€90</div>
+</a>
+<button class="add-to-cart-btn" aria-label="Ajouter Veste Techwear Noir au panier">Ajouter au panier</button>
+</article>
 
-        <button onclick="addToCart('T-shirt Urban Flame', 34.99, 'size2', 'color2')">Ajouter au panier</button>
-      </div>
 
-      <div class="product">
-        <img src="images/tshirt3.jpg" alt="product3" />
-        <h3>T-shirt Graffiti Flow</h3>
-        <p>1 €</p>
+<article class="product-card" data-id="5" tabindex="0">
+<a href="product.html?id=5">
+<img src="https://images.pexels.com/photos/1704126/pexels-photo-1704126.jpeg" alt="Pantalon streetwear" loading="lazy" decoding="async" width="600" height="600" />
+<div class="product-name">Pantalon Streetwear</div>
+<div class="product-price">€55</div>
+</a>
+<button class="add-to-cart-btn" aria-label="Ajouter Pantalon Streetwear au panier">Ajouter au panier</button>
+</article>
 
-        <label for="size3">Taille :</label>
-        <select id="size3">
-          <option>XS</option>
-          <option>S</option>
-          <option>M</option>
-          <option>L</option>
-          <option>XL</option>
-          <option>XXL</option>
-        </select>
 
-        <label for="color3">Couleur :</label>
-        <select id="color3">
-          <option>Noir</option>
-          <option>Blanc</option>
-          <option>Rouge</option>
-          <option>Bleu</option>
-          <option>Vert</option>
-        </select>
+<article class="product-card" data-id="6" tabindex="0">
+<a href="product.html?id=6">
+<img src="https://images.pexels.com/photos/1231232/pexels-photo-1231232.jpeg" alt="Sneakers blanches" loading="lazy" decoding="async" width="600" height="600" />
+<div class="product-name">Sneakers Blanches</div>
+<div class="product-price">€120</div>
+</a>
+<button class="add-to-cart-btn" aria-label="Ajouter Sneakers Blanches au panier">Ajouter au panier</button>
+</article>
+</main>
+  </div>
 
-        <button onclick="addToCart('T-shirt Graffiti Flow', 1, 'size3', 'color3')">Ajouter au panier</button>
-      </div>
-    </section>
-  </main>
+  <aside class="cart" aria-live="polite" aria-label="Panier d'achats">
+    <h3>Panier</h3>
+    <div id="cart-items">
+      <p>Votre panier est vide.</p>
+    </div>
+    <div style="margin-top: 15px; text-align:center;">
+      <button id="clear-cart"
+        style="background:#b084f9; color:#fff; border:none; border-radius:8px; padding:8px 16px; cursor:pointer;">Vider
+        le panier</button>
+    </div>
+  </aside>
 
   <footer>
-    <p>&copy; 2025 Doctor Drip. Tous droits réservés.</p>
+    <div style="max-width: 1000px; margin: auto;">
+      <h3>Rejoignez la communauté Doctor Drip</h3>
+      <p>Style, innovation et drops réguliers. Inscrivez-vous pour ne rien rater.</p>
+      <div style="margin-bottom: 30px;">
+        <a href="#">Conditions Générales</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">Mentions Légales</a>
+      </div>
+      <p>&copy; 2025 Doctor Drip. Tous droits réservés.</p>
+    </div>
   </footer>
 
   <script>
-    function addToCart(name, price, sizeId, colorId) {
-      const size = document.getElementById(sizeId).value;
-      const color = document.getElementById(colorId).value;
+    const cartItemsEl = document.getElementById('cart-items');
+    const clearCartBtn = document.getElementById('clear-cart');
 
-      const item = {
-        name,
-        price,
-        size,
-        color,
-        quantity: 1
-      };
-
-      let cart = JSON.parse(localStorage.getItem('cart')) || [];
-      cart.push(item);
-      localStorage.setItem('cart', JSON.stringify(cart));
-
-      showAddToCartPopup(`${name} (${color}, ${size}) ajouté au panier`);
+    function loadCart() {
+      let cart = JSON.parse(localStorage.getItem('doctorDripCart')) || [];
+      renderCart(cart);
     }
 
-    function showAddToCartPopup(message) {
-      const popup = document.createElement('div');
-      popup.className = 'cart-popup';
-      popup.innerText = message;
-      document.body.appendChild(popup);
-
-      setTimeout(() => popup.classList.add('visible'), 10);
-      setTimeout(() => {
-        popup.classList.remove('visible');
-        setTimeout(() => popup.remove(), 300);
-      }, 2000);
+    function saveCart(cart) {
+      localStorage.setItem('doctorDripCart', JSON.stringify(cart));
     }
+
+    function renderCart(cart) {
+      if (cart.length === 0) {
+        cartItemsEl.innerHTML = '<p>Votre panier est vide.</p>';
+        return;
+      }
+      cartItemsEl.innerHTML = '';
+      cart.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `
+          <span class="cart-item-name">${item.name}</span>
+          <span class="cart-item-qty">x${item.qty}</span>
+          <span class="cart-item-price">€${item.price * item.qty}</span>
+        `;
+        cartItemsEl.appendChild(div);
+      });
+    }
+
+    function addToCart(product) {
+      let cart = JSON.parse(localStorage.getItem('doctorDripCart')) || [];
+      let found = cart.find(i => i.name === product.name);
+      if (found) {
+        found.qty++;
+      } else {
+        cart.push({ ...product, qty: 1 });
+      }
+      saveCart(cart);
+      renderCart(cart);
+    }
+
+    document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        const card = e.target.closest('.product-card');
+        const name = card.querySelector('.product-name').textContent;
+        const priceText = card.querySelector('.product-price').textContent;
+        const price = Number(priceText.replace('€', ''));
+        addToCart({ name, price });
+      });
+    });
+
+    clearCartBtn.addEventListener('click', () => {
+      localStorage.removeItem('doctorDripCart');
+      renderCart([]);
+    });
+
+    loadCart();
   </script>
-  <script src="https://js.stripe.com/v3/"></script>
-
 </body>
+
 </html>

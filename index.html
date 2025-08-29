@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doctor Drip - Accueil</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Doctor Drip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * {
       margin: 0;
@@ -15,244 +15,98 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #1e1e1e, #2c2c2c);
-      color: #f0f0f0;
-      transition: background 0.3s ease, color 0.3s ease;
+      font-family: 'Outfit', sans-serif;
+      background: #0a0a0a;
+      color: white;
+      overflow-x: hidden;
+      position: relative;
+      min-height: 100vh;
     }
 
-    body.light {
-      background: linear-gradient(to right, #f0f0f0, #ffffff);
-      color: #111;
+    /* Canvas pour la ligne de pinceau animée */
+    #brush {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 700hv;
+      height: 700hv;
+      pointer-events: none;
+      z-index: 0;
+      display: block;
+      background: transparent;
     }
 
     header {
+      position: fixed;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      padding: 10px 30px;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 10%;
-      background-color: transparent;
-      position: relative;
-      z-index: 10;
-    }
-
-    .logo img {
-      height: 50px;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: inherit;
-      font-weight: 600;
-      transition: color 0.2s;
-    }
-
-    nav a:hover, nav a.active {
-      color: #00bfff;
-    }
-
-    .menu-toggle {
-      display: none;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    .form {
-      text-align: center;
-      padding: 60px 20px;
-      background-color: rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
-      max-width: 700px;
-      margin: 40px auto;
-    }
-
-    .form button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #00bfff;
-      border: none;
-      color: white;
-      font-weight: 600;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .form button:hover {
-      background-color: #009acf;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 30px;
-      padding: 40px 10%;
-    }
-
-    .product {
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      padding: 20px;
-      text-align: center;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .product:hover {
-      transform: translateY(-10px) scale(1.02);
-      box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
-    }
-
-    .product img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-bottom: 15px;
-    }
-
-    .product h3 {
-      margin-bottom: 10px;
-      font-size: 1.1em;
-    }
-
-    .product p {
-      margin-bottom: 15px;
-      font-weight: bold;
-      color: #00bfff;
-    }
-
-    .product button {
-      padding: 10px 20px;
-      background: #00bfff;
-      border: none;
-      color: #fff;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    .footer {
-      background-color: #111;
-      color: #eee;
-      padding: 40px 10%;
-    }
-
-    .footer-section h3 {
-      margin-bottom: 10px;
-    }
-
-    .newsletter-form {
-      margin-top: 15px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .newsletter-form input {
-      padding: 10px;
-      flex: 1;
-      min-width: 200px;
-      border-radius: 6px;
-      border: none;
-    }
-
-    .newsletter-form button {
-      padding: 10px 20px;
-      background-color: #00bfff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .social-icons a {
-      font-size: 24px;
-      margin-right: 10px;
-    }
-
-    .footer-bottom {
-      margin-top: 20px;
-      text-align: center;
-      font-size: 0.9em;
-    }
-
-    .footer-bottom ul {
-      list-style: none;
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      flex-wrap: wrap;
-      margin-top: 10px;
-    }
-
-    .footer-bottom a {
-      color: #00bfff;
-      text-decoration: none;
-    }
-
-    #theme-toggle {
-      position: fixed;
-      top: 20px;
-      right: 20px;
-      background: #00bfff;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      font-size: 18px;
-      cursor: pointer;
+      border-radius: 14px;
       z-index: 1000;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     }
 
-    @media (max-width: 768px) {
-      nav ul {
-        flex-direction: column;
-        display: none;
-        background: #222;
-        position: absolute;
-        top: 70px;
-        right: 10%;
-        padding: 10px;
-        border-radius: 8px;
-      }
+    @media (min-width: 1921px), (min-height: 1081px) {
+  header {
+    width: 60%;
+  }
+}
 
-      nav ul.show {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
+    header h1 {
+      color: #b084f9;
+      font-size: 40px;
+      letter-spacing: 1px;
     }
 
-    #particles-js, #intro-overlay {
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .auth-buttons a {
+      margin-left: 15px;
+      padding: 7px 15px;
+      border-radius: 50px;
+      border: 2px solid #b084f9;
+      color: #b084f9;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .auth-buttons a:hover {
+      background-color: #00bfff;
+      color: #121212;
+    }
+
+    .intro-animation {
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      z-index: -1;
-      background: linear-gradient(to right, #1e1e1e, #2c2c2c);
+      height: 100vh;
+      background: #0a0a0a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      animation: fadeOut 2s ease 3s forwards;
     }
 
-    #intro-overlay {
-      z-index: 9999;
-      background: #000;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2em;
-      font-weight: bold;
-      animation: fadeOut 2s ease forwards;
-      animation-delay: 2.5s;
+    .intro-animation h2 {
+      font-size: 42px;
+      color: #b084f9;
+      animation: scaleIn 2s ease;
     }
 
     @keyframes fadeOut {
@@ -261,145 +115,335 @@
         visibility: hidden;
       }
     }
+
+    @keyframes scaleIn {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      background: linear-gradient(180deg, #0f0f0f, #1c1c1c);
+      overflow: hidden;
+      z-index: 1; /* Pour être au dessus du canvas */
+    }
+
+    .hero h2 {
+      font-size: 100px;
+      color: #b084f9;
+      margin-bottom: 20px;
+      z-index: 2;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      text-align: center;
+      z-index: 2;
+    }
+
+    .scroll-banner {
+      margin-top: 40px;
+      white-space: nowrap;
+      overflow: hidden;
+      z-index: 2;
+    }
+
+    .scroll-banner div {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 10s linear infinite;
+      color: #fff;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    section {
+      padding: 120px 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1; /* au dessus du canvas */
+    }
+
+    .section-title {
+      font-size: 36px;
+      color: #b084f9;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .section-content {
+      max-width: 900px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .pexels-img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 14px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid #222;
+      position: relative;
+      z-index: 1;
+    }
+
+    footer h3 {
+      color: #b084f9;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    footer a {
+      margin: 0 15px;
+      color: #b084f9;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    footer p {
+      font-size: 13px;
+    }
   </style>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-  <div id="intro-overlay">DOCTOR DRIP</div>
-  <div id="particles-js"></div>
-  <button id="theme-toggle">🌓</button>
+  <!-- Canvas ligne pinceau -->
+  <canvas id="brush"></canvas>
+
+<div class="intro-animation" id="introAnimation">
+  <h2>Doctor Drip</h2>
+</div>
+
 
   <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Doctor Drip Logo" />
-    </div>
+    <h1>Doctor Drip</h1>
     <nav>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
-      <ul id="menu">
-        <li><a href="index.html" class="active">Accueil</a></li>
-        <li><a href="shop.html">Boutique</a></li>
-        <li><a href="login.html">Connexion</a></li>
-        <li><a href="register.html">Inscription</a></li>
-        <li><a href="checkout.html">Panier</a></li>
-      </ul>
+      <a href="index.html">Accueil</a>
+      <a href="shop.html">Shop</a>
+      <a href="#drop">Nouveautés</a>
+      <a href="#categories">Catégories</a>
+      <a href="checkout.html">Payer Maintenant !</a>
     </nav>
+    <div class="auth-buttons">
+      <a href="login.html">Connexion</a>
+      <a href="signup.html">Inscription</a>
+    </div>
   </header>
 
-  <main class="auth">
-    <div class="form">
-      <h1>Bienvenue chez <span style="color:#00bfff;">Doctor Drip</span></h1>
-      <p style="margin: 20px 0; font-style: italic;">Du style, de l'attitude et des t-shirts pour dominer la street.</p>
-      <a href="shop.html"><button>Accéder à la boutique</button></a>
-    </div>
-  </main>
-
-  <section class="products">
-    <div class="product">
-      <img src="images/tshirt1.jpg" alt="T-shirt 1" />
-      <h3>T-shirt Drip Skull</h3>
-      <p>29,99 €</p>
-      <button>Ajouter au panier</button>
-    </div>
-    <div class="product">
-      <img src="images/tshirt2.jpg" alt="T-shirt 2" />
-      <h3>T-shirt Urban Flame</h3>
-      <p>34,99 €</p>
-      <button>Ajouter au panier</button>
-    </div>
-    <div class="product">
-      <img src="images/tshirt3.jpg" alt="T-shirt 3" />
-      <h3>T-shirt Graffiti Flow</h3>
-      <p>1 €</p>
-      <button>Ajouter au panier</button>
+  <section class="hero" id="hero">
+    <h2>Drip is a Lifestyle</h2>
+    <p>Découvre l’univers Doctor Drip inspiré par la rue, la nuit, et l’avant-garde.</p>
+    <div class="scroll-banner">
+      <div>NEW DROP - 2025 - STREET DREAMS - FUTURE AESTHETIC - DOCTOR DRIP</div>
     </div>
   </section>
 
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-section newsletter">
-        <h3>Suivez-Nous</h3>
-        <p>Souscrivez à la Newsletter pour recevoir en exclusivité les dernières actualités, pré-lancements et collections.</p>
-        <form action="#" method="post" class="newsletter-form">
-          <input type="email" placeholder="Votre email" required>
-          <button type="submit">S’abonner</button>
-        </form>
-        <div class="social-icons">
-          <a href="#" aria-label="Facebook">📘</a>
-          <a href="#" aria-label="Instagram">📸</a>
-          <a href="#" aria-label="Twitter">🐦</a>
-          <a href="#" aria-label="YouTube">▶️</a>
-        </div>
+  <section id="lookbook">
+    <h2 class="section-title">Lookbook</h2>
+    <p class="section-content">Explore notre univers avec des visuels immersifs et stylisés.</p>
+    <img src="https://images.pexels.com/photos/19179185/pexels-photo-19179185.jpeg" alt="Lookbook" class="pexels-img" />
+  </section>
+
+  <section id="drop">
+    <h2 class="section-title">Nouveaux Drops</h2>
+    <p class="section-content">Chaque mois, une nouvelle collection pensée pour la rue et la nuit.</p>
+    <img src="https://images.pexels.com/photos/19179198/pexels-photo-19179198.jpeg" alt="Drop" class="pexels-img" />
+  </section>
+
+  <section id="categories">
+    <h2 class="section-title">Catégories</h2>
+    <p class="section-content">Du techwear à l’oversize en passant par le minimalisme futuriste.</p>
+    <img src="https://images.pexels.com/photos/19179217/pexels-photo-19179217.jpeg" alt="Categories" class="pexels-img" />
+  </section>
+
+  <section id="newsletter">
+    <h2 class="section-title">Newsletter</h2>
+    <p class="section-content">
+      Reçois les dernières infos, drops, exclus et offres spéciales directement dans ta boîte mail.
+    </p>
+    <img src="https://images.pexels.com/photos/19179201/pexels-photo-19179201.jpeg" alt="Newsletter" class="pexels-img" />
+  </section>
+
+  <footer>
+    <div style="max-width: 1000px; margin: auto;">
+      <h3>Trusted by Apple, Nike, Adidas &amp; more.</h3>
+      <p>Des marques de renommée mondiale font confiance à Doctor Drip pour le style et l'innovation.</p>
+      <div style="margin-bottom: 30px;">
+        <a href="#">Conditions Générales</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">Mentions Légales</a>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <ul>
-        <li><a href="#">Plan du Site</a></li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="#">Cookies</a></li>
-        <li>Pays de livraison : <strong>France</strong></li>
-        <li><a href="index.html">Service client</a></li>
-      </ul>
+      <p>&copy; 2025 Doctor Drip. Tous droits réservés.</p>
     </div>
   </footer>
 
   <script>
-    const menuToggle = document.getElementById('menu-toggle');
-    const menu = document.getElementById('menu');
-    menuToggle.addEventListener('click', () => {
-      menu.classList.toggle('show');
-    });
+    const canvas = document.getElementById('brush');
+    const ctx = canvas.getContext('2d');
+    let width, height;
 
-    document.querySelectorAll('nav a').forEach(link => {
-      link.addEventListener('click', () => menu.classList.remove('show'));
-    });
+    function resize() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      canvas.width = width;
+      canvas.height = height;
+    }
+    resize();
+    window.addEventListener('resize', resize);
 
-    document.getElementById('theme-toggle').onclick = () => {
-      document.body.classList.toggle('light');
-    };
+    // Position initiale au centre
+    let x = width / 2;
+    let y = height / 2;
 
-    ScrollReveal().reveal('.product', {
-      delay: 100,
-      origin: 'bottom',
-      distance: '50px',
-      duration: 700,
-      easing: 'ease-out',
-      interval: 150
-    });
+    // Vitesse initiale aléatoire douce
+    let angle = Math.random() * 2 * Math.PI;
+    let speed = 2;
 
-    particlesJS('particles-js', {
-      particles: {
-        number: { value: 60, density: { enable: true, value_area: 800 } },
-        color: { value: '#00bfff' },
-        shape: { type: 'circle' },
-        opacity: { value: 0.5, random: true },
-        size: { value: 3, random: true },
-        line_linked: {
-          enable: true,
-          distance: 150,
-          color: '#00bfff',
-          opacity: 0.4,
-          width: 1
-        },
-        move: {
-          enable: true,
-          speed: 2,
-          direction: 'none',
-          out_mode: 'out'
-        }
-      },
-      interactivity: {
-        detect_on: 'canvas',
-        events: {
-          onhover: { enable: true, mode: 'repulse' }
-        },
-        modes: {
-          repulse: { distance: 100, duration: 0.4 }
-        }
-      },
-      retina_detect: true
-    });
+    // Pour simuler un mouvement fluide avec courbes douces
+    let vx = Math.cos(angle) * speed;
+    let vy = Math.sin(angle) * speed;
+
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+    ctx.lineWidth = 5;
+    ctx.strokeStyle = 'rgba(176, 132, 249, 0.8)';
+
+    let prevX = x;
+    let prevY = y;
+
+    function animate() {
+      // Effacer doucement le canvas avec opacité basse (effet traînée)
+      ctx.fillStyle = 'rgba(10, 10, 10, 0.1)';
+      ctx.fillRect(0, 0, width, height);
+
+      // Mise à jour de la position
+      x += vx;
+      y += vy;
+
+      // Rebonds aux bords de la fenêtre
+      if (x < 0) {
+        x = 0;
+        vx = -vx;
+      } else if (x > width) {
+        x = width;
+        vx = -vx;
+      }
+      if (y < 0) {
+        y = 0;
+        vy = -vy;
+      } else if (y > height) {
+        y = height;
+        vy = -vy;
+      }
+
+      // Lissage des changements de direction (pour éviter trop d’à-coups)
+      vx += (Math.random() - 0.5) * 0.3;
+      vy += (Math.random() - 0.5) * 0.3;
+
+      // Limiter la vitesse
+      const maxSpeed = 3;
+      const minSpeed = 1;
+      let currentSpeed = Math.sqrt(vx * vx + vy * vy);
+      if (currentSpeed > maxSpeed) {
+        vx = (vx / currentSpeed) * maxSpeed;
+        vy = (vy / currentSpeed) * maxSpeed;
+      } else if (currentSpeed < minSpeed) {
+        vx = (vx / currentSpeed) * minSpeed;
+        vy = (vy / currentSpeed) * minSpeed;
+      }
+
+      // Tracer la ligne de pinceau entre ancienne et nouvelle position
+      ctx.beginPath();
+      ctx.moveTo(prevX, prevY);
+      ctx.lineTo(x, y);
+      ctx.stroke();
+
+      prevX = x;
+      prevY = y;
+
+      requestAnimationFrame(animate);
+    }
+
+    // Remplissage initial en noir (opaque)
+    ctx.fillStyle = '#0a0a0a';
+    ctx.fillRect(0, 0, width, height);
+
+    animate();
+
+    // Enlever l'animation intro après 5 secondes (fade out)
+    setTimeout(() => {
+      document.querySelector('.intro-animation').style.display = 'none';
+    }, 5000);
+
+    
+  const intro = document.getElementById('introAnimation');
+
+  // Vérifie si l'utilisateur a déjà vu l'animation
+  if (localStorage.getItem('introSeen')) {
+    // Si oui, on masque directement l'animation
+    intro.style.display = 'none';
+  } else {
+    // Sinon, on lance l'animation puis on la masque après 5s
+    setTimeout(() => {
+      intro.style.display = 'none';
+      // Marque comme vue
+      localStorage.setItem('introSeen', 'true');
+    }, 5000); // durée de ton animation
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const user = localStorage.getItem("user");
+
+    if (user) {
+      document.querySelector("#login-btn").style.display = "none";
+      document.querySelector("#signup-btn").style.display = "none";
+      document.querySelector("#profile-btn").style.display = "block";
+    } else {
+      document.querySelector("#login-btn").style.display = "block";
+      document.querySelector("#signup-btn").style.display = "block";
+      document.querySelector("#profile-btn").style.display = "none";
+    }
+  });
+
+
+
   </script>
 </body>
+
 </html>

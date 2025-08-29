@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "stripe": "^18.5.0"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^10.0.0"
+  }
+}

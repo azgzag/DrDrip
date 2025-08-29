@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Détails du produit - Doctor Drip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #0a0a0a;
+      color: white;
+      margin: 0;
+      padding-top: 140px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      padding: 10px 30px;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 5px;
+      z-index: 1000;
+    }
+
+    @media (min-width: 1921px), (min-height: 1081px) {
+  header {
+    width: 60%;
+  }
+}
+
+    header h1 {
+      color: #b084f9;
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .auth-buttons a {
+      margin-left: 10px;
+      padding: 6px 12px;
+      border-radius: 50px;
+      border: 2px solid #b084f9;
+      color: #b084f9;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      font-size: 14px;
+    }
+
+    .auth-buttons a:hover {
+      background-color: #00bfff;
+      color: #121212;
+    }
+
+    /* Page produit */
+    .product-page {
+      width: min(1000px, 92%);
+      margin: 0 auto 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      align-items: center;
+
+    }
+
+    .product-page img {
+      width: 100%;
+      border-radius: 70px;
+      object-fit: cover;
+    }
+
+    .product-details h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #b084f9;
+    }
+
+    .product-details p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .product-price {
+      font-size: 22px;
+      color: #b084f9;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    .add-to-cart-btn {
+      padding: 12px 20px;
+      background: #b084f9;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .add-to-cart-btn:hover {
+      background: #9254c8;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      color: #b084f9;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid #222;
+      margin-top: auto;
+    }
+
+    footer h3 {
+      color: #b084f9;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    footer a {
+      margin: 0 15px;
+      color: #b084f9;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    footer p {
+      font-size: 13px;
+      margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .product-page {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .product-details h2 {
+        font-size: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Doctor Drip</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="shop.html">Shop</a>
+      <a href="checkout.html">Payer Maintenant !</a>
+    </nav>
+    <div class="auth-buttons">
+      <a href="login.html">Connexion</a>
+      <a href="signup.html">Inscription</a>
+    </div>
+  </header>
+
+  <main class="product-page">
+    <div class="product-image">
+      <img id="product-img" src="" alt="Produit">
+    </div>
+    <div class="product-details">
+      <h2 id="product-name"></h2>
+      <p id="product-description"></p>
+      <div class="product-price" id="product-price"></div>
+      <button class="add-to-cart-btn" id="add-to-cart">Ajouter au panier</button>
+      <a class="back-link" href="shop.html">← Retour au shop</a>
+    </div>
+  </main>
+
+  <footer>
+    <div style="max-width: 1000px; margin: auto;">
+      <h3>Rejoignez la communauté Doctor Drip</h3>
+      <p>Style, innovation et drops réguliers. Inscrivez-vous pour ne rien rater.</p>
+      <div style="margin-bottom: 30px;">
+        <a href="#">Conditions Générales</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">Mentions Légales</a>
+      </div>
+      <p>&copy; 2025 Doctor Drip. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script>
+    const products = [
+      {id: 1, name: "Lèvres avec billets", price: 15, img: "img.png", description: "Illustration artistique et tendance."},
+      {id: 2, name: "T-shirt Blanc Drip", price: 30, img: "https://images.pexels.com/photos/2915881/pexels-photo-2915881.jpeg", description: "Un t-shirt blanc minimaliste avec un style drip unique."},
+      {id: 3, name: "Casquette Futuriste Violet", price: 22, img: "https://images.pexels.com/photos/175814/pexels-photo-175814.jpeg", description: "Casquette violette au design futuriste, confortable et tendance."},
+      {id: 4, name: "Veste Techwear Noir", price: 90, img: "https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg", description: "Veste noire techwear, résistante et stylée pour un look urbain."},
+      {id: 5, name: "Pantalon Streetwear", price: 55, img: "https://images.pexels.com/photos/1704126/pexels-photo-1704126.jpeg", description: "Pantalon streetwear confortable et polyvalent."},
+      {id: 6, name: "Sneakers Blanches", price: 120, img: "https://images.pexels.com/photos/1231232/pexels-photo-1231232.jpeg", description: "Sneakers blanches classiques au design épuré."}
+    ];
+
+    // Récupérer l'ID depuis l'URL
+    const params = new URLSearchParams(window.location.search);
+    const id = parseInt(params.get("id"));
+
+    // Trouver le produit
+    const product = products.find(p => p.id === id);
+
+    if(product) {
+      document.getElementById("product-img").src = product.img;
+      document.getElementById("product-img").alt = product.name;
+      document.getElementById("product-name").textContent = product.name;
+      document.getElementById("product-description").textContent = product.description;
+      document.getElementById("product-price").textContent = `€${product.price}`;
+
+      // Ajout panier
+      document.getElementById("add-to-cart").addEventListener("click", () => {
+        let cart = JSON.parse(localStorage.getItem("doctorDripCart")) || [];
+        let found = cart.find(i => i.name === product.name);
+        if(found) {
+          found.qty++;
+        } else {
+          cart.push({...product, qty: 1});
+        }
+        localStorage.setItem("doctorDripCart", JSON.stringify(cart));
+        alert(`${product.name} a été ajouté au panier !`);
+      });
+    } else {
+      document.querySelector(".product-page").innerHTML = "<p>Produit introuvable.</p>";
+    }
+  </script>
+</body>
+</html>

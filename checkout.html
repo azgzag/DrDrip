@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,195 +8,230 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://js.stripe.com/v3/"></script>
   <style>
-    /* ===========================
-       Style Global (similaire à index)
-    ============================== */
+    /* Reset */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #1e1e1e, #2c2c2c);
-      color: #f0f0f0;
+      font-family: 'Outfit', sans-serif;
+      background: #0a0a0a;
+      color: white;
+      min-height: 100vh;
     }
+
     header {
+      position: fixed;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      padding: 10px 30px;
+      backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 10%;
-      background-color: transparent;
-      position: relative;
-      z-index: 10;
+      border-radius: 14px;
+      z-index: 1000;
     }
-    .logo img { height: 50px; }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 20px;
+
+    header h1 {
+      color: #b084f9;
+      font-size: 40px;
+      letter-spacing: 1px;
     }
-    nav a {
+
+    header nav a {
+      color: white;
       text-decoration: none;
-      color: inherit;
+      margin-left: 16px;
       font-weight: 600;
-      transition: color 0.2s;
+      font-size: 13px;
+      transition: color 0.3s ease;
     }
-    nav a:hover, nav a.active { color: #00bfff; }
-    
-    /* ===========================
-       Style Checkout Page
-    ============================== */
+
+    header nav a:hover {
+      color: #b084f9;
+    }
+
+    .auth-buttons a {
+      margin-left: 15px;
+      padding: 7px 15px;
+      border-radius: 50px;
+      border: 2px solid #b084f9;
+      color: #b084f9;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .auth-buttons a:hover {
+      background-color: #00bfff;
+      color: #121212;
+    }
+
     main.checkout {
-      padding: 60px 10%;
-      max-width: 1000px;
-      margin: 0 auto;
+      margin-top: 160px;
+      padding: 40px 5%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    section {
-      margin-bottom: 40px;
-    }
+
     h2 {
       margin-bottom: 20px;
       text-align: center;
-      color: #00bfff;
+      color: #b084f9;
+      font-size: 28px;
     }
-    /* Order Summary */
+
+    .checkout-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
     #order-summary {
+      flex: 2;
+      min-width: 600px;
       background: rgba(255, 255, 255, 0.05);
-      border-radius: 12px;
+      border-radius: 14px;
+      padding: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
       overflow-x: auto;
-      margin-bottom: 20px;
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
+
+    #checkout-form {
+      flex: 1;
+      min-width: 350px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 14px;
+      padding: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
     }
-    th, td {
-      padding: 12px 15px;
+
+    th,
+    td {
+      padding: 10px;
       text-align: center;
-      border-bottom: 1px solid #444;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
+
     th {
-      background: rgba(0,191,255,0.2);
+      background: rgba(255, 255, 255, 0.08);
       font-weight: 600;
+      color: #b084f9;
     }
+
     #total-display {
       text-align: right;
-      font-size: 1.2em;
       font-weight: bold;
       margin-top: 10px;
+      color: #fff;
     }
-    /* Shipping Form */
-    .form {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 30px 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      max-width: 500px;
-      margin: 0 auto;
-    }
-    .form label {
+
+    label {
       display: block;
       margin: 15px 0 5px;
       font-weight: 600;
     }
-    .form input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 6px;
-      border: none;
-      background: #333;
-      color: #f0f0f0;
-    }
-    .form button {
+
+    input,
+    textarea {
       width: 100%;
       padding: 12px;
-      margin-top: 20px;
-      background: #00bfff;
+      border-radius: 8px;
       border: none;
-      border-radius: 6px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.3s;
+      background: #1c1c1c;
       color: #fff;
+      font-size: 14px;
+      margin-bottom: 10px;
     }
-    .form button:hover { background: #009acf; }
-    /* Contact Form */
+
+    input:focus,
+    textarea:focus {
+      outline: 2px solid #b084f9;
+    }
+
+    button {
+      padding: 12px 25px;
+      margin-top: 20px;
+      background: #b084f9;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 15px;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    button:hover {
+      background: #00bfff;
+      color: #121212;
+      transform: scale(1.05);
+    }
+
+    .centered-btn {
+      text-align: center;
+      margin-top: 30px;
+    }
+
     .contact-us {
       background: rgba(255, 255, 255, 0.05);
-      padding: 30px 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      max-width: 500px;
-      margin: 40px auto;
+      padding: 30px;
+      border-radius: 14px;
+      max-width: 600px;
+      margin: 0 auto;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
-    .contact-us input, .contact-us textarea {
-      width: 100%;
-      padding: 10px;
-      border: none;
-      border-radius: 6px;
-      margin: 10px 0;
-      background: #333;
-      color: #f0f0f0;
+
+    footer {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+      color: #aaa;
+      border-top: 1px solid #222;
+      margin-top: 80px;
+      border-radius: 14px 14px 0 0;
     }
-    .contact-us button {
-      width: 100%;
-      padding: 12px;
-      background: #00bfff;
-      border: none;
-      border-radius: 6px;
-      color: #fff;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .contact-us button:hover { background: #009acf; }
-    /* Back To Top Button */
-    .back-to-top {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #00bfff;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      font-size: 24px;
-      cursor: pointer;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-      display: none;
-    }
-    .back-to-top.show { display: block; }
-    
-    /* Responsive */
-    @media (max-width: 768px) {
-      main.checkout { padding: 40px 5%; }
-      nav ul { flex-direction: column; }
+
+    footer p {
+      font-size: 13px;
     }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="logo">
-      <img src="images/logo.png" alt="Doctor Drip Logo" />
-    </div>
+    <h1>Doctor Drip</h1>
     <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="shop.html">Boutique</a></li>
-        <li><a href="login.html">Connexion</a></li>
-        <li><a href="register.html">Inscription</a></li>
-        <li><a href="checkout.html" class="active">Panier</a></li>
-      </ul>
+      <a href="index.html">Accueil</a>
+      <a href="shop.html">Shop</a>
+      <a href="#drop">Nouveautés</a>
+      <a href="#categories">Catégories</a>
+      <a href="checkout.html">Payer Maintenant !</a>
     </nav>
+    <div class="auth-buttons">
+      <a href="login.html" class="login-link">Connexion</a>
+      <a href="signup.html" class="register-link">Inscription</a>
+    </div>
   </header>
 
   <main class="checkout">
-    <section>
-      <h2>Order Summary</h2>
+    <section class="checkout-grid">
       <div id="order-summary">
+        <h2>Order Summary</h2>
         <table>
           <thead>
             <tr>
@@ -203,111 +239,145 @@
               <th>Color</th>
               <th>Size</th>
               <th>Price</th>
-              <th>Quantity</th>
+              <th>Qty</th>
               <th>Total</th>
             </tr>
           </thead>
           <tbody id="cart-items"></tbody>
         </table>
+        <div id="total-display">Total: 0.00 €</div>
       </div>
-      <div id="total-display">Total: 0.00 €</div>
-    </section>
-    <section>
-      <h2>Shipping Information</h2>
-      <form id="checkout-form" class="form">
-        <label for="name">Full Name</label>
+
+      <form id="checkout-form">
+        <h2>Shipping Information</h2>
+        <label for="name">Nom complet</label>
         <input type="text" name="name" id="name" required>
         <label for="email">Email</label>
         <input type="email" name="email" id="email" required>
-        <label for="address">Address</label>
+        <label for="address">Adresse</label>
         <input type="text" name="address" id="address" required>
-        <label for="city">City</label>
+        <label for="city">Ville</label>
         <input type="text" name="city" id="city" required>
-        <label for="postal">Postal Code</label>
+        <label for="postal">Code Postal</label>
         <input type="text" name="postal" id="postal" required>
-        <label for="country">Country</label>
+        <label for="country">Pays</label>
         <input type="text" name="country" id="country" required>
-        <button type="submit">Complete Purchase</button>
       </form>
     </section>
+
+    <div class="centered-btn">
+      <button type="submit" form="checkout-form">Payer maintenant</button>
+    </div>
+
     <section>
-      <h2>Contact Us</h2>
+      <h2>Contact</h2>
       <div class="contact-us">
         <form id="contact-form">
-          <input type="text" name="contact-name" placeholder="Your Name" required>
-          <input type="email" name="contact-email" placeholder="Your Email" required>
-          <textarea name="contact-message" rows="4" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
+          <input type="text" name="contact-name" placeholder="Nom" required>
+          <input type="email" name="contact-email" placeholder="Email" required>
+          <textarea name="contact-message" rows="4" placeholder="Message" required></textarea>
+          <button type="submit">Envoyer</button>
         </form>
       </div>
     </section>
+
+    <footer>
+      <div style="margin-bottom: 10px;">
+        <img src="images/logo.png" alt="Logo" style="height: 40px; margin-bottom: 10px;">
+        <p style="font-weight: bold; color: #fff;">Trusted by Apple, PayPal, Nike, and more.</p>
+      </div>
+      <p style="font-size: 13px;">&copy; 2025 Doctor Drip. All rights reserved.</p>
+    </footer>
   </main>
 
-  <button class="back-to-top" id="back-to-top">↑</button>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
-  <script>
-    // Gestion du panier
-    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];
-    const cartTable = document.getElementById('cart-items');
-    const totalDisplay = document.getElementById('total-display');
-    let total = 0;
-    cartItems.forEach(item => {
-      const itemTotal = item.price * item.quantity;
-      total += itemTotal;
-      const row = document.createElement('tr');
-      row.innerHTML = `
-        <td>${item.name}</td>
-        <td>${item.color}</td>
-        <td>${item.size}</td>
-        <td>${item.price.toFixed(2)} €</td>
-        <td>${item.quantity}</td>
-        <td>${itemTotal.toFixed(2)} €</td>
-      `;
-      cartTable.appendChild(row);
-    });
-    totalDisplay.textContent = `Total: ${total.toFixed(2)} €`;
+    const firebaseConfig = {
+      apiKey: "AIzaSyDHQ4Ia5XAA5jPJMP5z0t5RNhoiJ7olc0c",
+      authDomain: "doctor-drip-1fa85.firebaseapp.com",
+      projectId: "doctor-drip-1fa85",
+      storageBucket: "doctor-drip-1fa85.appspot.com",
+      messagingSenderId: "875097047945",
+      appId: "1:875097047945:web:5fb263cf8b51f44f5c3e99",
+      measurementId: "G-91RR7F4MQK"
+    };
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const stripe = Stripe("pk_test_51RaENmFToC8jgGBi6PCw6cfPwsQ3KZC11vb0jpWLMguxIMAV1mwyKaZoYrw6GmA2f5u6skZAi3FAPUcVRRh8qTBj003i38k8zW");
 
-    // Stripe
-    const stripe = Stripe('pk_test_51RaENmFToC8jgGBi6PCw6cfPwsQ3KZC11vb0jpWLMguxIMAV1mwyKaZoYrw6GmA2f5u6skZAi3FAPUcVRRh8qTBj003i38k8zW');
-    document.getElementById('checkout-form').addEventListener('submit', async function(event) {
-      event.preventDefault();
-      const formData = new FormData(this);
+    const cartItems = JSON.parse(localStorage.getItem("doctorDripCart")) || [];
+
+    function renderCart() {
+      const tbody = document.getElementById("cart-items");
+      const totalDisplay = document.getElementById("total-display");
+      tbody.innerHTML = "";
+      if (cartItems.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6">Votre panier est vide</td></tr>`;
+        totalDisplay.textContent = "Total: 0.00 €";
+        return;
+      }
+      let total = 0;
+      cartItems.forEach(item => {
+        const qty = item.qty || 1;
+        const price = item.price || 0;
+        const itemTotal = qty * price;
+        total += itemTotal;
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td>${item.name}</td><td>${item.color || '-'}</td><td>${item.size || '-'}</td><td>${price.toFixed(2)} €</td><td>${qty}</td><td>${itemTotal.toFixed(2)} €</td>`;
+        tbody.appendChild(tr);
+      });
+      totalDisplay.textContent = `Total: ${total.toFixed(2)} €`;
+    }
+
+    renderCart();
+
+    document.getElementById("checkout-form").addEventListener("submit", async e => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
       const shipping = Object.fromEntries(formData.entries());
+
+      for (let key in shipping) {
+        if (!shipping[key]) return alert("Merci de remplir tous les champs.");
+      }
+      if (shipping.country.trim().toLowerCase() !== "france") return alert("La livraison est uniquement disponible en France.");
+
       try {
-        const response = await fetch('/create-checkout-session', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+        const res = await fetch("http://localhost:3000/create-checkout-session", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ cartItems, shipping })
         });
-        const session = await response.json();
-        if (session.id) {
-          stripe.redirectToCheckout({ sessionId: session.id });
-        } else {
-          alert("Erreur de paiement : session invalide");
-        }
-      } catch (error) {
-        console.error(error);
-        alert("Erreur serveur");
-      }
+        const session = await res.json();
+        if (session.id) await stripe.redirectToCheckout({ sessionId: session.id });
+        else alert("Erreur lors de la création de la session.");
+      } catch (err) { console.error(err); alert("Erreur lors du paiement. Veuillez réessayer."); }
     });
-    
-    // Back to top
-    const backToTopButton = document.getElementById('back-to-top');
-    window.onscroll = function() {
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        backToTopButton.classList.add('show');
-      } else {
-        backToTopButton.classList.remove('show');
-      }
-    };
-    backToTopButton.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
-    // Contact form
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
-      event.preventDefault();
-      alert('Votre message a été envoyé !');
-      this.reset();
+    onAuthStateChanged(auth, user => {
+      const loginLink = document.querySelector(".login-link");
+      const registerLink = document.querySelector(".register-link");
+      loginLink.style.display = user ? "none" : "inline";
+      registerLink.style.display = user ? "none" : "inline";
+    });
+  </script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    emailjs.init('v7eUb9xrsXujObTeu');
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      emailjs.send('service_2tt6y99', 'template_contactus', {
+        from_name: form['contact-name'].value,
+        from_email: form['contact-email'].value,
+        message: form['contact-message'].value,
+        to_email: 'drdriplivraison@gmail.com'
+      }).then(() => { alert('Message envoyé avec succès !'); form.reset(); })
+        .catch(err => alert('Erreur lors de l’envoi : ' + err.text));
     });
   </script>
 </body>
+
 </html>
