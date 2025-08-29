@@ -344,7 +344,7 @@
       if (shipping.country.trim().toLowerCase() !== "france") return alert("La livraison est uniquement disponible en France.");
 
       try {
-        const res = await fetch("http://localhost:3000/create-checkout-session", {
+        const res = await fetch("https://doctor-drip-stripe.onrender.com/create-checkout-session", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ cartItems, shipping })

@@ -1,3 +1,5 @@
+'use strict';
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -5,34 +7,64 @@ const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const app = express();
 app.use(cors());
+
 app.use(express.json());
 
-app.post('/create-checkout-session', async (req,res)=>{
+// Route POST /create-checkout-session
+app.post('/create-checkout-session', async (req, res) => {
   try {
-    const { cartItems } = req.body;
-    if(!cartItems || !Array.isArray(cartItems)) return res.status(400).json({ error:"Panier invalide" });
+    const { cartItems, shipping } = req.body;
 
-    const line_items = cartItems.map(i=>({
+    if (!cartItems || !Array.isArray(cartItems)) {
+      return res.status(400).json({ error: 'cartItems manquant ou invalide' });
+    }
+
+    const line_items = cartItems.map(item => ({
       price_data: {
-        currency:"eur",
-        product_data: { name:i.name, description:`Color: ${i.color}, Size: ${i.size}` },
-        unit_amount: Math.round(i.price*100)
+        currency: 'eur',
+        product_data: {
+          name: item.name,
+          description: `Color: ${item.color}, Size: ${item.size}`,
+        },
+        unit_amount: Math.round(item.price * 100),
       },
-      quantity:i.qty
+      quantity: item.quantity,
     }));
 
     const session = await stripe.checkout.sessions.create({
-      payment_method_types:['card'],
+      payment_method_types: ['card'],
       line_items,
-      mode:'payment',
-      success_url:'http://localhost:3000/success.html',
-      cancel_url:'http://localhost:3000/cancel.html'
+      mode: 'payment',
+      shipping_address_collection: { allowed_countries: ['FR'] },
+      shipping_options: [
+        {
+          shipping_rate_data: {
+            type: 'fixed_amount',
+            fixed_amount: { amount: 500, currency: 'eur' },
+            display_name: 'Livraison standard',
+            delivery_estimate: {
+              minimum: { unit: 'business_day', value: 3 },
+              maximum: { unit: 'business_day', value: 5 },
+            },
+          },
+        },
+      ],
+      success_url: 'https://azgzag.github.io/DrDrip/success.html',
+      cancel_url: 'https://azgzag.github.io/DrDrip/cancel.html',
+
     });
+
     res.json({ id: session.id });
-  } catch(err){
-    console.error(err);
-    res.status(500).json({ error:err.message });
+  } catch (error) {
+    console.error('Erreur Stripe:', error);
+    res.status(500).json({ error: error.message });
   }
 });
 
-app.listen(3000, ()=>console.log("Server running on port 3000"));
+// Pour servir success.html et cancel.html s'ils existent dans le dossier courant
+app.use(express.static(__dirname));
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Stripe server running on port ${PORT}`);
+});
