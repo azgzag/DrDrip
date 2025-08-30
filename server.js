@@ -1,16 +1,22 @@
 'use strict';
 
-require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
+
+// Vérification clé Stripe
+console.log("Stripe key loaded ?", process.env.STRIPE_SECRET_KEY ? "YES" : "NO");
+
 const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 
 const app = express();
 app.use(cors());
-
 app.use(express.json());
 
-// Route POST /create-checkout-session
+
+// DEBUG : voir si la clé est chargée
+console.log("Stripe secret key:", process.env.STRIPE_SECRET_KEY ? "OK" : "MISSING");
+
+// Route checkout
 app.post('/create-checkout-session', async (req, res) => {
   try {
     const { cartItems, shipping } = req.body;
@@ -24,11 +30,11 @@ app.post('/create-checkout-session', async (req, res) => {
         currency: 'eur',
         product_data: {
           name: item.name,
-          description: `Color: ${item.color}, Size: ${item.size}`,
+          description: `Color: ${item.color || '-'}, Size: ${item.size || '-'}`
         },
         unit_amount: Math.round(item.price * 100),
       },
-      quantity: item.quantity,
+      quantity: item.qty || 1,
     }));
 
     const session = await stripe.checkout.sessions.create({
@@ -49,9 +55,8 @@ app.post('/create-checkout-session', async (req, res) => {
           },
         },
       ],
-      success_url: 'https://azgzag.github.io/DrDrip/success.html',
-      cancel_url: 'https://azgzag.github.io/DrDrip/cancel.html',
-
+      success_url: 'https://drdrip-1.onrender.com/success.html',
+      cancel_url: 'https://drdrip-1.onrender.com/cancel.html',
     });
 
     res.json({ id: session.id });
@@ -61,7 +66,7 @@ app.post('/create-checkout-session', async (req, res) => {
   }
 });
 
-// Pour servir success.html et cancel.html s'ils existent dans le dossier courant
+// Servir tes fichiers HTML statiques
 app.use(express.static(__dirname));
 
 const PORT = process.env.PORT || 3000;
